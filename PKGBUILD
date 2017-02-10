@@ -1,31 +1,34 @@
 # Maintainer: Chrysostomus @forum.manjaro.org
 
 pkgname=manjaro-architect
-pkgver=0.5
+_pkgname=aif-dev
+pkgver=0.7.2
 pkgrel=1
-pkgdesc="A clone of architect installer modified to install manjaro instead of arch linux"
+pkgdesc="A clone of architect installer modified for manjaro"
 arch=(any)
-url="https://github.com/Chrysostomus/aif-dev"
+url="https://github.com/Chrysostomus/$_pkgname"
 license=(GPL2)
-depends=('pacman'
-	'mhwd'
-	'manjaro-tools-base'
+depends=('bash'
 	'dialog'
-	'bash'
-	'gptfdisk'
 	'f2fs-tools'
-	'nilfs-utils'
-	'parted'
 	'git'
-	'pacman-mirrorlist')
+	'gptfdisk'
+	'manjaro-tools-base'
+	'mhwd'
+	'nilfs-utils'
+    'pacman'
+	'pacman-mirrorlist'
+	'parted')
 makedepends=('git')
-source=("git://github.com/Chrysostomus/aif-dev")
+source=("git+$url.git")
 md5sums=('SKIP')
+
 package () {
-    cd "$srcdir/aif-dev"
-    install -Dm755 "$srcdir/aif-dev/manjaro-architect" "$pkgdir/usr/bin/manjaro-architect"
-    install -dm655 $pkgdir/usr/share/aif/package-lists
-    install -dm655 $pkgdir/usr/share/aif/translations
-    cp -r $srcdir/aif-dev/package-lists/ "$pkgdir/usr/share/aif/"
-    cp -r $srcdir/aif-dev/translations/ "$pkgdir/usr/share/aif/"
+    cd $_pkgname
+    install -Dm755 $pkgname $pkgdir/usr/bin/$pkgname
+    mkdir -p $pkgdir/usr/share/aif/{package-lists,translations}
+    cp -r package-lists $pkgdir/usr/share/aif/
+    cp -r translations $pkgdir/usr/share/aif/
+    install -Dm644 $pkgname.desktop $pkgdir/usr/share/applications/$pkgname.desktop
+    install -Dm644 $pkgname.png $pkgdir/usr/share/icons/hicolor/48x48/apps/$pkgname.png
 }
