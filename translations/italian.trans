@@ -47,7 +47,7 @@ _AutoPartBody3="Se si intede utilizzare lo swap SWAP, selezionare l'opzione 'Swa
 
 # Messaggi d'errore. Tutti gli altri sono generati da BASH.
 _ErrNoMount="\nLa/Le partizione/i deve/devono essere montata/e per prima/e.\n\n"
-_ErrNoBase="\nArch base deve essere istallata per prima.\n\n"
+_ErrNoBase="\nManjaro base deve essere istallata per prima.\n\n"
 _ErrNoKernel="\nSelezionare almeno un kernel (linux o linux-lts).\n\n"
 
 # Installazioni su Vbox
@@ -74,7 +74,7 @@ _LuksEncryptAdv="impostare lunghezza chiave e algoritmo di cifratura"
 _LuksEncryptBody="\nSelezionare una partizione da crittografare."
 _LuksEncruptSucc="\nFatto! Aerta e pronta per LVM (raccomandato) o montaggio diretto.\n"
 _LuksPartErrBody="\nDevono essere crittografate almeno due partizioni:\n\n1. Root (/) - ammesse partizioni standard o lvm.\n\n2. Boot (/boot or /boot/efi) - solo partizioni standard (o lvm con Grub su BIOS).\n"
-_SelLuksRootBody="\nSelezionare la partizione ROOT (/) da crittografare. Arch sarà installata qui.\n\n"
+_SelLuksRootBody="\nSelezionare la partizione ROOT (/) da crittografare. Manjaro sarà installata qui.\n\n"
 _LuksPassBody="\nInserire una aprola chiave per de/crittare la partizione. Dovrebbe essere differente da quella usata per l'account Root o gli account utente.\n"
 _LuksWaitBody="\nCreazione partizione Root crittografata in corso:"
 _LuksWaitBody2="Volume o dispositivo in uso:"
@@ -209,7 +209,7 @@ _FSBody="\nExt4 è la scelta consigliata. Non tutti i filesystem sono utilizzabi
 _FSSkip="Salta / Nessuno" 
 
 # Select Root
-_SelRootBody="\nSelezionare partizione ROOT. Arch sarà installata qui."
+_SelRootBody="\nSelezionare partizione ROOT. Manjaro sarà installata qui."
 
 # Select SWAP
 _SelSwpBody="\nSelezionare partizione SWAP. Se si opta per uno Swapfile, sarà creato della stessa dimensione della RAM."
@@ -296,7 +296,7 @@ _InstNMErrBody="\nNetwork connection manager installato ed abilitato.\n\n"
 
 # Welcome
 _WelTitle="Benvenuto in"
-_WelBody="\nQuesto installer scaricherà i pacchetti più recenti dai repositories Arch. I passaggi comprenderrano la minima configurazione necessaria.\n\nOPZIONI MENU: Selezionare premendo il numero corrispondente o usando i tasti su/giù prima di premere [invio] per confermare. Scorrere fra i bottoni premendo [Tab] o le frecce sinistra/destraconfermando con [Invio]. È possibile navigare liste più lunghe usando i tasti [pg up] e [pg down], e/o la prima lettera corrispondente all'opzione selezionata.\n\nCONFIGURAZIONE & OPZIONI PACHETTI: I pacchetti preferiti nelle checklists verranno pre-selezionati. Utilizzare [Spazio] per selzionare e deselezionare."
+_WelBody="\nQuesto installer scaricherà i pacchetti più recenti dai repositories Manjaro. I passaggi comprenderrano la minima configurazione necessaria.\n\nOPZIONI MENU: Selezionare premendo il numero corrispondente o usando i tasti su/giù prima di premere [invio] per confermare. Scorrere fra i bottoni premendo [Tab] o le frecce sinistra/destraconfermando con [Invio]. È possibile navigare liste più lunghe usando i tasti [pg up] e [pg down], e/o la prima lettera corrispondente all'opzione selezionata.\n\nCONFIGURAZIONE & OPZIONI PACHETTI: I pacchetti preferiti nelle checklists verranno pre-selezionati. Utilizzare [Spazio] per selzionare e deselezionare."
 
 # Preparation Menu
 _PrepMenuTitle="Preparazione Installazione"
@@ -362,7 +362,7 @@ _InstMulCust="Installazioni Pacchetti Personalizzati"
 _InstMulCodBody="GStreamer è un framework per file multimediali. Le prime due opzioni sono i pacchetti correnti e quello legacy (gstreamer0.10). È inoltre disponibile Xine.\n\n"
 
 # Custom Packages Box
-_InstMulCustBody="\nIndicare i nomi dei pacchetti da installare dai repositories Arch, separati da spazi. Non è necessario specificare il comando pacstrap (o altri). È richiesto indicare i nomi dei pacchetti correttamente.\n\nAd esempio, per installare Firefox, VLC, e HTop: firefox vlc htop\n"
+_InstMulCustBody="\nIndicare i nomi dei pacchetti da installare dai repositories Manjaro, separati da spazi. Non è necessario specificare il comando pacstrap (o altri). È richiesto indicare i nomi dei pacchetti correttamente.\n\nAd esempio, per installare Firefox, VLC, e HTop: firefox vlc htop\n"
 
 # Menu Principale
 _MMTitle="Menu Principale"

@@ -47,7 +47,7 @@ _AutoPartBody3="Si vous avez l'intention d'utiliser un fichier d'échange (SWAP)
 
 # Messages d'erreur. Tous les autres messages sont générés par BASH.
 _ErrNoMount="\nLa ou les partitions doivent être montées en premier.\n\n"
-_ErrNoBase="\nLa base de Arch doit être installée en premier.\n\n"
+_ErrNoBase="\nLa base de Manjaro doit être installée en premier.\n\n"
 _ErrNoKernel="\nAu moins un noyau (linux ou linux-lts) doit être sélectionné.\n\n"
 
 # Installations de Vbox
@@ -74,7 +74,7 @@ _LuksEncryptAdv="Définir le cryptage et la longueur de clé"
 _LuksEncryptBody="\nSélectionner une partition à crypter."
 _LuksEncruptSucc="\nTerminé ! Ouvert et prêt pour LVM (recommandé) ou montage direct.\n"
 _LuksPartErrBody="\nUn minimum de deux partitions est nécessaire pour le cryptage :\n\n1. Root (/) - partition standard ou lvm.\n\n2. Boot (/boot ou /boot/efi) - partition standard uniquement (excepté lvm utilisant BIOS Grub).\n"
-_SelLuksRootBody="\nSélectionner la partition ROOT (/) à crypter. Arch sera installé dans cette partition.\n\n"
+_SelLuksRootBody="\nSélectionner la partition ROOT (/) à crypter. Manjaro sera installé dans cette partition.\n\n"
 _SelLuksRootBody="\nEntrer un mot de passe pour crypter/décrypter la partition. Le mot de passe ne doit pas être le même que celui du compte utilisateur ou administrateur.\n"
 _LuksWaitBody="\nCréation d'une partition Root crypté :"
 _LuksWaitBody2="Périphérique ou volume utilisé :"
@@ -209,7 +209,7 @@ _FSBody="\nExt4 est recommandé. Tous les systèmes de fichiers ne sont pas expl
 _FSSkip="Passer / Aucun" 
 
 # Sélectionner Root
-_SelRootBody="\nSélectionner la partition racine (ROOT) où Arch sera installé."
+_SelRootBody="\nSélectionner la partition racine (ROOT) où Manjaro sera installé."
 
 # Sélectionner le fichier d'échange (SWAP)
 _SelSwpBody="\nSélectionner une partition SWAP. Le fichier d'échange créé doit être de la même taille que votre mémoire vive (RAM)."
@@ -296,7 +296,7 @@ _InstNMErrBody="\nLe gestionnaire de connexion réseau a été installé et acti
 
 # Bienvenue
 _WelTitle="Bienvenue dans"
-_WelBody="\nCet installateur va télécharger les derniers paquets provenant des dépôts Arch. Seule la configuration minimale nécessaire sera téléchargée.\n\nOPTIONS du MENU : Sélectionner en appuyant sur le numéro de l'option, ou en utilisant les flèches haut/bas avant d'appuyer sur [entrée] pour confirmer. Basculer entre les boutons en utilisant [Tab] ou les flèches gauche/droite avant d'appuyer sur [entrée] pour confirmer.\n\nNaviguer dans la liste en utilisant les touches [page suivante] et [page précédente], et/ou en appuyant sur la première lettre de l'option souhaitée.\n\nOPTIONS & CONFIGURATION DES PAQUETS : Les paquets par défaut dans les listes vont être pré-vérifiés. Utiliser la [barre espace] pour sélectionner/désélectionner."
+_WelBody="\nCet installateur va télécharger les derniers paquets provenant des dépôts Manjaro. Seule la configuration minimale nécessaire sera téléchargée.\n\nOPTIONS du MENU : Sélectionner en appuyant sur le numéro de l'option, ou en utilisant les flèches haut/bas avant d'appuyer sur [entrée] pour confirmer. Basculer entre les boutons en utilisant [Tab] ou les flèches gauche/droite avant d'appuyer sur [entrée] pour confirmer.\n\nNaviguer dans la liste en utilisant les touches [page suivante] et [page précédente], et/ou en appuyant sur la première lettre de l'option souhaitée.\n\nOPTIONS & CONFIGURATION DES PAQUETS : Les paquets par défaut dans les listes vont être pré-vérifiés. Utiliser la [barre espace] pour sélectionner/désélectionner."
 
 # Menu de Préparation 
 _PrepMenuTitle="Préparer l'installation"
@@ -362,7 +362,7 @@ _InstMulCust="Installer des paquets personnalisés"
 _InstMulCodBody="GStreamer est une structure logicielle de gestion de sons et d'images. Les deux premières options sont les groupes de paquet actuelles (current) et héritées (legacy) (gstreamer0.10). Xine est également référencé.\n\n"
 
 # Boîte des paquets personnalisés
-_InstMulCustBody="\nEntrer le nom des paquets à installer depuis les dépôts Arch, séparés par des espaces. Il n'est pas nécessaire de spécifier la commande pacstrap, ou aucune autre. Il est nécessaire de spécifier le nom des paquets correctement.\n\nPar exemple, pour installer Firefox, VLC, et HTop : firefox vlc htop\n"
+_InstMulCustBody="\nEntrer le nom des paquets à installer depuis les dépôts Manjaro, séparés par des espaces. Il n'est pas nécessaire de spécifier la commande pacstrap, ou aucune autre. Il est nécessaire de spécifier le nom des paquets correctement.\n\nPar exemple, pour installer Firefox, VLC, et HTop : firefox vlc htop\n"
 
 # Menu principal
 _MMTitle="Menu principal"

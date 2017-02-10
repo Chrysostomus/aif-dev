@@ -242,7 +242,7 @@ check_mount() {
 
 }
 
-# Ensure that Arch has been installed
+# Ensure that Manjaro has been installed
 check_base() {
 
     if [[ ! -e ${MOUNTPOINT}/etc ]]; then

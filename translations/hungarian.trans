@@ -47,7 +47,7 @@ _AutoPartBody3="Ha használni akarsz cserefájlt, válaszd a 'Swap File' lehető
 
 # Hibaüzenetek. Az összes többi létre lesz hozva a BASH által.
 _ErrNoMount="\nA partíciót (partíciókat) csatold először.\n\n"
-_ErrNoBase="\nAz 'Arch base'-t kell először telepíteni.\n\n"
+_ErrNoBase="\nAz 'Manjaro base'-t kell először telepíteni.\n\n"
 _ErrNoKernel="\nLegalább egy kernelt (linux vagy linux-lts) kell választanod.\n\n"
 
 # Vbox telepítés
@@ -74,7 +74,7 @@ _LuksEncryptAdv="Határozd meg a kulcs méretét és a rejtjelezés típusát"
 _LuksEncryptBody="\nVálaszd ki a titkosítandó partíciót."
 _LuksEncruptSucc="\nKész! Kinyílt, és kész az LVM (ajánlott) vagy direkt csatolásra.\n"
 _LuksPartErrBody="\nMinimum kettő partícióra van szükség a titkosításhoz:\n\n1. Root (/) - normál vagy lvm partíció.\n\n2. Boot (/boot or /boot/efi) - csak normál partíció (kivéve lvm-nél ha BIOS Grub-ot használsz).\n"
-_SelLuksRootBody="\nVálaszd a gyökér (/) partíciót titkosításra. Ez az, ahová az Arch lesz telepítve.\n\n"
+_SelLuksRootBody="\nVálaszd a gyökér (/) partíciót titkosításra. Ez az, ahová az Manjaro lesz telepítve.\n\n"
 _LuksPassBody="\nAdj meg egy jelszót a partíció titkosításához, illetve a titkosítás feloldásához. Ez nem egyezhet sem a rendszergazda, sem a felhasználói jelszóval.\n"
 _LuksWaitBody="\nTitkosított gyökér partíció létrehozása:"
 _LuksWaitBody2="Használt eszköz vagy kötet:"
@@ -296,7 +296,7 @@ _InstNMErrBody="\nHálózatkezelő alkalmazás telepítve és bekapcsolva.\n\n"
 
 # Üdvözöllek
 _WelTitle="Üdvözöllek az"
-_WelBody="\nEz a telepítő letölti a legújabb csomagokat az ARCH tárolókból. Csak minimálisan szükséges beállítás vállalt.\n\nMENÜ OPCIÓK: Válassz az opciók számának  beütésével, vagy használd a fel/le nyilakat mielőtt [enter]t nyomnál a kiválasztáshoz. A gombok közötti váltáshoz használd a [Tab] billentyűt  vagy használd a bal/jobb nyilakat mielőtt [enter]t nyomnál a megerősítéshez. A hosszú listában navigálhatsz a [pg up] és [pg down] billentyűkkel, és/vagy nyomd le az első betűjét a kiválasztani kívánt opciónak.\n\nKonfiguráció és csomag opciók: Az alapértelmezett csomagok a csekklistán elleőrizve lesznek. Használd a [szóköz] billentyűt a kiválasztásoz illetve a kiválasztás törléséhez."
+_WelBody="\nEz a telepítő letölti a legújabb csomagokat az Manjaro tárolókból. Csak minimálisan szükséges beállítás vállalt.\n\nMENÜ OPCIÓK: Válassz az opciók számának  beütésével, vagy használd a fel/le nyilakat mielőtt [enter]t nyomnál a kiválasztáshoz. A gombok közötti váltáshoz használd a [Tab] billentyűt  vagy használd a bal/jobb nyilakat mielőtt [enter]t nyomnál a megerősítéshez. A hosszú listában navigálhatsz a [pg up] és [pg down] billentyűkkel, és/vagy nyomd le az első betűjét a kiválasztani kívánt opciónak.\n\nKonfiguráció és csomag opciók: Az alapértelmezett csomagok a csekklistán elleőrizve lesznek. Használd a [szóköz] billentyűt a kiválasztásoz illetve a kiválasztás törléséhez."
 
 # Előkészületek menü
 _PrepMenuTitle="Telepítés előkészítése"
@@ -362,7 +362,7 @@ _InstMulCust="Egyéni csomagok telepítése"
 _InstMulCodBody="A 'gStreamer' egy csővezeték-alapú multimédiás keretrendszer. Az első két lehetőség a jelenlegi, és a korábbi  (gstreamer0.10) csomag csoportok. A 'xine' is a listán szerepel.\n\n"
 
 # Egyéni csomagok doboza
-_InstMulCustBody="\nSzóközzel elválasztva adja meg az Arch tárolókból telepítendő csomagok nevét. Nem szükséges beírni a 'pacstrap'-ot, vagy egyéb parancsot. Csak a csomag nevét adjad meg helyesen. Például a Firefox, VLC, Htop telepítéséhez: firefox vlc htop\n"
+_InstMulCustBody="\nSzóközzel elválasztva adja meg az Manjaro tárolókból telepítendő csomagok nevét. Nem szükséges beírni a 'pacstrap'-ot, vagy egyéb parancsot. Csak a csomag nevét adjad meg helyesen. Például a Firefox, VLC, Htop telepítéséhez: firefox vlc htop\n"
 
 # Főmenü
 _MMTitle="Főmenü"

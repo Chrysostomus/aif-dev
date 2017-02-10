@@ -47,7 +47,7 @@ _AutoPartBody3="Si tiene pensado utilizar memoria SWAP, seleccione la opción 'A
 
 # Mensajes de Error. Todos los demás son generados por BASH.
 _ErrNoMount="\nPrimero se debe/n montar la/s partición/es.\n\n"
-_ErrNoBase="\nPrimero se debe instalar el sistema base de Arch.\n\n"
+_ErrNoBase="\nPrimero se debe instalar el sistema base de Manjaro.\n\n"
 _ErrNoKernel="\nSe debe seleccionar al menos un núcleo (linux o iinux-lts).\n\n"
 
 # Instalaciones de Vbox
@@ -74,7 +74,7 @@ _LuksEncryptAdv="Establecer cifrado y tamaño de la clave"
 _LuksEncryptBody="\nSeleccione una partición para encriptar."
 _LuksEncruptSucc="\n¡Listo! Abierto y listo para LVM (recomendado) o montaje directo.\n"
 _LuksPartErrBody="\nSe requiere un mínimo de dos particiones para la encriptación:\n\n1. Raíz (/) - tipos de partición estándar o LVM.\n\n2. Arranque (/boot o /boot/efi) - sólo tipos de partición estándar (excepto LVM cuando se utiliza Grub BIOS).\n"
-_SelLuksRootBody="\nSeleccione la partición RAÍZ (/) para encriptar. Aquí es donde se instalará Arch.\n\n"
+_SelLuksRootBody="\nSeleccione la partición RAÍZ (/) para encriptar. Aquí es donde se instalará Manjaro.\n\n"
 _LuksPassBody="\nIntroduzca una contraseña para des/encriptar la partición. Ésta no debería ser la misma que las contraseñas de superusuario o de usuario normal.\n"
 _LuksWaitBody="\nCreando partición raíz encriptada:"
 _LuksWaitBody2="Dispositivo o volumen en uso:"
@@ -209,7 +209,7 @@ _FSBody="\nSe recomienda el sistema de archivos Ext4. No todos los sistemas de a
 _FSSkip="Saltar / Ninguno" 
 
 # Seleccionar raíz
-_SelRootBody="\nSeleccione la partición RAÍZ. Aquí es donde se instalará Arch."
+_SelRootBody="\nSeleccione la partición RAÍZ. Aquí es donde se instalará Manjaro."
 
 # Seleccionar SWAP
 _SelSwpBody="\nSeleccione la partición SWAP. Si va a usar un archivo SWAP, se creará con un tamaño igual al de la memoria RAM del equipo."
@@ -296,7 +296,7 @@ _InstNMErrBody="\nSe ha instalado y activado el administrador de conexiones.\n\n
 
 # Bienvenido
 _WelTitle="Bienvenido a"
-_WelBody="\nEste instalador descargará los paquetes más recientes de los repositorios de Arch. Sólo se realiza la configuración mínima necesaria.\n\nOPCIONES DE MENÚ: Seleccione pulsando el número de opción o usando las teclas flecha arriba/flecha abajo antes de pulsar [Intro] para confirmar. Cambie entre distintos botones con la tecla [Tabulador] o las teclas flecha izquierda/derecha antes de pulsar [Intro] para confirmar. Se puede navegar por listas largas utilizando las teclas [Re Pág] y [Av Pág], o bien pulsando la primera letra de la opción deseada.\n\nOPCIONES DE CONFIGURACIÓN Y PAQUETES: Los paquetes por defecto en las listas de verificación estarán premarcados. Utilice la tecla [BarraEspaciadora] para des/marcar."
+_WelBody="\nEste instalador descargará los paquetes más recientes de los repositorios de Manjaro. Sólo se realiza la configuración mínima necesaria.\n\nOPCIONES DE MENÚ: Seleccione pulsando el número de opción o usando las teclas flecha arriba/flecha abajo antes de pulsar [Intro] para confirmar. Cambie entre distintos botones con la tecla [Tabulador] o las teclas flecha izquierda/derecha antes de pulsar [Intro] para confirmar. Se puede navegar por listas largas utilizando las teclas [Re Pág] y [Av Pág], o bien pulsando la primera letra de la opción deseada.\n\nOPCIONES DE CONFIGURACIÓN Y PAQUETES: Los paquetes por defecto en las listas de verificación estarán premarcados. Utilice la tecla [BarraEspaciadora] para des/marcar."
 
 # Menú de preparación
 _PrepMenuTitle="Preparar instalación"
@@ -362,7 +362,7 @@ _InstMulCust="Instalar paquetes personalizados"
 _InstMulCodBody="GStreamer es un framework multimedia basado en canales. Las primeras dos opciones son los grupos de paquetes actual y 'legacy' (gstreamer0.10), respectivamente. También está disponible Xine.\n\n"
 
 # Caja de paquetes personalizados
-_InstMulCustBody="\nIntroduzca los nombres de los paquetes a instalar de los repositorios de Arch, separados por espacios. No es necesario especificar el comando 'pacstrap' u otro cualquiera. Es necesario especificar los nombres correctos de los paquetes.\n\nPor ejemplo, para instalar Firefox, VLC y Htop: firefox vlc htop\n"
+_InstMulCustBody="\nIntroduzca los nombres de los paquetes a instalar de los repositorios de Manjaro, separados por espacios. No es necesario especificar el comando 'pacstrap' u otro cualquiera. Es necesario especificar los nombres correctos de los paquetes.\n\nPor ejemplo, para instalar Firefox, VLC y Htop: firefox vlc htop\n"
 
 # Menú principal
 _MMTitle="Menú principal"

@@ -47,7 +47,7 @@ _AutoPartBody3="Indien je SWAP wenst te gebruiken, selecteer de 'Swap File' opti
 
 #Foutmeldingen. Alle andere worden door BASH gegenereerd.
 _ErrNoMount="\nPartitie(s) moet(en) eerst worden aangekoppeld\n\n"
-_ErrNoBase="\nHet Arch basissysteem moet eerst worden geïnstalleerd.\n\n"
+_ErrNoBase="\nHet Manjaro basissysteem moet eerst worden geïnstalleerd.\n\n"
 _ErrNoKernel="\nEr moet ten minste één kernel (linux of linux-lts) worden geselecteer.\n\n"
 
 # Vbox Installaties
@@ -74,7 +74,7 @@ _LuksEncryptAdv="Bepaal de sleutelgrootte en Cypher"
 _LuksEncryptBody="\nSelecteer een partitie om te versleutelen."
 _LuksEncruptSucc="\nKlaar! Geopend en klaar voor LVM (aanbevolen) of rechtstreekse aankoppeling.\n"
 _LuksPartErrBody="\nEr zijn minimum twee partities nodig om te kunnen versleutelen:\n\n1. Root (/) - standaard-of LVM partitie-types.\n\n2. Boot (/boot of /boot/efi) - alleen standaard partitietypes  (behalve LVM waar men BIOS Grub gebruikt).\n"
-_SelLuksRootBody="\nSelecteer de ROOT (/) partitie die moet worden versleuteld. Dit is waar Arch zal worden geïnstalleerd.\n\n"
+_SelLuksRootBody="\nSelecteer de ROOT (/) partitie die moet worden versleuteld. Dit is waar Manjaro zal worden geïnstalleerd.\n\n"
 _LuksPassBody="\nGeef een wachtwoord in om de partitie te versleutelen. Dit mag niet hetzelfde zijn als het Root-wachtwoord of uw gebruikerswachtwoord.\n"
 _LuksWaitBody="\nAanmaken van een versleutelde Root partitie:"
 _LuksWaitBody2="Gebruikt opslagmedium of volume:"
@@ -209,7 +209,7 @@ _FSBody="\nExt4 is hier aanbevolen. Niet alle bestandsystemen zijn geschikt voor
 _FSSkip="Sla over / Geen" 
 
 # Selecteer Root
-_SelRootBody="\nSelecteer de ROOT Partitie. Dit is waar Arch zal worden geïnstalleerd."
+_SelRootBody="\nSelecteer de ROOT Partitie. Dit is waar Manjaro zal worden geïnstalleerd."
 
 # Selecteer SWAP
 _SelSwpBody="\nSelecteer de SWAP Partitie. Bij gebruik van SWAP, zal deze even groot ingesteld worden als de hoeveelheid RAM."
@@ -296,7 +296,7 @@ _InstNMErrBody="\nNetwerk manager werd geïnstalleerd en ingeschakeld.\n\n"
 
 # Welkom
 _WelTitle="Welkom bij"
-_WelBody="\nDit installatieprogramma zal de nieuwste pakketten downloaden van de Arch repositories. Enkel de hoogstnodige configuratie wordt uitgevoerd\n\nMENU OPTIES: Selecteer de gewenste optie door haar nummer in te tikken of door de pijljestoetsen [op]/[neer] te gebruiken. Bevestig door op [enter] te drukken. Schakel tussen de knoppen door de [Tab] toets of de pijltjestoets [links]/[rechts] te gebruiken. Bevestig door op [enter] te drukken. U kunt navigeren in de lange lijsten door de [pg up] en [pg down] toetsen te gebruiken, en/of door op de eerste letter van de gewenste optie te drukken.\n\nCONFIGURATIE & PAKKET OPTIES: Standaard pakketten in checklists worden vooraf geselecteerd. Gebruik de [Spatiebar] om te (de)selecteren"
+_WelBody="\nDit installatieprogramma zal de nieuwste pakketten downloaden van de Manjaro repositories. Enkel de hoogstnodige configuratie wordt uitgevoerd\n\nMENU OPTIES: Selecteer de gewenste optie door haar nummer in te tikken of door de pijljestoetsen [op]/[neer] te gebruiken. Bevestig door op [enter] te drukken. Schakel tussen de knoppen door de [Tab] toets of de pijltjestoets [links]/[rechts] te gebruiken. Bevestig door op [enter] te drukken. U kunt navigeren in de lange lijsten door de [pg up] en [pg down] toetsen te gebruiken, en/of door op de eerste letter van de gewenste optie te drukken.\n\nCONFIGURATIE & PAKKET OPTIES: Standaard pakketten in checklists worden vooraf geselecteerd. Gebruik de [Spatiebar] om te (de)selecteren"
 
 #Voorbereidings Menu
 _PrepMenuTitle="Voorbereiding  Installatieproces"
@@ -362,7 +362,7 @@ _InstMulCust="Installeer gewone pakketten"
 _InstMulCodBody="GStreamer is een pipeline-gebaseerd multimedia-raamwerk. De eerste twee opties zijn de huidige en legacy (gstreamer0.10) pakketgroepen. Xine wordt ook vermeld.\n\n"
 
 # Gewenste Pakketten Box
-_InstMulCustBody="\nGeef de pakketnamen op, met tussenspaties, die je wil installeren uit de Arch repositories. Het is niet nodig het pacstrap (of ander) commando te gebruiken. Het is noodzakelijk om de namen van pakketten correct op te geven.\n\nBijvoorbeeld: om Firefox, VLC, en HTop te installeren: firefox vlc htop\n"
+_InstMulCustBody="\nGeef de pakketnamen op, met tussenspaties, die je wil installeren uit de Manjaro repositories. Het is niet nodig het pacstrap (of ander) commando te gebruiken. Het is noodzakelijk om de namen van pakketten correct op te geven.\n\nBijvoorbeeld: om Firefox, VLC, en HTop te installeren: firefox vlc htop\n"
 
 # Hoofd Menu
 _MMTitle="Hoofd Menu"
