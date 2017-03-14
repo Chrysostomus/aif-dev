@@ -80,6 +80,10 @@ UEFI_MOUNT=""                   # UEFI mountpoint (/boot or /boot/efi)
 # Edit Files
 FILE=""          # File(s) to be reviewed
 
+#input infos
+declare -A ARGS=()
+
+
 # Installation
 DM_INST=""       # Which DMs have been installed?
 DM_ENABLED=0     # Has a display manager been enabled?
@@ -122,6 +126,55 @@ function finishini {
     ((debug)) && cat "/var/log/m-a.ini"
 }
 trap finishini EXIT
+
+# read datas from ini file
+# read: value=$(ini system.init)
+inifile() {
+    [[ -r "${ARGS[ini]}" ]] || return 1
+    local section="$1"
+    [[ "$section" =~ \. ]] || section="manjaro-architect.${section}"
+    ini_val "${ARGS[ini]}" "$section" 2>/dev/null
+}
+
+# read console args , set in array ARGS global var
+get_ARGS() {
+    declare key param
+    getvalue(){
+        local value="${param##--${key}=}"
+        [[ "${value:0:1}" == '"' ]] && value="${value/\"/}" # remove quotes
+        echo "${value}"
+    }
+    while [ -n "$1" ]; do
+        param="$1"
+        case "${param}" in
+            --debug|-d)
+                ARGS[debug]=1
+                ;; 
+            --init=*)
+                key="init"
+                ARGS[$key]=$(getvalue)
+                ;;
+            --ini=*)
+                key="ini"
+                ARGS[$key]=$(getvalue)
+                ;;
+            --mount.root=*)
+                key="mount.root"
+                ARGS[$key]=$(getvalue)
+                ;;
+            --help|-h)
+                echo -e "usage [-d|--debug] [--ini=\"file.ini\"] [ --init=openrc ]  "
+                exit 0
+                ;;
+            -*)
+                echo "${param}: not used";
+                ;;
+        esac
+        shift
+    done
+    #declare -g -r ARGS
+}
+get_ARGS "$@"
 
 # progress through menu entries until number $1 is reached
 submenu() {

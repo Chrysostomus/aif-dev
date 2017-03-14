@@ -839,11 +839,21 @@ mount_partitions() {
         delete_partition_in_list $part
     done
 
-    # Identify and mount root
-    DIALOG " $_PrepMntPart " --menu "\n$_SelRootBody\n " 0 0 12 ${PARTITIONS} 2>${ANSWER} || return 0
-    PARTITION=$(cat ${ANSWER})
-    ROOT_PART=${PARTITION}
+echo "arg: ${ARGS[mount.root]}"
+echo "ini: $(inifile mount.root)"
 
+    # Identify and mount root
+    PARTITION="${ARGS[mount.root]}"
+    if [[ -z "$PARTITION" ]]; then
+        PARTITION=$(inifile "mount.root")
+        if [[ -z "$PARTITION" ]]; then
+            DIALOG " $_PrepMntPart " --menu "\n$_SelRootBody\n " 0 0 12 ${PARTITIONS} 2>${ANSWER} || return 0
+            PARTITION=$(cat ${ANSWER})
+        fi
+    fi
+    ROOT_PART=${PARTITION}
+#echo "format: $ROOT_PART"
+#exit
     # Format with FS (or skip) -> # Make the directory and mount. Also identify LUKS and/or LVM
     select_filesystem && mount_current_partition || return 0
 
