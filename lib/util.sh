@@ -166,8 +166,6 @@ get_ARGS() {
                 key="${param%=*}"
                 key="${key//-}"
                 ARGS[$key]=$(getvalue)
-                echo $key
-                #exit
                 ;;
             -*)
                 echo "${param}: not used";
@@ -407,6 +405,18 @@ check_requirements() {
 # Greet the user when first starting the installer
 greeting() {
     DIALOG " $_WelTitle $VERSION " --msgbox "\n$_WelBody\n " 0 0
+
+    # if params, auto load root partition
+    local PARTITION="${ARGS[mount.root]}"
+    [[ -z "$PARTITION" ]] && PARTITION=$(inifile "mount.root")
+    if [[ -n "$PARTITION" ]]; then
+        local option="${ARGS[mount.${PARTITION}]}"
+        [[ -z "$option" ]] && option=$(inifile "mount.${PARTITION}")
+        if [[ -n "$option" ]]; then
+            mount_partitions
+        fi
+    fi
+
 }
 
 # Originally adapted from AIS. Added option to allow users to edit the mirrorlist.
