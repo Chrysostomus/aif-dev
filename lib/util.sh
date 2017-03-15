@@ -136,6 +136,16 @@ inifile() {
     ini_val "${ARGS[ini]}" "$section" 2>/dev/null
 }
 
+# read install value
+# console param, import ini, or current ini
+getvar() {
+    local value=''
+    value="${ARGS[$1]}"
+    [[ -z "$value" ]] && value=$(inifile "$1")
+    [[ -z "$value" ]] && value=$(ini "$1")
+    echo "$value"
+}
+
 # read console args , set in array ARGS global var
 get_ARGS() {
     declare key param
@@ -407,11 +417,9 @@ greeting() {
     DIALOG " $_WelTitle $VERSION " --msgbox "\n$_WelBody\n " 0 0
 
     # if params, auto load root partition
-    local PARTITION="${ARGS[mount.root]}"
-    [[ -z "$PARTITION" ]] && PARTITION=$(inifile "mount.root")
+    local PARTITION=$(getvar "mount.root")
     if [[ -n "$PARTITION" ]]; then
-        local option="${ARGS[mount.${PARTITION}]}"
-        [[ -z "$option" ]] && option=$(inifile "mount.${PARTITION}")
+        local option=$(getvar "mount.${PARTITION}")
         if [[ -n "$option" ]]; then
             mount_partitions
         fi

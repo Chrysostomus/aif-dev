@@ -235,8 +235,7 @@ select_filesystem() {
     fs_opts=""
     CHK_NUM=0
 
-    local option="${ARGS[mount.${PARTITION}]}"
-    [[ -z "$option" ]] && option=$(inifile "mount.${PARTITION}")
+    local option==$(getvar "mount.${PARTITION}")
     if [[ -z "$option" ]]; then
         DIALOG " $_FSTitle " --menu "\n${PARTITION}\n$_FSBody\n " 0 0 12 \
         "$_FSSkip" "-" \
@@ -846,8 +845,7 @@ mount_partitions() {
     done
 
     # Identify and mount root
-    PARTITION="${ARGS[mount.root]}"
-    [[ -z "$PARTITION" ]] && PARTITION=$(inifile "mount.root")
+    PARTITION=$(getvar "mount.root")
     if [[ -z "$PARTITION" ]]; then
         DIALOG " $_PrepMntPart " --menu "\n$_SelRootBody\n " 0 0 12 ${PARTITIONS} 2>${ANSWER} || return 0
         PARTITION=$(cat ${ANSWER})
