@@ -43,7 +43,7 @@ function ini_val() {
   fi
 
   local current
-  current=$(awk -F "${delim}" "/^${key}${delim}/ {for (i=2; i<NF; i++) printf \$i \" \"; print \$NF}" "${file}")
+  current=$(awk -F "${delim}" "/^${key//\//\\\/}${delim}/ {for (i=2; i<NF; i++) printf \$i \" \"; print \$NF}" "${file}")
 
   if [[ ! "${val}" ]]; then
     # get a value

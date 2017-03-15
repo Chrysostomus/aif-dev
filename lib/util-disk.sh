@@ -235,17 +235,23 @@ select_filesystem() {
     fs_opts=""
     CHK_NUM=0
 
-    DIALOG " $_FSTitle " --menu "\n$_FSBody\n " 0 0 12 \
-      "$_FSSkip" "-" \
-        "btrfs" "mkfs.btrfs -f" \
-        "ext3" "mkfs.ext3 -q" \
-        "ext4" "mkfs.ext4 -q" \
-        "jfs" "mkfs.jfs -q" \
-        "nilfs2" "mkfs.nilfs2 -fq" \
-        "ntfs" "mkfs.ntfs -q" \
-        "reiserfs" "mkfs.reiserfs -q" \
-        "vfat" "mkfs.vfat -F32" \
-        "xfs" "mkfs.xfs -f" 2>${ANSWER} || return 1
+    local option="${ARGS[mount.${PARTITION}]}"
+    [[ -z "$option" ]] && option=$(inifile "mount.${PARTITION}")
+    if [[ -z "$option" ]]; then
+        DIALOG " $_FSTitle " --menu "\n${PARTITION}\n$_FSBody\n " 0 0 12 \
+        "$_FSSkip" "-" \
+            "btrfs" "mkfs.btrfs -f" \
+            "ext3" "mkfs.ext3 -q" \
+            "ext4" "mkfs.ext4 -q" \
+            "jfs" "mkfs.jfs -q" \
+            "nilfs2" "mkfs.nilfs2 -fq" \
+            "ntfs" "mkfs.ntfs -q" \
+            "reiserfs" "mkfs.reiserfs -q" \
+            "vfat" "mkfs.vfat -F32" \
+            "xfs" "mkfs.xfs -f" 2>${ANSWER} || return 1
+    else
+        echo "$option">${ANSWER}
+    fi
         
     case $(cat ${ANSWER}) in
         "$_FSSkip") FILESYSTEM="$_FSSkip"
