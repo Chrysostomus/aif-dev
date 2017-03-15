@@ -847,12 +847,10 @@ mount_partitions() {
 
     # Identify and mount root
     PARTITION="${ARGS[mount.root]}"
+    [[ -z "$PARTITION" ]] && PARTITION=$(inifile "mount.root")
     if [[ -z "$PARTITION" ]]; then
-        PARTITION=$(inifile "mount.root")
-        if [[ -z "$PARTITION" ]]; then
-            DIALOG " $_PrepMntPart " --menu "\n$_SelRootBody\n " 0 0 12 ${PARTITIONS} 2>${ANSWER} || return 0
-            PARTITION=$(cat ${ANSWER})
-        fi
+        DIALOG " $_PrepMntPart " --menu "\n$_SelRootBody\n " 0 0 12 ${PARTITIONS} 2>${ANSWER} || return 0
+        PARTITION=$(cat ${ANSWER})
     fi
     ROOT_PART=${PARTITION}
 
