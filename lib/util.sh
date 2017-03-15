@@ -158,13 +158,16 @@ get_ARGS() {
                 key="ini"
                 ARGS[$key]=$(getvalue)
                 ;;
-            --mount.root=*)
-                key="mount.root"
-                ARGS[$key]=$(getvalue)
-                ;;
             --help|-h)
                 echo -e "usage [-d|--debug] [--ini=\"file.ini\"] [ --init=openrc ]  "
                 exit 0
+                ;;
+            --*=*)
+                key="${param%=*}"
+                key="${key//-}"
+                ARGS[$key]=$(getvalue)
+                echo $key
+                #exit
                 ;;
             -*)
                 echo "${param}: not used";
