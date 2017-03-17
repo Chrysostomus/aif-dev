@@ -358,7 +358,8 @@ _ConfBseFstab="Genereer FSTAB"
 _ConfBseHost="Stel Host-naam in"
 _ConfBseTimeHC="Stel Tijdzone en klok in"
 _ConfBseSysLoc="Stel de Systeemtaal in"
-_MMRunMkinit="Voer Mkinitcpio uit"
+_RunMkinit="Voer Mkinitcpio uit"
+_RunUpGrub="Update GRUB"                            # translate me !
 
 # Gebruikersmenu
 _ConfUsrRoot="Stel het Root wachtwoord in"

@@ -17,10 +17,11 @@ DATADIR='@datadir@'
 
 [[ -r ${LIBDIR}/util.sh ]] && source ${LIBDIR}/util.sh
 
-import ${LIBDIR}/util-menu.sh
+import ${LIBDIR}/ini_val.sh
 import ${LIBDIR}/util-base.sh
 import ${LIBDIR}/util-desktop.sh
 import ${LIBDIR}/util-disk.sh
+import ${LIBDIR}/util-menu.sh
 import ${LIBDIR}/ini_val.sh
 import ${LIBDIR}/menu-engine.sh
 import ${LIBDIR}/util-rescue.sh

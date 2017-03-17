@@ -357,7 +357,8 @@ _ConfBseFstab="Gerar FSTAB"
 _ConfBseHost="Definir Nome da Máquina"
 _ConfBseTimeHC="Definir Fuso horário e Relógio"
 _ConfBseSysLoc="Definir a Localização do Sistema"
-_MMRunMkinit="Executar Mkinitcpio"
+_RunMkinit="Executar Mkinitcpio"
+_RunUpGrub="Update GRUB"                            # translate me !
 
 #Menu Usuário
 _ConfUsrRoot="Definir Senha ROOT"

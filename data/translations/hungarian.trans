@@ -355,7 +355,8 @@ _ConfBseFstab="FSTAB generálása"
 _ConfBseHost="Gépnév beállítása"
 _ConfBseTimeHC="Időzóna és óra beállítása"
 _ConfBseSysLoc="Helyi nyelv beállítása"
-_MMRunMkinit="Mkinitcpio futtatása"
+_RunMkinit="Mkinitcpio futtatása"
+_RunUpGrub="Update GRUB"                            # translate me !
 
 # Felhasználó menü
 _ConfUsrRoot="Rendszergazda jelszó beállítása"

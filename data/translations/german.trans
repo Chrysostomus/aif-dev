@@ -357,7 +357,8 @@ _ConfBseFstab="Generate FSTAB"
 _ConfBseHost="Set Hostname"
 _ConfBseTimeHC="Set Timezone and Clock"
 _ConfBseSysLoc="Set System Locale"
-_MMRunMkinit="Run Mkinitcpio"
+_RunMkinit="Run Mkinitcpio"
+_RunUpGrub="Update GRUB"                            # translate me !
 
 # User Menu
 _ConfUsrRoot="Set Root Password"

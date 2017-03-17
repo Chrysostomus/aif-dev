@@ -1,4 +1,4 @@
-Version=0.8.0
+Version=0.8.1
 
 PREFIX = /usr
 LIBDIR = /lib/manjaro-architect
@@ -15,6 +15,7 @@ LIBS = \
 	lib/util.sh \
 	lib/util-advanced.sh \
 	lib/util-base.sh \
+	lib/util-config.sh \
 	lib/util-desktop.sh \
 	lib/util-disk.sh \
 	lib/util-menu.sh \

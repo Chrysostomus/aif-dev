@@ -329,9 +329,9 @@ install_bootloader() {
     check_base
     if [[ $? -eq 0 ]]; then
         if [[ $SYSTEM == "BIOS" ]]; then
-            bios_bootloader || DIALOG " $_InstBseTitle " --msgbox "\n$_InstFail\n " 0 0
+            bios_bootloader
         else
-            uefi_bootloader || DIALOG " $_InstBseTitle " --msgbox "\n$_InstFail\n " 0 0
+            uefi_bootloader
         fi
     else
         HIGHLIGHT_SUB=2
@@ -361,9 +361,7 @@ uefi_bootloader() {
     [[ $(lsblk -lno FSTYPE,MOUNTPOINT | awk '/ \/mnt$/ {print $1}') == btrfs ]] && \
       sed -e '/GRUB_SAVEDEFAULT/ s/^#*/#/' -i ${MOUNTPOINT}/etc/default/grub
 
-    # Generate config file
-    arch_chroot "grub-mkconfig -o /boot/grub/grub.cfg" 2>$ERR
-    check_for_error "grub-mkconfig" $?
+    grub_mkconfig
 
     # Ask if user wishes to set Grub as the default bootloader and act accordingly
     DIALOG " $_InstUefiBtTitle " --yesno "\n$_SetBootDefBody ${UEFI_MOUNT}/EFI/boot $_SetBootDefBody2\n " 0 0
@@ -445,8 +443,7 @@ bios_bootloader() {
                 [[ $(lsblk -lno FSTYPE,MOUNTPOINT | awk '/ \/mnt$/ {print $1}') == btrfs ]] && \
                   sed -e '/GRUB_SAVEDEFAULT/ s/^#*/#/' -i ${MOUNTPOINT}/etc/default/grub
 
-                arch_chroot "grub-mkconfig -o /boot/grub/grub.cfg" 2>$ERR
-                check_for_error "grub-mkconfig" $?
+                grub_mkconfig
             fi
         else
             # Syslinux
@@ -520,7 +517,6 @@ generate_fstab() {
     if [[ $(cat ${ANSWER}) != "" ]]; then
         if [[ $SYSTEM == "BIOS" ]] && [[ $(cat ${ANSWER}) == "fstabgen -t PARTUUID -p" ]]; then
             DIALOG " $_ErrTitle " --msgbox "\n$_FstabErr\n " 0 0
-            generate_fstab
         else
             $(cat ${ANSWER}) ${MOUNTPOINT} > ${MOUNTPOINT}/etc/fstab 2>$ERR
             check_for_error "$FUNCNAME" $?

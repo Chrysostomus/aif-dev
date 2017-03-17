@@ -359,7 +359,8 @@ _ConfBseFstab="Opret FSTAB"
 _ConfBseHost="Opsæt Computernavn"
 _ConfBseTimeHC="Opsæt Tidszone og Ur"
 _ConfBseSysLoc="Opsæt System Sprog"
-_MMRunMkinit="Kør Mkinitcpio"
+_RunMkinit="Kør Mkinitcpio"
+_RunUpGrub="Update GRUB"                            # translate me !
 
 # User Menu
 _ConfUsrRoot="Opret root adgangskode"

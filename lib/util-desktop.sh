@@ -89,7 +89,7 @@ install_intel() {
     if [[ -e ${MOUNTPOINT}/boot/grub/grub.cfg ]]; then
         DIALOG " grub-mkconfig " --infobox "\n$_PlsWaitBody\n " 0 0
         sleep 1
-        arch_chroot "grub-mkconfig -o /boot/grub/grub.cfg" 2>$ERR
+        grub_mkconfig
     fi
     # Syslinux
     [[ -e ${MOUNTPOINT}/boot/syslinux/syslinux.cfg ]] && sed -i "s/INITRD /&..\/intel-ucode.img,/g" ${MOUNTPOINT}/boot/syslinux/syslinux.cfg

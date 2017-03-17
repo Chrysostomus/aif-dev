@@ -551,7 +551,12 @@ evaluate_openrc() {
             ;;
         esac
     fi
-}  
+}
+
+grub_mkconfig() {
+    arch_chroot "grub-mkconfig -o /boot/grub/grub.cfg" 2>$ERR
+    check_for_error "grub-mkconfig" $?
+}
 
 final_check() {
     CHECKLIST=/tmp/.final_check

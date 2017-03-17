@@ -359,7 +359,8 @@ _ConfBseFstab="Générer FSTAB"
 _ConfBseHost="Définir le nom d'hôte"
 _ConfBseTimeHC="Définir l'heure et le fuseau horaire"
 _ConfBseSysLoc="Définir les paramètres régionaux"
-_MMRunMkinit="Exécuter Mkinitcpio"
+_RunMkinit="Exécuter Mkinitcpio"
+_RunUpGrub="Update GRUB"                            # translate me !
 
 # Menu utilisateur
 _ConfUsrRoot="Définir le mot de passe administrateur"
