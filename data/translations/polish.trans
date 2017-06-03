@@ -38,7 +38,7 @@ _SecKernTitle="Ogranicz dostęp do logów kernela"
 _SecKernBody="Logi jądra mogą zawierać informacje, których atakujący może użyć do identyfikacji i wykorzysta luk jądra, włączając w to adresy pamięci.\n\nJeśli rejestrowanie systemd-journald nie zostało wyłączone, istnieje możliwość utworzenia reguły w /etc/sysctl.d/ w celu uniemożliwienia dostępu do tych dzienników bez uprawnień root'a (np. przy użyciu sudo)."
 _Edit="Edytuj plik konfiguracyjny"
 _Disable="Wyłącz"
-_SecMenuBody="DOstępne jest kilka użytecznych i przyjaznych początkującym użytkownikom poprawek umożliwiających zmiany bezpieczeństwa i wydajności systemu..\n\nWybranie opcji, wyświetli szczegółowe informacje o niej."
+_SecMenuBody="Dostępne jest kilka użytecznych i przyjaznych początkującym użytkownikom poprawek umożliwiających zmiany bezpieczeństwa i wydajności systemu..\n\nWybranie opcji, wyświetli szczegółowe informacje o niej."
 _SecJournBody="systemd-journald gromadzie i przechowuje dzienniki jądra, dzienniki systemowe, wpisy audytu oraz standardowe informacje i błędny usług..\n\nDomyślnie limit stały (nieulotny) dziennika, wynosi 10% wielkości partycji root: root 500G oznacza limit 50G danych przechowywanych w dzienniku /var/log/journal. 50M powinno być wystarczające. Rejestrowanie można również wyłączyć, chociaż rozwiązywanie problemów z systemem może być trudniejsze."
 _SecCoreBody="Zrzut rdzenia jest zapisem pamięci komputera, gdy proces się zawiesza. \n\nUżyteczny dla programistów, ale nie przeciętnego użytkownika. Zrzuty rdzenia pozbawiają system zasobów, mogą także zawierać poufne dane, takie jak hasła i klucze szyfrowania.\n\nDomyślnie zachowanie systemd polega na generowaniu zrzutów pamięci dla wszystkich procesów w /var/lib/systemd/coredump. To zachowanie może zostać nadpisane przez utworzenie pliku konfiguracyjnego w katalogu /etc/systemd/coredump.conf.d/."
 
@@ -357,7 +357,7 @@ _InstDrvBody="Niektóre karty sieciowe i graficzne \nmogą wymagać specjalnych 
 _InstFree="Zainstaluj automatycznie otwarte sterowniki"
 _InstProp="Zainstaluj automatycznie sterowniki własnościowe"
 _SelDDrv="Wybierz sterownik wyświetlania"
-_InstAllDrv="Install all free drivers"				# translate me !
+_InstAllDrv="Zainstaluj wszystkie otwarte sterowniki"
 
 # Configure Base Menu
 _ConfBseMenuTitle="Konfiguracja systemu podstawowego"
