@@ -27,14 +27,14 @@ _EstCon="Verbindung herstellen?"
 _Config="Konfiguration"
 _ApplySet="Spracheinstellungen werden\nangewendet ..."
 _ChMenu="Menu wählen"
-_ChMenuBody="The Regular Menu will guide you through the installation of a pre-configured Manjaro Environment with some additional choices.\n\nThe Advanced Menu can be used to install unconfigured desktops or Manjaro development profiles and also includes an additional selection of network and multimedia applications and some advanced options for system and security configuration."       # translate me !
+_ChMenuBody="Das Standardmenü wird Sie durch die Installation einer durch Manjaro vorkonfigurierten Desktopumgebung führen und zusätzliche Entscheidungen anbieten.\n\nDas erweiterte Menü kann zur Installation von Desktopumgebungen ohne Voreinstellungen und experimentellen Manjaroprofilen benutzt werden. Es beinhaltet auch eine Auswahl an Netzwerk- und Multimediaprogrammen sowie erweiterte System- und Sicherheitseinstellungen."
 
 # Security and Tweaks
 _SecMenuTitle="System- und Sicherheitseinstellungen"
 _SecJournTitle="journald Logging berichtigen"
 _SecCoreTitle="Coredump Logging deaktivieren"
 _SecKernTitle="Zugriff auf Kernel-Logs einschränken"
-_SecKernBody="Kernel logs may contain information an attacker can use to identify and exploit kernel vulnerabilities, including sensitive memory addresses.\n\nIf systemd-journald logging has not been disabled, it is possible to create a rule in /etc/sysctl.d/ to disable access to these logs unless using root privilages (e.g. via sudo)."                                                       # translate me !
+_SecKernBody="Das Protokoll des Linux-Kernels könnte Informationen beinhalten, die zur Ausnutzung von Schwachstellen beitragen können und sensible Speicherbereiche aufzeigen.\n\nWenn in systemd-journald das protokollieren nicht abgeschaltet wurde, ist es möglich eine Datei in /etc/sysctl.d/ zu erstellen, welche Zugriff auf das Protokoll des Linux-Kernels nur mit Root-Rechten (z.B. mit sudo) erlaubt."
 _Edit="Konfigurationsdatei bearbeiten"
 _Disable="Deaktivieren"
 _SecMenuBody="Einige nützliche und anfängerfreundliche System- und Sicherheitsoptimierungen.\n\nAnzeigen von Details durch Selektieren."
