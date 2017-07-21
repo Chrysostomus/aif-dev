@@ -1,7 +1,7 @@
 ##
-## 							
-## Nederlands Vertaalbestand (Architect 2.0)		
-##								
+##
+## Nederlands Vertaalbestand (Architect 2.0)
+##
 ##
 ## Written by Carl Duff (15-Feb-2016)
 ##
@@ -10,7 +10,7 @@
 # Generic
 _UseSpaceBar="Gebruik de [spatietoets] om opties in de lijst te (de)selecteren."
 _AlreadyInst="Reeds geïnstalleerd maar nog niet actief:"
-_InstPkg="Install"                       # translate me !
+_InstPkg="Installeer"
 _All="Alle"
 _Done="Klaar"
 _PlsWaitBody="Even geduld aub..."
@@ -19,23 +19,23 @@ _ErrTitle="Fout"
 _PassErrBody="De ingegeven wachtwoorden zijn niet identiek. Probeer opnieuw aub."
 
 # Basics
-_SelLang="Select Language"                       # translate me !
-_Lang="Language"                                 # translate me !
-_Keep="Keep"                                     # translate me !
-_Change="Change"                                 # translate me !
-_NoCon="No Internet Detected."                   # translate me !
-_EstCon="Establish connection?"                  # translate me !
-_Config="Configure"                              # translate me !
-_ApplySet="Apply language settings ..."          # translate me !
-_ChMenu="Select Menu"                            # translate me !
-_ChMenuBody="The Regular Menu will guide you through the installation of a pre-configured Manjaro Environment with some additional choices.\n\nThe Advanced Menu can be used to install unconfigured desktops or Manjaro development profiles and also includes an additional selection of network and multimedia applications and some advanced options for system and security configuration."       # translate me !
+_SelLang="Selecteer een Taal"
+_Lang="Taal"
+_Keep="Behoud"
+_Change="Verander"
+_NoCon="Geen Internet verbinding."
+_EstCon="Verbinding maken?"
+_Config="Configureer"
+_ApplySet="Pas de taalinstellingen toe..."
+_ChMenu="Selecteer Menu"
+_ChMenuBody="Het Standaard menu zal je begeleiden doorheen de installatie van een voorgeconfigureerde Manjaro Omgeving met bijkomende keuzes.\n\nHet Menu voor Gevorderden kan gebruikt worden voor niet-geconfigureerde desktops of Manjaro ontwikkelingsprofielen, alsook het toevoegen van netwerk en multimedia toepassingen en enkele gevorderde opties voor systeem en veiligheid.
 
 # Veiligheid en aanpassingen
 _SecMenuTitle="Beveiliging en systemd instellen"
 _SecJournTitle="Verbeter journald logging"
 _SecCoreTitle="Schakel Coredump logging uit"
 _SecKernTitle="Beperk de toegang tot Kernel Logs"
-_SecKernBody="Kernel logs may contain information an attacker can use to identify and exploit kernel vulnerabilities, including sensitive memory addresses.\n\nIf systemd-journald logging has not been disabled, it is possible to create a rule in /etc/sysctl.d/ to disable access to these logs unless using root privilages (e.g. via sudo)."  # translate me !
+_SecKernBody="Kernel logs kunnen informatie bevatten die misbruikt kan worden voor het identificeren en uitbuiten van kernel kwetsbaarheden, inclusief gevoelige geheugenadressen.\n\nIndien systemd-journald logging niet is uitgezet, is het mogelijk een regel in /etc/sysctl.d/ te maken om toegang naar deze logs onmogelijk te maken tenzij door het gebruik van root rechten (bv. via sudo)."
 _Edit="Pas het configuratiebestand aan"
 _Disable="Uitschakelen"
 _SecMenuBody="Er zijn enkele handige en beginners-vriendelijke instelmogelijkheden voorzien om de beveiliging van het systeem en de prestaties te verbeteren.\n\nBij het selecteren van een optie krijg je meer details te zien."
@@ -82,7 +82,7 @@ _LuksMenuBody="Opslagmedia en volumes die versleuteld werden met dm_crypt kunnen
 _LuksMenuBody2="Een aparte niet-versleutelde boot partitie zonder logisch volume management (LVM - tenzij bij gebruik van BIOS Grub) is vereist."
 _LuksMenuBody3="Standaard wordt de automatische versleuteloptie gebruikt, en dit is aanbevolen voor beginners. Het is ook mogelijk om de code en de sleutelgrootte-parameters manueel in te geven."
 _LuksOpen="Open Versleutelde Partitie"
-_LuksErr="No LUKS-encrypted partition found."           # translate me !
+_LuksErr="Geen LUKS-encrypted partitie gevonden."
 _LuksOpenBody="Geef een naam aan het versleutelde opslagmedium. Het is niet nodig om het voorvoegsel /dev/mapper/ te vermelden. er werd een voorbeeld voorzien."
 _LuksEncrypt="Automatische LUKS Versleuteling"
 _LuksEncryptAdv="Bepaal de sleutelgrootte en Cypher"
@@ -112,11 +112,11 @@ _LvmPvConfBody2="met de volgende partities:"
 _LvmPvActBody1="Aanmaak en activering van Volume Groep"
 _LvmPvDoneBody1="Volume Groep"
 _LvmPvDoneBody2="werd aangemaakt"
-_LvmLvNumBody1="Enter the number of Logical Volumes (LVs) to create in"                      # translate me !
+_LvmLvNumBody1="Voer het aantal aan te maken Logical Volumes (LVs) in"
 _LvmLvNumBody2="De laatste (of enige) LV zal automatisch 100% van de overblijvende ruimte innemen in de Volume Groep."
 _LvmLvNameBody1="Om een Logisch Volume (LV) aan te maken geef je een naam in.\n\nDit is zoals het geven van een naam/label aan een partitie."
 _LvmLvNameBody2="NOTE: Deze LV zal alle overgebleven ruimte van de Volume Groep innemen"
-_LvmLvNameErrBody="Name is in use or not valid. Use alpha-numeric charactes only, no spaces or '/'!"        # translate me !
+_LvmLvNameErrBody="Naam is in gebruik of niet geldig. Gebruik enkel alfanumerieke tekens, geen spaties of '/'!"
 _LvmLvSizeBody1="resterend"
 _LvmLvSizeBody2="Geef de grootte van Logisch Volume (LV) in, in Megabytes (M) of Gigabytes (G). Bij voorbeeld, 100M maakt een LV van 100 Megabyte . 10G maakt een LV van  10 Gigabyte."
 _LvmLvSizeErrBody="Een ongeldige waarde werd ingegeven. Er moet een numerieke waarde worden ingegeven gevolgd door een 'M' (Megabytes) of een 'G' (Gigabytes).\n\nVoorbeelden, 100M, 10G, or 250M. De waarde mag ook niet gelijk of groter zijn dan de restgrootte van de VG."
@@ -135,14 +135,14 @@ _RtFailBody="Het installatieprogramma moet worden uitgevoerd als root. Afsluiten
 _ConFailBody="Geen internetverbinding. Afsluiten."
 _ReqMetTitle="Alle voorwaarden voldaan"
 _ReqMetBody="Alle controles ok!"
-_UpdDb="Updating database ..."     # translate me !
+_UpdDb="Updating de database ..."
 
 
 # Installeer Mirrorlijst
 _MirrorlistTitle="Mirrorlijst"
-_MirrorBranch="Choose Manjaro branch to use"   # translate me !
+_MirrorBranch="Kies de te gebruiken Manjaro branch"
 _MirrorlistBody="De mirrorlijst bevat server-adressen die worden gebruikt door pacman om pakketten te installeren. Om de snelste servers te vinden, moet u EERST een mirrorlijst per land genereren VOORALEER u RankMirrors laat draaien, anders zal het proces LANG duren.\n\nHet pacman configuratiebestand kan worden bewerkt om multilib en andere repositories in te schakelen. \n\nOPMERKING:. Sluit tekstbestanden met '[Ctrl] + [x] '. Indien  u dit bestand bewerkt, druk dan op [y] om de wijzigingen op te slaan of [n] om ze te annuleren."
-_RankMirrors="Selected your custom mirrors using [Spacebar] or [Enter] and confirm with the [OK] button at the bottom."        # translate me !
+_RankMirrors="Selecteer je eigen mirrors met [Spatiebalk] of [Enter] en bevestig met de [OK] toets onderaan."
 _MirrorbyCountry="Genereer een mirrorlijst gesorteerd volgens Land"
 _MirrorEdit="Pas de Mirrorlijst manueel aan"
 _MirrorRankTitle="Start RankMirrors"
@@ -157,7 +157,7 @@ _MIrrorPacQ="Wil je het aangepast pacman configuratiebestand gebruiken voor het 
 
 # Stel het toetsenbord in (vconsole)
 _VCKeymapTitle="Stel de Virtuele Console in"
-_DefKeymap="The default keymap for your selected language is"              # translate me !
+_DefKeymap="De standaard keymap voor jouw gekozen taal is"
 _VCKeymapBody="Een virtuele console is een shell prompt in een niet-grafische omgeving. De toetsenbordindeling ervan is onafhankelijk van een desktop suite / terminal."
 
 # stel Xkbmap in (omgeving)
@@ -198,9 +198,9 @@ _NUsrErrTitle="Foute gebruikersnaam"
 _NUsrErrBody="Een foute gebruikersnaam werd ingegeven. Probeer opnieuw aub."
 
 # Stel Gebruiker in
-_PassNUsrBody="Geef wachtwoord in voor" 
+_PassNUsrBody="Geef wachtwoord in voor"
 _NUsrSetBody="Maak een Gebruiker aan en stel Groepen in..."
-_DefShell="Choose the default shell."   # translate me !
+_DefShell="Kies de standaard shell."
 
 # Aankoppelen van Partities
 _MntStatusTitle="Aankoppelstatus"
@@ -227,10 +227,10 @@ _PartErrBody="De installatie van BIOS systemen vereist minimum één partitie (R
 # Bestand Systeem
 _FSTitle="Kies een bestandsysteem"
 _FSBody="Ext4 is hier aanbevolen. Niet alle bestandsystemen zijn geschikt voor de Root of Boot-Partities. Elk bestandsysteem heeft verschillende eigenschappen en beperkingen."
-_FSSkip="Do not format"  # translate me !
-_FSMount="Mount"         # translate me !
-_FSWarn1="Data on"       # translate me !
-_FSWarn2="will be lost"  # translate me !
+_FSSkip="Formatteer niet"
+_FSMount="Koppel"
+_FSWarn1="Gegevens op"
+_FSWarn2="zullen verwijderd worden"
 
 # Selecteer Root
 _SelRootBody="Selecteer de ROOT Partitie. Dit is waar Manjaro zal worden geïnstalleerd."
@@ -248,7 +248,7 @@ _FormUefiBody="De UEFI partitie"
 _FormUefiBody2="werd reeds geformateerd.\n\nHerformateren? Dit zal ALLE data op deze partitie wissen."
 
 # UEFI aankoppelpunt
-_MntUefiBody="Select UEFI Mountpoint."     # translate me !
+_MntUefiBody="Selecteer het UEFI Aankoppelpunt."
 
 # Extra Partities
 _ExtPartBody="Selecteer bijkomende partities in eender welke volgorde, of 'Klaar' om te eindigen."
@@ -260,27 +260,27 @@ _ExtPartBody1="Bepaal een partitie aankoppelpunt. Verzeker je ervan dat de naam 
 _ExtErrBody="Partitie kan niet worden aangekoppeld wegens een probleem met de aankoppelnaam. De naam moet achter een voorwaartse slash komen."
 
 # Installeer Basissysteem
-_WarnInstBase="A Manjaro Base has already been installed on this partition.\nProceed anyway?"       # translate me !
+_WarnInstBase="Een Manjaro Basis is reeds geïnstalleerd op deze partitie.\nToch verdergaan?"
 _InstBseTitle="Installeer Basissysteem"
-_InstFail="Installation failed."          # translate me !
+_InstFail="Installatie mislukt."
 _InstBseBody="Standaard: Aanbevolen voor beginners. Keuze tot twee kernels (linux en linux-lts) en optioneel kunnen de base-devel pakket groep. sudo, btrfs-progs, f2fs-tools ook worden geïnstalleerd.\n\nGevorderden: Keuze tot vier kernels (linux, lts, grsec, zen) en controle over individuele base en base-devel pakketten. Bijkomende configuratie van vgrsec en zen kan nodig zijn voor Virtualbox en NVIDIA.\n\nNOTE: Tenzij er reeds een kernel geïnstalleerd is, moet er tenminste een kernel worden geselecteerd."
 _InstStandBseBody="De base package group zal automatisch worden geïnstalleerd. The base-devel package group is nodig voor de Arch User Repository (AUR)."
 _InstStandBase="Standaard Installatie"
 _InstAdvBase="Geadvanceerde Installatie"
 _InstAdvBseBody="WAARSCHUWING: Dit is enkel voor ervaren gebruikers. Nieuwere gebruikers gebruiken best de 'standaard' installatie optie."
 _InstAdvWait="Verzameling pakketbeschrijvingen."
-_InstGrub="Install Grub"                  # translate me !
+_InstGrub="Installeer Grub"
 
 # Installeer BIOS Bootloader
 _InstBiosBtTitle="Installeer BIOS Bootlader"
-_InstGrubBody="The installation device for GRUB can be selected in the next step.\n\nOs-prober is needed for automatic detection of already installed systems on other partitions."                        # translate me !
+_InstGrubBody="Het toestel waar GRUB geïnstalleerd moet worden, kan gekozen worden in de volgende stap.\n\nOs-prober is nodig voor automatische detectie van reeds aanwezige installaties op andere partities."
 _InstBiosBtBody="Grub2 is aanbevolen voor beginners. De installatieschijf kan ook worden geselecteerd.\n\nSyslinux is een lichter en eenvoudiger alternatief dat enkel werkt met de ext/btrfs -bestandsystemen."
 _InstSysTitle="Installeer Syslinux"
 _InstSysBody="Installeer syslinux op Master Boot Record (MBR) of op Root (/)?"
 
 # Installeer UEFI Bootloader
 _InstUefiBtTitle="Installeer UEFI Bootloader"
-_InstUefiBtBody="Install UEFI Bootloader GRUB."    # translate me !
+_InstUefiBtBody="Installeer UEFI Bootloader GRUB."
 _SetBootDefBody="Sommige UEFI firmware kan geen bootloader vinden tenzij het is ingesteld als standaard. Dit doe je door het kopiëeren van haar efi stub"
 _SetBootDefBody2="en het te hernoemen naar bootx64.efi.\n\nHet is aanbevolen dit te doen tenzij je reeds een standaard bootloader hebt, of wanneer je van plan bent meerdere bootloaders te gebruiken.\n\nStel de bootloader in als standaard?"
 
@@ -306,14 +306,14 @@ _DEInfoBody="meerdere Desktop Suites kunnen worden geïnstalleerd.\n\nGnome en L
 
 # Installeer DE Menu
 _InstDETitle="Installeer Desktop Suites"
-_InstManDEBody="Please choose a Manjaro Environment.\n\nNote that the following are currently available for systemd base only:" # translate me !
-_ErrInit="Wrong init system" # translate me !
-_WarnInit="is currently available for systemd only\nPlease adjust your selection:" # translate me !
-_DiffPro="Select different profile" # translate me !
-_InstSystd="Install systemd base" # translate me !
+_InstManDEBody="Kies een Manjaro Omgeving.\n\nNotie, volgende omgevingen zijn enkel beschikbaar voor systemd basis:"
+_ErrInit="Verkeerde init systeem"
+_WarnInit="is momenteel enkel beschikbaar voor systemd\nPas uw keuze aan:"
+_DiffPro="Selecteer een ander profiel"
+_InstSystd="Installeer systemd basis"
 _InstDEBody="Desktop Suites en hun verwante pakketten staan bovenaan de lijst."
-_ExtraTitle="Full or minimal?"                     # translate me"
-_ExtraBody="This edition is offered in two versions" # translate me"
+_ExtraTitle="Volledig of Minimaal?"
+_ExtraBody="Deze editie is beschikbaar in twee uitvoeringen"
 
 # Installeer meestgebruikte Pakketten
 _InstComTitle="Installeer meestgebruikte Pakketten"
@@ -343,21 +343,21 @@ _PrepMntPart="Koppel de Partities aan"
 _Back="Terug"
 
 # Menu: installeren van het Basissysteem
-_PkgList="Processing package list"                                       # translate me !
+_PkgList="Pakkettenlijst verwerken"
 _InstBsMenuTitle="Installeer het Basissysteem"
-_InstBseMenuBody="Packages to be installed will be downloaded from mirror servers. The default branch is 'stable'.\nTo optimize your download speed or to switch branch, use the entry [$_PrepMirror]."                                   # translate me !
+_InstBseMenuBody="Te installeren pakketten worden gedownload van mirror servers. De standaard branch is 'stable'.\nGebruik [$_PrepMirror] om je downloadsnelheid te verbeteren of om van branch te wisselen."
 _InstBse="Installeer het Basissysteem"
-_ChsInit="Choose your initsystem"                                        # translate me !
-_Note="Note!"                                                            # translate me !
-_WarnOrc="These Manjaro profiles are incompatible with openrc:"          # translate me !
-_ChsAddPkgs="Choose additional modules for your kernels"                 # translate me !
+_ChsInit="Kies je initsysteem"
+_Note="Notie!"
+_WarnOrc="Deze Manjaro profilielen zijn niet compatibel met openrc:"
+_ChsAddPkgs="Kies bijkomende modules voor jouw kernels"
 _InstBootldr="Installeer de Bootlader"
-_InstDrvTitle="Install Hardware Drivers"                                 # translate me !
-_InstDrvBody="Some network and graphics cards\nmay need special drivers.\nOptions 1 and 2 choose drivers automatically,\noptions 3 and 4 let you choose specific drivers"                                            # translate me !
-_InstFree="Auto-install free drivers"               # translate me !
-_InstProp="Auto-install proprietary drivers"        # translate me !
-_SelDDrv="Select Display Driver"                    # translate me !
-_InstAllDrv="Install all free drivers"				# translate me !
+_InstDrvTitle="Installeer Hardware Drivers"
+InstDrvBody="Sommige netwerk-en grafische kaarten hebben afzonderlijke stuurprogramma's nodig.\nOptie 1 en 2 kiezen de stuurprogramma's automatisch,\noptie 3 en 4 laten je toe het stuurprogramma te kiezen"
+_InstFree="Auto-installeer open stuurprogramma's"
+_InstProp="Auto-installeer gesloten stuurprogramma's"
+_SelDDrv="Selecteer een Beeldscherm Stuurprogramma"
+_InstAllDrv="Installeer alle open stuurprogramma's"
 
 # Configureer het basissysteem
 _ConfBseMenuTitle="Configureer het Basissysteem"
@@ -367,7 +367,7 @@ _ConfBseHost="Stel Host-naam in"
 _ConfBseTimeHC="Stel Tijdzone en klok in"
 _ConfBseSysLoc="Stel de Systeemtaal in"
 _RunMkinit="Voer Mkinitcpio uit"
-_RunUpGrub="Update GRUB"                            # translate me !
+_RunUpGrub="Update GRUB"
 
 # Gebruikersmenu
 _ConfUsrRoot="Stel het Root wachtwoord in"
@@ -376,25 +376,25 @@ _ConfUsrNew="Voeg nieuwe gebruiker(s) toe"
 # Graphics Menu
 _InstGrMenuTitle="Installeer Grafische omgeving"
 _InstGrMenuBody="Vooraleer een Desktop-Suite te installeren, MOETEN eerst de stuurprogramma's voor Beeld, Ingave, en Geluid geinstalleerd worden, met inbegrip van het stuurprogramma van uw grafische kaart."
-_InstDEMenuTitle="Choose a full Manjaro edition or vanilla desktop environments"  # translate me !
+_InstDEMenuTitle="Kies uit een volledige Manjaro editie of vanilla desktopomgevingen"
 _InstGrMenuDS="Installeer Weergave Manager"
 _InstGrMenuDSBody="In aanvulling op Xorg en Wayland opties, zijn stuurprogramma's voor invoerapparaten (xf86-input) ook vermeld."
 _InstGrMenuDD="Installeer Weergave Manager"
-_InstGrDrv="Choose video-driver to be installed"             # translate me !
-_WarnInstGr="No Display Driver selected."                    # translate me !
-_InstDEStable="Install Manjaro Desktop"                      # translate me !
-_InstDEGit="Install Manjaro Desktop (development profiles)"  # translate me !
-_InstGrDE="Install Desktop environment"                      # translate me !
-_InstPBody="This installs a package list and a desktop-settings package, that corresponding to manjaro editions of the same name."         # translate me !
-_InstDE="Install unconfigured desktop environments"          # translate me !
+_InstGrDrv="Kies het te installeren video stuurprogramma"
+_WarnInstGr="Geen Beeld stuurprogramma geselecteerd."
+_InstDEStable="Installeer Manjaro Desktop"
+_InstDEGit="Installeer Manjaro Desktop (ontwikkelingsprofielen)"
+_InstGrDE="Installeer Desktopomgeving"
+_InstPBody="Dit installeert een pakkettenlijst en een pakket met desktopvoorkeuren, dat overeenstemt met de Manjaro editie met dezelfde naam."
+_InstDE="Installeer niet-geconfigureerde desktopomgevingen"
 _InstGrMenuGE="Installeer Desktop-Suites"
 _InstGrMenuDM="Installeer Weergave Manager"
 
 # Netwerk Menu
 _InstNMMenuTitle="Installeer Netwerk mogelijkheden"
-_InstNWDrv="Network Drivers"                                                                            # translate me !
-_SelNWDrv="Select Network Driver"                                                                       # translate me !
-_InfoNWKernel="Support for your network card is built into the kernel, \nno need to install anything."  # translate me !
+_InstNWDrv="Netwerk Stuurprogramma"
+_SelNWDrv="Kies een Netwerk Stuurprogramma"
+_InfoNWKernel="Ondersteuning voor jouw netwerkkaart is in de kernel ingebouwd, \ninstallatie is niet nodig."
 _InstNMMenuBody="Aanvullende pakketten kunnen nodig zijn om netwerken en draadloze apparaten aan te sturen. Sommige draadloze apparaten kunnen ook extra firmware nodig hebben om te functioneren."
 _InstNMMenuPkg="Install Wireless Device Packages"
 _InstNMMenuNM="Installeer Netwerkmanager"
@@ -427,17 +427,17 @@ _MMTitle="Hoofd Menu"
 _MMBody="Elke stap moet IN VOLGORDE uitgevoerd worden. Eenmaal alles is afgewerkt, selecteer 'Klaar' om zo de installatie correct af te ronden."
 
 # Final Check
-_BaseCheck="Base is not installed"                   # translate me !
-_BootlCheck="Bootloader is not installed"            # translate me !
-_FstabCheck="Fstab has not been generated"           # translate me !
-_GCCheck="No graphics driver has been installed"     # translate me !
-_LocaleCheck="Locales have not been generated"       # translate me !
-_RootCheck="Root password is not set"                # translate me !
-_UserCheck="No user accounts have been generated"    # translate me !
+_BaseCheck="Basis is niet geïnstalleerd"
+_BootlCheck="Bootloader is niet geïnstalleerd"
+_FstabCheck="Fstab is niet gegenereerd"
+_GCCheck="Geen grafisch stuurprogramma is geïnstalleerd"
+_LocaleCheck="Locales zijn niet gegenereerd"
+_RootCheck="Root paswoord is niet ingesteld"
+_UserCheck="Geen gebruikersaccounts zijn gegenereerd"
 
 # Sluit Installer
 _CloseInstBody="Installatieprogramma Afsluiten?"
-_LogInfo="Would you like to save the installation-log to the installed system?\nIt will be copied to"  # translate me !
+_LogInfo="Wil je de installatielog opslaan op het geïnstalleerde systeem?\nHet zal gekopieerd worden naar"
 
 # Chroot
 _ChrootReturn="\nYou will now chroot into your installed system. You can do changes almost as if you had booted into your installation.\n\nType \"exit\" to exit chroot and \"fg\" to return to installer.\n "
