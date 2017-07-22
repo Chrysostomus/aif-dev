@@ -8,7 +8,7 @@
 ##
 
 # Generic
-_UseSpaceBar="Gebruik de [spatietoets] om opties in de lijst te (de)selecteren."
+_UseSpaceBar="Gebruik de [spatiebalk] om opties in de lijst te (de)selecteren."
 _AlreadyInst="Reeds geïnstalleerd maar nog niet actief:"
 _InstPkg="Installeer"
 _All="Alle"
@@ -105,7 +105,7 @@ _LvMDelAll="Verwijder *ALLE* VGs, LVs, PVs"
 _LvmDetBody="Een bestaand Logische Volume Management (LVM) gedetecteerd. Activeren. Even geduld aub..."
 _LvmPartErrBody="\Er zijn geen geschikte partities beschikbaar die gebruikt kunnen worden als Logische Volume Management. Er is minimum één zo'n partitie vereist.\n\nAls LVM al in gebruik is, zal het deactiveren ervan het mogelijk maken om de partitie(s) die bezet waren als Physical Volume(s) opnieuw te gebruiken."
 _LvmNameVgBody="Om een Volume Groep (VG) aan te maken geef een naam in.\n\nDe VG is de nieuwe 'virtuele harde schijf' die gemaakt kan worden op de hierna te selecteren partitie(s)."
-_LvmNameVgErr="Ongeldige naam ingegeven. The Volume Groepsnaam mag alfa-numeriek zijn, maar mag geen spaties bevatten, starten met een '/', of al in gebruik zijn."
+_LvmNameVgErr="Ongeldige naam ingegeven. De Volume Groepsnaam mag alfa-numeriek zijn; maar mag geen spaties bevatten, starten met een '/', of al in gebruik zijn."
 _LvmPvSelBody="Selecteer de partitie(s) om te gebruiken als Physical Volume (PV)."
 _LvmPvConfBody1="Bevestig het aanmaken van Volume Groep"
 _LvmPvConfBody2="met de volgende partities:"
@@ -266,7 +266,7 @@ _InstFail="Installatie mislukt."
 _InstBseBody="Standaard: Aanbevolen voor beginners. Keuze tot twee kernels (linux en linux-lts) en optioneel kunnen de base-devel pakket groep. sudo, btrfs-progs, f2fs-tools ook worden geïnstalleerd.\n\nGevorderden: Keuze tot vier kernels (linux, lts, grsec, zen) en controle over individuele base en base-devel pakketten. Bijkomende configuratie van vgrsec en zen kan nodig zijn voor Virtualbox en NVIDIA.\n\nNOTE: Tenzij er reeds een kernel geïnstalleerd is, moet er tenminste een kernel worden geselecteerd."
 _InstStandBseBody="De base package group zal automatisch worden geïnstalleerd. The base-devel package group is nodig voor de Arch User Repository (AUR)."
 _InstStandBase="Standaard Installatie"
-_InstAdvBase="Geadvanceerde Installatie"
+_InstAdvBase="Installatie voor Gevorderden"
 _InstAdvBseBody="WAARSCHUWING: Dit is enkel voor ervaren gebruikers. Nieuwere gebruikers gebruiken best de 'standaard' installatie optie."
 _InstAdvWait="Verzameling pakketbeschrijvingen."
 _InstGrub="Installeer Grub"
@@ -306,7 +306,7 @@ _DEInfoBody="meerdere Desktop Suites kunnen worden geïnstalleerd.\n\nGnome en L
 
 # Installeer DE Menu
 _InstDETitle="Installeer Desktop Suites"
-_InstManDEBody="Kies een Manjaro Omgeving.\n\nNotie, volgende omgevingen zijn enkel beschikbaar voor systemd basis:"
+_InstManDEBody="Kies een Manjaro Omgeving.\n\nNotie, volgende omgevingen zijn enkel beschikbaar op systemd basis:"
 _ErrInit="Verkeerde init systeem"
 _WarnInit="is momenteel enkel beschikbaar voor systemd\nPas uw keuze aan:"
 _DiffPro="Selecteer een ander profiel"
@@ -349,7 +349,7 @@ _InstBseMenuBody="Te installeren pakketten worden gedownload van mirror servers.
 _InstBse="Installeer het Basissysteem"
 _ChsInit="Kies je initsysteem"
 _Note="Notie!"
-_WarnOrc="Deze Manjaro profilielen zijn niet compatibel met openrc:"
+_WarnOrc="Deze Manjaro profielen zijn niet compatibel met openrc:"
 _ChsAddPkgs="Kies bijkomende modules voor jouw kernels"
 _InstBootldr="Installeer de Bootlader"
 _InstDrvTitle="Installeer Hardware Drivers"
@@ -396,7 +396,7 @@ _InstNWDrv="Netwerk Stuurprogramma"
 _SelNWDrv="Kies een Netwerk Stuurprogramma"
 _InfoNWKernel="Ondersteuning voor jouw netwerkkaart is in de kernel ingebouwd, \ninstallatie is niet nodig."
 _InstNMMenuBody="Aanvullende pakketten kunnen nodig zijn om netwerken en draadloze apparaten aan te sturen. Sommige draadloze apparaten kunnen ook extra firmware nodig hebben om te functioneren."
-_InstNMMenuPkg="Install Wireless Device Packages"
+_InstNMMenuPkg="Installeer de Pakketten voor Draadloze Apparatuur"
 _InstNMMenuNM="Installeer Netwerkmanager"
 _InstNMMenuCups="Installeer CUPS / Printer Pakketten"
 _InstNMMenuPkgBody="De belangrijkste wifi pakketten zullen vooraf worden geconsulteerd als een draadloos apparaat werd gedetecteerd. Als je onzeker bent over de extra firmware, kun je alle pakketten installeren."
@@ -440,13 +440,13 @@ _CloseInstBody="Installatieprogramma Afsluiten?"
 _LogInfo="Wil je de installatielog opslaan op het geïnstalleerde systeem?\nHet zal gekopieerd worden naar"
 
 # Chroot
-_ChrootReturn="\nJe gaat nu chroot gebruiken op je geïnstalleerde systeem\n\n Tik \"exit\" om uit chroot te komen en \"fg\" terug te gaan naar de installatie programma.\n"
+_ChrootReturn="\nJe gaat nu chroot gebruiken op je geïnstalleerde systeem\n\n Tik \"exit\" om uit chroot te komen en \"fg\" terug te gaan naar het installatieprogramma.\n"
 _EnterChroot="Enter je systeem"
 
 #Refind
 _InstRefindTitle="Installeer refind"
 _InstRefindBody="Dit gaat refind installeren en configureren met de ontdekte kernels. Het kan encrypted /boot of microcode niet automatisch handelen, maar je kan het manueel instellen."
-_RefindReady="Refind is succesvol geïnstalleer"
+_RefindReady="Refind is succesvol geïnstalleerd."
 _bootloaderInfo="Refind kan gebruikt worden standalone of met andere bootloaders als een grafische boot menu. Het ontdekt automatisch alle geïnstalleerde systemen.\nGrub kan encrypted /boot partities handelen en detecteert alle geïnstalleerde systemen als je de kernel update. Het kan .iso bestanden starten die op de harde schrijf staan en btrfs snapshots handelen.\nSystemd-boot is licht en makkelijk te gebruiken maar is niet geautomatiseerd. Het kan windows en mac ontdekken, maar is anders niet geschikt voor multiboot."
 
 # Systemd-boot
@@ -455,9 +455,9 @@ _SystdBReady="Systemd-boot is geïnstalleerd"
 
 #Meta menu
 _InstCrMenuTitle="Installeer basis systeem"
-_InstDsMenuBody="Dit gaat manjaro basis systeem installeren zonder desktopomgeving. Stappen 1-3 zijn nodig om een werkend systeem the hebben, de rest is optioneel."
+_InstDsMenuBody="Dit installeert manjaro basis systeem zonder desktopomgeving. Stappen 1-3 zijn nodig om een werkend systeem te hebben, de rest is optioneel."
 _InstDsMenuTitle="Installeer desktopomgeving"
-_InstDsMenuBody="Dit gaat een volledige manjaro desktopomgeving installeren. Stappen 1-4 zijn nodig om een werkend systeem the hebben, de rest is optioneel."
+_InstDsMenuBody="Dit gaat een volledige manjaro desktopomgeving installeren. Stappen 1-4 zijn nodig om een werkend systeem te hebben, de rest is optioneel."
 _InstCsMenuTitle="Installeer zelf een systeem"
-_InstCsMenuBody="Dit gaat manjaro basis systeem installeren zonder desktopomgeving. Stappen 1-4 zijn nodig om een werkend systeem the hebben, de rest is optioneel."
+_InstCsMenuBody="Dit gaat manjaro basis systeem installeren zonder desktopomgeving. Stappen 1-4 zijn nodig om een werkend systeem te hebben, de rest is optioneel."
 _MMNewBody="Nadat de partities zijn geselecteerd in de voorbereiding menu, selecteer de installatie type. Als je niet zeker ben, kies dan een desktop omgeving voor een volledige manjaro."
