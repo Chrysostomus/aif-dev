@@ -7,7 +7,7 @@
 ##
 ## Translated by Ivan Burmin (01-Mar-2016)
 ##
-## Translated by Danil Antoshckin (Mauladen)
+## Translated by Danil Antoshckin (2017)
 
 # Generic
 _UseSpaceBar="Используйте [Пробел] для выбора/отмены выбора опций."
@@ -456,10 +456,10 @@ _InstSystdBBody="Это установит systemd-boot и создаст заг
 _SystdBReady="Systemd-boot был успешно установлен"
 
 #Meta menu
-_InstCrMenuTitle="Установка базовой системы"
+_InstCrMenuTitle="Установка базовой (CLI) системы"
 _InstDsMenuBody="Устанавливает базовую систему манджаро без графической среды рабочего стола. Шаги 1-3 необходимы для работы системы, остальное опционально."
 _InstDsMenuTitle="Установка настольной системы"
 _InstDsMenuBody="Устанавливает полный выпуск манджаро с графической среде. Шаги 1-4 необходимы для работы системы, остальное опционально."
 _InstCsMenuTitle="Установка пользовательской системы"
 _InstCsMenuBody="Устанавливает базовую систему манджаро без графической среды рабочего стола. Шаги 1-4 необходимы для работы системы, остальное опционально."
-_MMNewBody="After mounting partitions in preparation section, select your installation type. If you are unsure, choose Desktop system for default manjaro."
+_MMNewBody="После монтирования разделов в разделе подготовки выберите тип установки. Если вы не уверены, выберите установку настольной системы."
