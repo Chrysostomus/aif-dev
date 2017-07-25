@@ -27,14 +27,14 @@ _EstCon="Verbindung herstellen?"
 _Config="Konfiguration"
 _ApplySet="Spracheinstellungen werden\nangewendet ..."
 _ChMenu="Menu wählen"
-_ChMenuBody="The Regular Menu will guide you through the installation of a pre-configured Manjaro Environment with some additional choices.\n\nThe Advanced Menu can be used to install unconfigured desktops or Manjaro development profiles and also includes an additional selection of network and multimedia applications and some advanced options for system and security configuration."       # translate me !
+_ChMenuBody="Das Standardmenü wird Sie durch die Installation einer durch Manjaro vorkonfigurierten Desktopumgebung führen und zusätzliche Entscheidungen anbieten.\n\nDas erweiterte Menü kann zur Installation von Desktopumgebungen ohne Voreinstellungen und experimentellen Manjaroprofilen benutzt werden. Es beinhaltet auch eine Auswahl an Netzwerk- und Multimediaprogrammen sowie erweiterte System- und Sicherheitseinstellungen."
 
 # Security and Tweaks
 _SecMenuTitle="System- und Sicherheitseinstellungen"
 _SecJournTitle="journald Logging berichtigen"
 _SecCoreTitle="Coredump Logging deaktivieren"
 _SecKernTitle="Zugriff auf Kernel-Logs einschränken"
-_SecKernBody="Kernel logs may contain information an attacker can use to identify and exploit kernel vulnerabilities, including sensitive memory addresses.\n\nIf systemd-journald logging has not been disabled, it is possible to create a rule in /etc/sysctl.d/ to disable access to these logs unless using root privilages (e.g. via sudo)."                                                       # translate me !
+_SecKernBody="Das Protokoll des Linux-Kernels könnte Informationen beinhalten, die zur Ausnutzung von Schwachstellen beitragen können und sensible Speicherbereiche aufzeigen.\n\nWenn in systemd-journald das protokollieren nicht abgeschaltet wurde, ist es möglich eine Datei in /etc/sysctl.d/ zu erstellen, welche Zugriff auf das Protokoll des Linux-Kernels nur mit Root-Rechten (z.B. mit sudo) erlaubt."
 _Edit="Konfigurationsdatei bearbeiten"
 _Disable="Deaktivieren"
 _SecMenuBody="Einige nützliche und anfängerfreundliche System- und Sicherheitsoptimierungen.\n\nAnzeigen von Details durch Selektieren."
@@ -315,13 +315,13 @@ _ExtraTitle="Voll oder Minimal?"
 _ExtraBody="Diese Edition wird in zwei Ausführungen angeboten"
 
 # Install Common Packages
-_InstComTitle="Install Common Packages"
-_InstComBody="Some environments require additional packages to function better."
+_InstComTitle="Install Common Packages" # translate me !
+_InstComBody="Some environments require additional packages to function better." # translate me !
 
 # Display Manager
 _DmChTitle="Installiere Display Manager"
 _DmChBody="GDM hat Gnome-Shell als Abhängigkeit. sddm ist für Plasma empfohlen. LightDM wird lightdm-gtk-greeter enthalten. SLiM wird nicht mehr entwickelt."
-_DmDoneBody="Display manager has been installed and enabled."
+_DmDoneBody="Display manager has been installed and enabled." # translate me !
 
 # Network Manager
 _InstNMTitle="Installiere Network Manager"
@@ -356,29 +356,29 @@ _InstDrvBody="Manche Netzwerk- und Grafikkarten\nbenötigen spezielle Treiber.\n
 _InstFree="Auto-Installation freie Treiber"
 _InstProp="Auto-Installation proprietäre Treiber"
 _SelDDrv="Grafiktreiber auswählen"
-_InstAllDrv="Install all free drivers"				# translate me !
+_InstAllDrv="Freie Treiber installieren"
 
 # Configure Base Menu
 _ConfBseMenuTitle="Basis konfigurieren"
-_ConfBseBody="Basic configuration of the base."
-_ConfBseFstab="Generate FSTAB"
-_ConfBseHost="Set Hostname"
-_ConfBseTimeHC="Set Timezone and Clock"
-_ConfBseSysLoc="Set System Locale"
-_RunMkinit="Run Mkinitcpio"
-_RunUpGrub="Update GRUB"                            # translate me !
+_ConfBseBody="Basic configuration of the base." # translate me !
+_ConfBseFstab="Generate FSTAB" # translate me !
+_ConfBseHost="Set Hostname" # translate me !
+_ConfBseTimeHC="Set Timezone and Clock" # translate me !
+_ConfBseSysLoc="Set System Locale" # translate me !
+_RunMkinit="Run Mkinitcpio" # translate me !
+_RunUpGrub="GRUB aktualisieren"
 
 # User Menu
-_ConfUsrRoot="Set Root Password"
-_ConfUsrNew="Add New User(s)"
+_ConfUsrRoot="Set Root Password" # translate me !
+_ConfUsrNew="Add New User(s)" # translate me !
 
 # Graphics Menu
 _InstGrMenuTitle="Install Graphical Interface"
-_InstGrMenuBody="Prior to installing a desktop environment, graphics, input, and sound drivers MUST be installed first. This will include installing graphics card drivers."
+_InstGrMenuBody="Prior to installing a desktop environment, graphics, input, and sound drivers MUST be installed first. This will include installing graphics card drivers." # translate me !
 _InstDEMenuTitle="Wähle eine vollständige Manjaro Edition oder ein unkonfigurierte Desktop-Umgebung"
-_InstGrMenuDS="Install Display Server"
-_InstGrMenuDSBody="In addition to xorg and wayland options, drivers for input devices (xf86-input-) are also listed."
-_InstGrMenuDD="Install Display Driver"
+_InstGrMenuDS="Install Display Server" # translate me !
+_InstGrMenuDSBody="In addition to xorg and wayland options, drivers for input devices (xf86-input-) are also listed." # translate me !
+_InstGrMenuDD="Install Display Driver" # translate me !
 _InstGrDrv="Grafiktreiber zur Installation auswählen"
 _WarnInstGr="Kein Grafiktreiber ausgewählt."
 _InstDEStable="Manjaro Desktop installieren"
@@ -387,36 +387,36 @@ _InstGrDE="Installiere Desktop-Umgebung"
 _InstPBody="Dies installiert eine Liste von Anwendungs- und Konfigurations-Paketen, entsprechend der gleichnamigen Manjaro Edition."
 _InstDE="Unkonfigurierte Desktop-Umgebung installieren"
 _InstGrMenuGE="Installiere Grafische Umgebung"
-_InstGrMenuDM="Install Display Manager"
+_InstGrMenuDM="Install Display Manager" # translate me !
 
 # Networking Menu
-_InstNMMenuTitle="Install Networking Capabilties"
+_InstNMMenuTitle="Install Networking Capabilties" # translate me !
 _InstNWDrv="Netzwerktreiber"
 _SelNWDrv="Netzwerktreiber auswählen"
 _InfoNWKernel="Unterstützung für die Netzwerkkarte ist im Kernel eingebaut\nKeine Installation notwendig."
-_InstNMMenuBody="Supplementary packages may be required for networking and wireless devices. Some wireless devices may also require additional firmware to function."
-_InstNMMenuPkg="Install Wireless Device Packages"
-_InstNMMenuNM="Install Network Connection Manager"
-_InstNMMenuCups="Install CUPS / Printer Packages"
-_InstNMMenuPkgBody="Key wifi packages will be pre-checked if a wireless device was detected. If unsure about additional firmware, all packages can be installed."
-_SeeWirelessDev="Display Wireless Device (optional)"
-_WirelessShowTitle="Wireless Device"
-_WirelessErrBody="None Detected."
-_InstCupsBody="CUPS (Common Unix Printing System) is the standards-based, open source printing system developed by Apple Inc. for OS X and other UNIX-like operating systems. Samba allows file and printer sharing between Linux and Windows systems."
-_InstCupsQ="Enable org.cups.cupsd.service on installed system?"
+_InstNMMenuBody="Supplementary packages may be required for networking and wireless devices. Some wireless devices may also require additional firmware to function." # translate me !
+_InstNMMenuPkg="Install Wireless Device Packages" # translate me !
+_InstNMMenuNM="Install Network Connection Manager" # translate me !
+_InstNMMenuCups="Install CUPS / Printer Packages" # translate me !
+_InstNMMenuPkgBody="Key wifi packages will be pre-checked if a wireless device was detected. If unsure about additional firmware, all packages can be installed." # translate me !
+_SeeWirelessDev="Display Wireless Device (optional)" # translate me !
+_WirelessShowTitle="Wireless Device" # translate me !
+_WirelessErrBody="None Detected." # translate me !
+_InstCupsBody="CUPS (Common Unix Printing System) is the standards-based, open source printing system developed by Apple Inc. for OS X and other UNIX-like operating systems. Samba allows file and printer sharing between Linux and Windows systems." # translate me !
+_InstCupsQ="Enable org.cups.cupsd.service on installed system?" # translate me !
 
 # Install Multimedia Support Menu
-_InstMultMenuTitle="Install Multimedia Support"
-_InstMultMenuBody="Accessibility packages aid those with sight and/or hearing impairments. The Custom Packages option allows for user-defined packages to be installed."
-_InstMulSnd="Install Sound Driver(s)"
-_InstMulSndBody="ALSA provides kernel driven sound card drivers. PulseAudio serves as a proxy to ALSA."
-_InstMulCodec="Install Codecs"
-_InstMulAcc="Install Accessibility Packages"
-_InstMulAccBody="Select desired accessibility packages."
-_InstMulCust="Install Custom Packages"
+_InstMultMenuTitle="Install Multimedia Support" # translate me !
+_InstMultMenuBody="Accessibility packages aid those with sight and/or hearing impairments. The Custom Packages option allows for user-defined packages to be installed." # translate me !
+_InstMulSnd="Install Sound Driver(s)" # translate me !
+_InstMulSndBody="ALSA provides kernel driven sound card drivers. PulseAudio serves as a proxy to ALSA." # translate me !
+_InstMulCodec="Install Codecs" # translate me !
+_InstMulAcc="Install Accessibility Packages" # translate me !
+_InstMulAccBody="Select desired accessibility packages." # translate me !
+_InstMulCust="Install Custom Packages" # translate me !
 
 # Codecs Menu
-_InstMulCodBody="GStreamer is a pipeline-based multimedia framework. The first two options are the current and legacy (gstreamer0.10) package groups. Xine is also listed."
+_InstMulCodBody="GStreamer is a pipeline-based multimedia framework. The first two options are the current and legacy (gstreamer0.10) package groups. Xine is also listed." # translate me !
 
 # Custom Packages Box
 _InstMulCustBody="Geben Sie die (exakten) Namen von Paketen aus den Manjaro Repositorien - getrennt mit Leerzeichen - ein.\n\nZum Beistiel, um Firefox, VLC, und HTop zu installieren: firefox vlc htop"
@@ -435,24 +435,25 @@ _RootCheck="Kein Root-Passwort gesetzt"
 _UserCheck="Kein Benutzer eingerichtet"
 
 # Chroot
-_ChrootReturn="\nYou will now chroot into your installed system. You can do changes almost as if you had booted into your installation.\n\nType \"exit\" to exit chroot and \"fg\" to return to installer.\n "
-_EnterChroot="Enter your installation"
+_ChrootReturn="\nHier können Sie in Ihr installiertes System chrooten und Änderungen vornehmen, fast so als würden Sie in die Installation booten.\n\nTippen Sie \"exit\" zum Verlassen oder \"fg\" um zum Installer zurückzukehren.\n "
+_EnterChroot="In die Installation chrooten"
 
 #Refind
-_InstRefindTitle="Install refind"
-_InstRefindBody="This installs refind and configures it to automatically detect your kernels. No support for encrypted /boot or intel microcode. These require manual boot stanzas or using different bootloader."
-_RefindReady="Refind was succesfully installed"
-_bootloaderInfo="Refind can be used as standalone or in conjunction with other bootloaders as a graphical bootmenu. It autodetects all bootable systems at boot time.\nGrub supports encrypted /boot partition and detects all bootable systems when you update your kernels. It can boot .iso files from harddrive and has automatic boot entries for btrfs snapshots.\nSystemd-boot is very light and simple and has little automation. It autodetects windows, but is otherwise unsuited for multibooting."
+_InstRefindTitle="'refind' installieren"
+_InstRefindBody="Dies installiert refind und konfiguriert es, automiatisch Ihren Kernel zu erkennen. Keine Unterstützung für verschlüsselte /boot Partition und intel microcode. Diese erfordern manuelle Boot-Einträge oder einen anderen Bootloader."
+_RefindReady="Refind erfolgreich installiert"
+_bootloaderInfo="Refind kann unabhängig oder als grafisches Bootmenu in Verbindung mit anderen Bootloaders verwendet werden. Es erkennt während des Bootvorgangs bootfähige Systeme automatisch.\nGRUB unterstützt verschlüsselte /boot Partitionen und erkennt bootfähige Systeme wenn Ihre Kernel aktualisiert werden, kann .iso-Dateien von Speichermedien booten und stellt automatische Boot-Einträge fpr btrfs-Schnapschüsse zur Verfügung.\nSystemd-boot ist sehr leicht und einfach mit wenig Automation. Es erkennt Windows automatisch aber ist ansonsten für Multiboot ungeeignet."
 
 # Systemd-boot
-_InstSystdBBody="This installs systemd-boot and generates boot entries for the currently installed kernels. This bootloader requires your kernels to be on the UEFI partition. This is achieved by mounting UEFI partition to /boot."
-_SystdBReady="Systemd-boot was installed"
+_InstSystdBBody="Dies installiert Systemd-boot und generiert Boot-Einträge für aktuell installierte Kernel. Die Kernel müssen für diesen Bootloader auf der UEFI Partition installiert und diese als /boot eingehängt sein."
+_SystdBReady="Systemd-boot wurde installiert"
 
 #Meta menu
-_InstCrMenuTitle="Install CLI system"
-_InstDsMenuBody="This installs base manjaro system without graphical desktop environment. Steps 1-3 are needed for working system, the rest is optional."
-_InstDsMenuTitle="Install desktop system"
-_InstDsMenuBody="This installs full manjaro edition with graphical desktop environment. Steps 1-4 are needed for working system, the rest is optional."
+_InstCrMenuTitle="CLI System installieren"
+_InstDsMenuBody="Dies installiert ein Manjaro-Basissystem ohne grafische Oberfläche. Schritte 1-3 sind für ein funktionierendes System erforderlich, der Rest optional."
+_InstDsMenuTitle="Desktop-System installieren"
+_InstDsMenuBody="Dies installiert eine vollständige Manjaro Edition mit grafischer Oberfläche. Schritte 1-4 
+This installs full manjaro edition with graphical desktop environment. sind für ein funktionierendes System erforderlich, der Rest optional."
 _InstCsMenuTitle="Install custom system"
-_InstCsMenuBody="This installs base manjaro system without graphical desktop environment. Steps 1-4 are needed for working system, the rest is optional."
-_MMNewBody="After mounting partitions in preparation section, select your installation type. If you are unsure, choose Desktop system for default manjaro."
+_InstCsMenuBody="Dies installiert ein Manjaro-Basissystem ohne grafische Oberfläche. Schritte 1-4 sind für ein funktionierendes System erforderlich, der Rest optional."
+_MMNewBody="Wählen Sie die Installationsart nach dem Einhängen der Partitionen. Wenn Sie unsicher sind, wählen Sie 'Desktop-System' für eine Standard-Installation."
