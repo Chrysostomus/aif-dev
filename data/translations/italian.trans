@@ -136,7 +136,7 @@ _RtFailBody="L'installer deve essere eseguito come Root. Procedura terminata."
 _ConFailBody="Il test della connessione ad Internet è fallito. Procedura terminata."
 _ReqMetTitle="Requisiti soddisfatti"
 _ReqMetBody="Tutti i controlli sono stati superati!"
-_UpdDb="Updating database ..."     # translate me ! > No need translation
+_UpdDb="Aggiornamento database ..."    
 
 
 # Lista Mirror Installer
@@ -274,7 +274,7 @@ _InstGrub="Installazione Grub"
 
 # Install BIOS Bootloader
 _InstBiosBtTitle="Installazione Bootloader BIOS"
-_InstGrubBody="The installation device for GRUB can be selected in the next step.\n\nOs-prober is needed for automatic detection of already installed systems on other partitions."                        # translate me !
+_InstGrubBody="Il supporto di installazione per GRUB può essere selezionato nel prossimo passaggio.\n\nOs-prober è richiesto per trovare automaticamente gli altri sistemi già installati."                        
 _InstBiosBtBody="Grub2 è consigliato per i principianti. E' possibile specificare il dispositivo sul quale installarlo.\n\nSyslinux rappresenta un'alternativa più leggera e semplice che funzionerà solo con i filesystem ext/btrfs."
 _InstSysTitle="Installa Syslinux"
 _InstSysBody="Installare syslinux nel Master Boot Record (MBR) on in Root (/)?"
@@ -377,7 +377,7 @@ _ConfUsrNew="Aggiungi nuovo/i utente/i"
 # Menù schede grafiche
 _InstGrMenuTitle="Installazione Interfaccia Grafica"
 _InstGrMenuBody="Prima di installare un ambiente desktop, DOVRANNO essere installati drivers grafici, audio e per l'input, incluso i drivers per le schede video."
-_InstDEMenuTitle="Choose a full Manjaro edition or vanilla desktop environments"  # translate me !
+_InstDEMenuTitle="Scegli una edizione Manjaro completa o una installazione pulita dell'ambiente desktop"  
 _InstGrMenuDS="Installa Display Server"
 _InstGrMenuDSBody="In aggiunta alle opzioni xorg e wayland, vengono mostrati drivers per dispositivi di input (xf86-input-)."
 _InstGrMenuDD="Installazione Display Driver"
@@ -386,7 +386,7 @@ _WarnInstGr="Nessun Display Driver selezionato."
 _InstDEStable="Installazione Manjaro Desktop"                     
 _InstDEGit="Installazione Manjaro Desktop (development profiles)"  
 _InstGrDE="Installazione Desktop environment"                      
-_InstPBody="This installs a package list and a desktop-settings package, that corresponding to manjaro editions of the same name."  # translate me !
+_InstPBody="Questo installa una lista di pacchetti e una configurazione desktop, questo corrisponderà alla edizione manjaro scelta in base al desktop scelto."  
 _InstDE="Installazione ambiente desktop non preconfigurato"          
 _InstGrMenuGE="Installazione Ambiente Grafico"
 _InstGrMenuDM="Installazione Display Manager"
@@ -441,24 +441,23 @@ _CloseInstBody="Chiudere il programma di installazione?"
 _LogInfo="Vuoi salvare il log di installazione?\nSarà copiato in" 
 
 # Chroot
-_ChrootReturn="\nYou will now chroot into your installed system. You can do changes almost as if you had booted into your installation.\n\nType \"exit\" to exit chroot and \"fg\" to return to installer.\n " # translate me !
-_EnterChroot="Enter your installation" # translate me !
+_ChrootReturn="\nOra tu entrerai in chroot nel tuo sistema installato. Puoi dare comandi come se tu fossi entrato normalmente nel tuo sistema tramite il normale boot.\n\nDigita \"exit\" per uscire dal chroot e\"fg\" per ritornare all'installazione.\n " 
+_EnterChroot="Entra nella tua installazione"
 
 #Refind
-_InstRefindTitle="Install refind" # translate me !
-_InstRefindBody="This installs refind and configures it to automatically detect your kernels. No support for encrypted /boot or intel microcode. These require manual boot stanzas or using different bootloader." # translate me !
-_RefindReady="Refind was succesfully installed" # translate me !
-_bootloaderInfo="Refind can be used as standalone or in conjunction with other bootloaders as a graphical bootmenu. It autodetects all bootable systems at boot time.\nGrub supports encrypted /boot partition and detects all bootable systems when you update your kernels. It can boot .iso files from harddrive and has automatic boot entries for btrfs snapshots.\nSystemd-boot is very light and simple and has little automation. It autodetects windows, but is otherwise unsuited for multibooting." # translate me !
-
+_InstRefindTitle="Installazione refind" 
+_InstRefindBody="Questo installa refind e configurerà in automatico la rilevazione dei tuoi kernel. Non supporta la criptazione di /boott o intel microcode. Questo richiede aggiustamenti manuali o l'uso di bootloader diversi." 
+_RefindReady="Refind installato correttamente" 
+_bootloaderInfo="Refind può essere utilizzato come standard o in combinazione con altri bootloader. Identifica automaticamente tutti i sistemi di boot all'avvio.\nGrub supporta la criptazione della partizione /boot e rileva tutti i sistemi bootabili quando aggiornate il kernel. Può avviare file dall' hd e riconosce variabili di boot per snapshot di btrfs.\nSystemd-boot è molto leggero e semplice ed è parzialmente automatizzato. Riconosce si windows è installato , ma non è adatto al multiboot."
 # Systemd-boot
-_InstSystdBBody="This installs systemd-boot and generates boot entries for the currently installed kernels. This bootloader requires your kernels to be on the UEFI partition. This is achieved by mounting UEFI partition to /boot." # translate me !
-_SystdBReady="Systemd-boot was installed" # translate me !
+_InstSystdBBody="Questo installa systemd-boot e genera le voci di avvio per i kernel attualmente installati. Questo bootloader richiede che i vostri kernel siano sulla partizione UEFI. Ciò è ottenuto montando la partizione UEFI in /boot." 
+_SystdBReady="Systemd-boot è stato installato"
 
 #Meta menu
-_InstCrMenuTitle="Install CLI system" # translate me !
-_InstDsMenuBody="This installs base manjaro system without graphical desktop environment. Steps 1-3 are needed for working system, the rest is optional." # translate me !
-_InstDsMenuTitle="Install desktop system" # translate me !
-_InstDsMenuBody="This installs full manjaro edition with graphical desktop environment. Steps 1-4 are needed for working system, the rest is optional." # translate me !
-_InstCsMenuTitle="Install custom system" # translate me !
-_InstCsMenuBody="This installs base manjaro system without graphical desktop environment. Steps 1-4 are needed for working system, the rest is optional." # translate me !
-_MMNewBody="After mounting partitions in preparation section, select your installation type. If you are unsure, choose Desktop system for default manjaro."# translate me !
+_InstCrMenuTitle="Installazione sistema CLI" 
+_InstDsMenuBody="Questo installa il sistema base di Manjaro senza interfacce desktop grafici. I passi 1-3 sono necessari per avere un sistema funzionante, il resto è opzionale." 
+_InstDsMenuTitle="Installazione sistema desktop" 
+_InstDsMenuBody="Questo installa una edizione completa di manjaro con desktop grafico. I passi 1-4 sono necessari per avere un sistema funzionante, il resto è opzionale."
+_InstCsMenuTitle="Installazione sistema personalizzato"
+_InstCsMenuBody="Questo installa il sistema base manjaro senza desktop grafici. I passi 1-4 sono necessari per avere un sistema funzionante, il resto è opzionale."
+_MMNewBody="Dopo aver montato le partizioni nella sezione configurazione, seleziona il tipo di installazione. Se non sei sicuro, scegli un sistema desktop manjaro."
