@@ -137,7 +137,6 @@ _ReqMetTitle="Alle voorwaarden voldaan"
 _ReqMetBody="Alle controles ok!"
 _UpdDb="Updating de database ..."
 
-
 # Installeer Mirrorlijst
 _MirrorlistTitle="Mirrorlijst"
 _MirrorBranch="Kies de te gebruiken Manjaro branch"
@@ -157,7 +156,7 @@ _MIrrorPacQ="Wil je het aangepast pacman configuratiebestand gebruiken voor het 
 
 # Stel het toetsenbord in (vconsole)
 _VCKeymapTitle="Stel de Virtuele Console in"
-_DefKeymap="De standaard keymap voor jouw gekozen taal is"
+_DefKeymap="De standaard toetsenbordindeling voor jouw gekozen taal is"
 _VCKeymapBody="Een virtuele console is een shell prompt in een niet-grafische omgeving. De toetsenbordindeling ervan is onafhankelijk van een desktop suite / terminal."
 
 # stel Xkbmap in (omgeving)
@@ -306,6 +305,7 @@ _DEInfoBody="meerdere Desktop Suites kunnen worden geïnstalleerd.\n\nGnome en L
 
 # Installeer DE Menu
 _InstDETitle="Installeer Desktop Suites"
+_DesktopInstalled="Een Manjaro-Desktop is reeds geïnstalleerd op deze partitie!\nHet opnieuw installeren van één zal waarschijnlijk pakkettenconflicten en andere problemen veroorzaken.\nAangeraden wordt de partitie opnieuw te formatteren en het starten van een nieuwe installatie.\n\nNegeren en toch verdergaan?"
 _InstManDEBody="Kies een Manjaro Omgeving.\n\nNotie, volgende omgevingen zijn enkel beschikbaar op systemd basis:"
 _ErrInit="Verkeerde init systeem"
 _WarnInit="is momenteel enkel beschikbaar voor systemd\nPas uw keuze aan:"
@@ -353,7 +353,7 @@ _WarnOrc="Deze Manjaro profielen zijn niet compatibel met openrc:"
 _ChsAddPkgs="Kies bijkomende modules voor jouw kernels"
 _InstBootldr="Installeer de Bootlader"
 _InstDrvTitle="Installeer Hardware Drivers"
-InstDrvBody="Sommige netwerk-en grafische kaarten hebben afzonderlijke stuurprogramma's nodig.\nOptie 1 en 2 kiezen de stuurprogramma's automatisch,\noptie 3 en 4 laten je toe het stuurprogramma te kiezen"
+_InstDrvBody="Sommige netwerk-en grafische kaarten hebben afzonderlijke stuurprogramma's nodig.\nOptie 1 en 2 kiezen de stuurprogramma's automatisch,\noptie 3 en 4 laten je toe het stuurprogramma te kiezen"
 _InstFree="Auto-installeer open stuurprogramma's"
 _InstProp="Auto-installeer gesloten stuurprogramma's"
 _SelDDrv="Selecteer een Beeldscherm Stuurprogramma"
@@ -413,7 +413,7 @@ _InstMulSnd="Installeer de stuurprogramma's voor Geluid"
 _InstMulSndBody="ALSA biedt door kernel aangedreven geluidskaartstuurprogramma's. PulseAudio fungeert als een proxy rond ALSA."
 _InstMulCodec="Installeer Codecs"
 _InstMulAcc="Installeer ToegankelijkheidsPakketten"
-_InstAccBody="Selecteer gewenste toegankelijkheidspakketten"
+_InstMulAccBody="Selecteer gewenste toegankelijkheidspakketten"
 _InstMulCust="Installeer gewone pakketten"
 
 # Codecs Menu
