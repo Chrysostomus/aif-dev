@@ -274,7 +274,7 @@ _InstGrub="Instalar Grub"
 
 # Instalar o carregador de boot BIOS"
 _InstBiosBtTitle="Instalar o carregador de boot BIOS"
-_InstGrubBody="The installation device for GRUB can be selected in the next step.\n\nOs-prober is needed for automatic detection of already installed systems on other partitions."                        # translate me !
+_InstGrubBody="O dispositivo de instalação para o GRUB pode ser selecionado no próximo passo.\n\nOs-prober é necessário para a detecção automática de sistemas já instalados em outras partições."
 _InstBiosBtBody="Grub2 é recomendado para iniciantes. O dispositivo de instalação também pode ser selecionado.\n\nSyslinux é uma alternativa mais leve e simples, que só funcionará com sistemas de arquivos ext/btrfs."
 _InstSysTitle="Instalar o Syslinux"
 _InstSysBody="Instalar o syslinux no Master Boot Record (MBR) ou no Root (/)?"
