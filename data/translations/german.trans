@@ -315,13 +315,13 @@ _ExtraTitle="Voll oder Minimal?"
 _ExtraBody="Diese Edition wird in zwei Ausführungen angeboten"
 
 # Install Common Packages
-_InstComTitle="Install Common Packages"
-_InstComBody="Some environments require additional packages to function better."
+_InstComTitle="Install Common Packages" # translate me !
+_InstComBody="Some environments require additional packages to function better." # translate me !
 
 # Display Manager
 _DmChTitle="Installiere Display Manager"
 _DmChBody="GDM hat Gnome-Shell als Abhängigkeit. sddm ist für Plasma empfohlen. LightDM wird lightdm-gtk-greeter enthalten. SLiM wird nicht mehr entwickelt."
-_DmDoneBody="Display manager has been installed and enabled."
+_DmDoneBody="Display manager has been installed and enabled." # translate me !
 
 # Network Manager
 _InstNMTitle="Installiere Network Manager"
@@ -360,25 +360,25 @@ _InstAllDrv="Freie Treiber installieren"
 
 # Configure Base Menu
 _ConfBseMenuTitle="Basis konfigurieren"
-_ConfBseBody="Basic configuration of the base."
-_ConfBseFstab="Generate FSTAB"
-_ConfBseHost="Set Hostname"
-_ConfBseTimeHC="Set Timezone and Clock"
-_ConfBseSysLoc="Set System Locale"
-_RunMkinit="Run Mkinitcpio"
+_ConfBseBody="Basic configuration of the base." # translate me !
+_ConfBseFstab="Generate FSTAB" # translate me !
+_ConfBseHost="Set Hostname" # translate me !
+_ConfBseTimeHC="Set Timezone and Clock" # translate me !
+_ConfBseSysLoc="Set System Locale" # translate me !
+_RunMkinit="Run Mkinitcpio" # translate me !
 _RunUpGrub="GRUB aktualisieren"
 
 # User Menu
-_ConfUsrRoot="Set Root Password"
-_ConfUsrNew="Add New User(s)"
+_ConfUsrRoot="Set Root Password" # translate me !
+_ConfUsrNew="Add New User(s)" # translate me !
 
 # Graphics Menu
 _InstGrMenuTitle="Install Graphical Interface"
-_InstGrMenuBody="Prior to installing a desktop environment, graphics, input, and sound drivers MUST be installed first. This will include installing graphics card drivers."
+_InstGrMenuBody="Prior to installing a desktop environment, graphics, input, and sound drivers MUST be installed first. This will include installing graphics card drivers." # translate me !
 _InstDEMenuTitle="Wähle eine vollständige Manjaro Edition oder ein unkonfigurierte Desktop-Umgebung"
-_InstGrMenuDS="Install Display Server"
-_InstGrMenuDSBody="In addition to xorg and wayland options, drivers for input devices (xf86-input-) are also listed."
-_InstGrMenuDD="Install Display Driver"
+_InstGrMenuDS="Install Display Server" # translate me !
+_InstGrMenuDSBody="In addition to xorg and wayland options, drivers for input devices (xf86-input-) are also listed." # translate me !
+_InstGrMenuDD="Install Display Driver" # translate me !
 _InstGrDrv="Grafiktreiber zur Installation auswählen"
 _WarnInstGr="Kein Grafiktreiber ausgewählt."
 _InstDEStable="Manjaro Desktop installieren"
@@ -387,36 +387,36 @@ _InstGrDE="Installiere Desktop-Umgebung"
 _InstPBody="Dies installiert eine Liste von Anwendungs- und Konfigurations-Paketen, entsprechend der gleichnamigen Manjaro Edition."
 _InstDE="Unkonfigurierte Desktop-Umgebung installieren"
 _InstGrMenuGE="Installiere Grafische Umgebung"
-_InstGrMenuDM="Install Display Manager"
+_InstGrMenuDM="Install Display Manager" # translate me !
 
 # Networking Menu
-_InstNMMenuTitle="Install Networking Capabilties"
+_InstNMMenuTitle="Install Networking Capabilties" # translate me !
 _InstNWDrv="Netzwerktreiber"
 _SelNWDrv="Netzwerktreiber auswählen"
 _InfoNWKernel="Unterstützung für die Netzwerkkarte ist im Kernel eingebaut\nKeine Installation notwendig."
-_InstNMMenuBody="Supplementary packages may be required for networking and wireless devices. Some wireless devices may also require additional firmware to function."
-_InstNMMenuPkg="Install Wireless Device Packages"
-_InstNMMenuNM="Install Network Connection Manager"
-_InstNMMenuCups="Install CUPS / Printer Packages"
-_InstNMMenuPkgBody="Key wifi packages will be pre-checked if a wireless device was detected. If unsure about additional firmware, all packages can be installed."
-_SeeWirelessDev="Display Wireless Device (optional)"
-_WirelessShowTitle="Wireless Device"
-_WirelessErrBody="None Detected."
-_InstCupsBody="CUPS (Common Unix Printing System) is the standards-based, open source printing system developed by Apple Inc. for OS X and other UNIX-like operating systems. Samba allows file and printer sharing between Linux and Windows systems."
-_InstCupsQ="Enable org.cups.cupsd.service on installed system?"
+_InstNMMenuBody="Supplementary packages may be required for networking and wireless devices. Some wireless devices may also require additional firmware to function." # translate me !
+_InstNMMenuPkg="Install Wireless Device Packages" # translate me !
+_InstNMMenuNM="Install Network Connection Manager" # translate me !
+_InstNMMenuCups="Install CUPS / Printer Packages" # translate me !
+_InstNMMenuPkgBody="Key wifi packages will be pre-checked if a wireless device was detected. If unsure about additional firmware, all packages can be installed." # translate me !
+_SeeWirelessDev="Display Wireless Device (optional)" # translate me !
+_WirelessShowTitle="Wireless Device" # translate me !
+_WirelessErrBody="None Detected." # translate me !
+_InstCupsBody="CUPS (Common Unix Printing System) is the standards-based, open source printing system developed by Apple Inc. for OS X and other UNIX-like operating systems. Samba allows file and printer sharing between Linux and Windows systems." # translate me !
+_InstCupsQ="Enable org.cups.cupsd.service on installed system?" # translate me !
 
 # Install Multimedia Support Menu
-_InstMultMenuTitle="Install Multimedia Support"
-_InstMultMenuBody="Accessibility packages aid those with sight and/or hearing impairments. The Custom Packages option allows for user-defined packages to be installed."
-_InstMulSnd="Install Sound Driver(s)"
-_InstMulSndBody="ALSA provides kernel driven sound card drivers. PulseAudio serves as a proxy to ALSA."
-_InstMulCodec="Install Codecs"
-_InstMulAcc="Install Accessibility Packages"
-_InstMulAccBody="Select desired accessibility packages."
-_InstMulCust="Install Custom Packages"
+_InstMultMenuTitle="Install Multimedia Support" # translate me !
+_InstMultMenuBody="Accessibility packages aid those with sight and/or hearing impairments. The Custom Packages option allows for user-defined packages to be installed." # translate me !
+_InstMulSnd="Install Sound Driver(s)" # translate me !
+_InstMulSndBody="ALSA provides kernel driven sound card drivers. PulseAudio serves as a proxy to ALSA." # translate me !
+_InstMulCodec="Install Codecs" # translate me !
+_InstMulAcc="Install Accessibility Packages" # translate me !
+_InstMulAccBody="Select desired accessibility packages." # translate me !
+_InstMulCust="Install Custom Packages" # translate me !
 
 # Codecs Menu
-_InstMulCodBody="GStreamer is a pipeline-based multimedia framework. The first two options are the current and legacy (gstreamer0.10) package groups. Xine is also listed."
+_InstMulCodBody="GStreamer is a pipeline-based multimedia framework. The first two options are the current and legacy (gstreamer0.10) package groups. Xine is also listed." # translate me !
 
 # Custom Packages Box
 _InstMulCustBody="Geben Sie die (exakten) Namen von Paketen aus den Manjaro Repositorien - getrennt mit Leerzeichen - ein.\n\nZum Beistiel, um Firefox, VLC, und HTop zu installieren: firefox vlc htop"
