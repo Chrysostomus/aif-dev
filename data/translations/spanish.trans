@@ -6,6 +6,7 @@
 ## Texto original de Carl Duff (27-Feb-2016)
 ##
 ## Traducción al español por Juanjo Jiménez (xXJuAnJi05Xx) (28-Feb-2016)
+## y Roberto Michán (Roboron3042) (28-July-2017)
 
 # Genérico
 _UseSpaceBar="Utilice la [BarraEspaciadora] para de/seleccionar las opciones de la lista."
@@ -26,7 +27,7 @@ _Change="Cambiar"
 _NoCon="No se ha detectado conexión a Internet."
 _EstCon="¿Establecer conexión?"
 _Config="Configurar"
-_ApplySet="Aplicando ajustes de idioma ..."
+_ApplySet="Aplicar ajustes de idioma ..."
 _ChMenu="Seleccionar Menú"
 _ChMenuBody="El Menú Regular le guiará durante la instalación de un entorno Manjaro preconfigurado con algunas opciones adicionales\n\nEl Menú Avanzado puede usarse para instalar escritorios no configurados o perfiles de desarrollo de Manjaro, y también incluye una selección adicional de aplicaciones multimedia y de internet así como algunas opciones avanzadas para la configuración del sistema y la seguridad."
 
