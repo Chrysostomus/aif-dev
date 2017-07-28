@@ -10,7 +10,7 @@
 # Genérico
 _UseSpaceBar="Utilice la [BarraEspaciadora] para de/seleccionar las opciones de la lista."
 _AlreadyInst="Ya instalado/s pero no habilitado/s:"
-_InstPkg="Install"                       # translate me !
+_InstPkg="Instalar"
 _All="Todos"
 _Done="Finalizar"
 _PlsWaitBody="Por favor espere..."
@@ -19,23 +19,23 @@ _ErrTitle="Error"
 _PassErrBody="Las contraseñas introducidas no coinciden. Vuelva a intentarlo."
 
 # Basics
-_SelLang="Select Language"                       # translate me !
-_Lang="Language"                                 # translate me !
-_Keep="Keep"                                     # translate me !
-_Change="Change"                                 # translate me !
-_NoCon="No Internet Detected."                   # translate me !
-_EstCon="Establish connection?"                  # translate me !
-_Config="Configure"                              # translate me !
-_ApplySet="Apply language settings ..."          # translate me !
-_ChMenu="Select Menu"                            # translate me !
-_ChMenuBody="The Regular Menu will guide you through the installation of a pre-configured Manjaro Environment with some additional choices.\n\nThe Advanced Menu can be used to install unconfigured desktops or Manjaro development profiles and also includes an additional selection of network and multimedia applications and some advanced options for system and security configuration."       # translate me !
+_SelLang="Seleccionar Idioma"
+_Lang="Idioma"
+_Keep="Guardar"
+_Change="Cambiar"
+_NoCon="No se ha detectado conexión a Internet."
+_EstCon="¿Establecer conexión?"
+_Config="Configurar"
+_ApplySet="Aplicando ajustes de idioma ..."
+_ChMenu="Seleccionar Menú"
+_ChMenuBody="El Menú Regular le guiará durante la instalación de un entorno Manjaro preconfigurado con algunas opciones adicionales\n\nEl Menú Avanzado puede usarse para instalar escritorios no configurados o perfiles de desarrollo de Manjaro, y también incluye una selección adicional de aplicaciones multimedia y de internet así como algunas opciones avanzadas para la configuración del sistema y la seguridad."
 
 # Seguridad y ajustes
 _SecMenuTitle="Seguridad y ajustes de systemd"
 _SecJournTitle="Mejorar el registro de journald"
 _SecCoreTitle="Deshabilitar el registro de volcados de memoria"
 _SecKernTitle="Limitar acceso a los registros del núcleo"
-_SecKernBody="Kernel logs may contain information an attacker can use to identify and exploit kernel vulnerabilities, including sensitive memory addresses.\n\nIf systemd-journald logging has not been disabled, it is possible to create a rule in /etc/sysctl.d/ to disable access to these logs unless using root privilages (e.g. via sudo)."  # translate me !
+_SecKernBody="Los registros del núcleo pueden contener información que un atacante puede utilizar para identificar y aprovechar vulnerabilidades del kernel, incluyendo direcciones de memoria sensibles.\n\nSi los registros de systemd-journald no han sido desactivados, es posible crear una regla en /etc/sysctl.d/ para deshabilitar el acceso a estos registros a menos que se utilice privilegios de administrador (por ejemplo vía sudo)."
 _Edit="Editar archivo de configuración"
 _Disable="Deshabilitar"
 _SecMenuBody="Hay disponibles varios ajustes útiles y fáciles de usar para mejorar el rendimiento y la seguridad del sistema.\n\nSeleccionar una opción porporcionará detalles sobre la misma."
@@ -82,7 +82,7 @@ _LuksMenuBody="Los dispositivos y volúmenes encriptados mediante 'dm_crypt' no 
 _LuksMenuBody2="Se requiere una partición de arranque separada del resto, sin encriptación o gestión de volúmenes lógicos (LVM - a menos que se use Grub BIOS)."
 _LuksMenuBody3="La opción 'Automático' utiliza opciones de encriptación predeterminadas, y es recomendable para principiantes. En cualquier caso, se puede ajustar manualmente el cifrado y el tamaño de la clave."
 _LuksOpen="Abrir partición encriptada."
-_LuksErr="No LUKS-encrypted partition found."           # translate me !
+_LuksErr="Ninguna partición encriptada LUKS encontrada."
 _LuksOpenBody="Introduzca un nombre para el dispositivo encriptado. No es necesario añadirle delante '/dev/mapper/'. Se proporciona un ejemplo para verlo mejor."
 _LuksEncrypt="Encriptación LUKS automática"
 _LuksEncryptAdv="Establecer cifrado y tamaño de la clave"
@@ -112,11 +112,11 @@ _LvmPvConfBody2="con las siguientes particiones:"
 _LvmPvActBody1="Creando y activando grupo de volúmenes"
 _LvmPvDoneBody1="El grupo de volúmenes"
 _LvmPvDoneBody2="se ha creado"
-_LvmLvNumBody1="Enter the number of Logical Volumes (LVs) to create in"                                      # translate me !
+_LvmLvNumBody1="Ingresa el número de volúmenes lógicos (VLs) a crear"
 _LvmLvNumBody2="El último (o único) VL usará de forma automática el 100% del espacio restante en el grupo de volúmenes."
 _LvmLvNameBody1="Introduzca el nombre del volumen lógico (VL) a crear.\n\nEs como asignar un nombre o una etiqueta a una partición."
 _LvmLvNameBody2="ATENCIÓN: Este volumen lógico utilizará automáticamente todo el espacio restante del grupo de volúmenes"
-_LvmLvNameErrBody="Name is in use or not valid. Use alpha-numeric charactes only, no spaces or '/'!"        # translate me !
+_LvmLvNameErrBody="El nombre está en uso o no es válido. Usa únicamente caracteres alfanuméricos, sin espacios o '/'!"
 _LvmLvSizeBody2="Introduzca el tamaño del volumen lógico (VL) en megabytes (M) o gigabytes (G). Por ejemplo, '100M' creará un volumen lógico de 100MB. '10G' creará un volumen lógico de 10GB."
 _LvmLvSizeErrBody="El valor introducido no es válido. Un valor numérico debe ser introducido con una 'M' (Megabytes) o una 'G' (Gigabytes) al final.\n\nPor ejemplo: '100M', '10G' o '250M'. El valor tampoco puede ser mayor o igual que el tamaño restante del grupo de volúmenes."
 _LvmCompBody="¡Listo! Todos los volúmenes lógicos han sido creados para el grupo de volúmenes.\n\n¿Desea ver el nuevo esquema de LVM?"
@@ -134,14 +134,14 @@ _RtFailBody="El instalador debe ser ejecutado como superusuario (usuario root). 
 _ConFailBody="Fallo de la prueba de conexión a internet. Saliendo."
 _ReqMetTitle="Requisitos cumplidos"
 _ReqMetBody="¡Todas las pruebas superadas!"
-_UpdDb="Updating database ..."     # translate me !
+_UpdDb="Actualizando base de datos ..."
 
 
 # Lista de mirrors del instalador
 _MirrorlistTitle="Lista de mirrors"
-_MirrorBranch="Choose Manjaro branch to use"   # translate me !
+_MirrorBranch="Selecciona una rama de manjaro para usar"
 _MirrorlistBody="La lista de mirrors contiene direcciones de servidores utilizadas por 'pacman' para instalar paquetes. Para encontrar los servidores más rápidos, PRIMERO genere una lista de mirrors por país ANTES de ejecutar RankMirrors, ya que de no hacerlo el proceso puede tardar MUCHO TIEMPO.\n\nSe puede editar el archivo de configuración de 'pacman' para activar 'multilib' y otros repositorios.\n\nNOTA: Cierre los archivos de texto con '[CTRL] + [x]'. Si se edita el archivo, pulse [y] para guardar o [n] para descartar los cambios."
-_RankMirrors="Selected your custom mirrors using [Spacebar] or [Enter] and confirm with the [OK] button at the bottom."        # translate me !
+_RankMirrors="Selecciona tus mirrors personalizados usando [Barra Espaciadora] o [Entrar] y confírmalo con el botón [OK] en la parte de abajo."
 _MirrorbyCountry="Generar lista de mirrors por países"
 _MirrorEdit="Editar manualmente la lista de mirrors"
 _MirrorRankTitle="Ejecutar RankMirrors"
@@ -156,7 +156,7 @@ _MIrrorPacQ="¿Utilizar el archivo de configuración de 'pacman' editado para el
 
 # Seleccionar distribución de teclado de la consola virtual (vconsole)
 _VCKeymapTitle="Seleccionar distribución de teclado de la consola virtual"
-_DefKeymap="The default keymap for your selected language is"              # translate me !
+_DefKeymap="La distribución de teclado por defecto para su idioma es"
 _VCKeymapBody="Una consola virtual es un intérprete de comandos en un entorno no gráfico. Su distribución de teclado es independiente de un entorno de escritorio o terminal."
 
 # Seleccionar Xkbmap (entorno)
@@ -199,7 +199,7 @@ _NUsrErrBody="Se ha introducido un nombre de usuario incorrecto. Vuelva a intent
 # Establecer usuario
 _PassNUsrBody="Escriba la contraseña para" 
 _NUsrSetBody="Creando usuario y ajustando grupos..."
-_DefShell="Choose the default."   # translate me !
+_DefShell="Seleccione el valor predeterminado."
 
 # Montaje (particiones)
 _MntStatusTitle="Estado de montaje"
@@ -226,10 +226,10 @@ _PartErrBody="Los sistemas BIOS requieren un mínimo de una partición (RAÍZ).\
 # Sistema de archivos
 _FSTitle="Elegir sistema de archivos"
 _FSBody="Se recomienda el sistema de archivos Ext4. No todos los sistemas de archivos son adecuados para particiones raíz o de arranque. Todas tienen sus características y limitaciones."
-_FSSkip="Do not format"  # translate me !
-_FSMount="Mount"         # translate me !
-_FSWarn1="Data on"       # translate me !
-_FSWarn2="will be lost"  # translate me !
+_FSSkip="No formatear"
+_FSMount="Montar"
+_FSWarn1="La información en"
+_FSWarn2="se perderá"
 
 # Seleccionar raíz
 _SelRootBody="Seleccione la partición RAÍZ. Aquí es donde se instalará Manjaro."
@@ -247,7 +247,7 @@ _FormUefiBody="La partición UEFI"
 _FormUefiBody2="ya ha sido formateada.\n\n¿Desea reformatearla? Ésto borrara TODA la información existente en dicha partición."
 
 # Punto de montaje UEFI
-_MntUefiBody="Select UEFI Mountpoint."     # translate me !
+_MntUefiBody="Seleccionar punto de montaje UEFI."
 
 # Particiones extra
 _ExtPartBody="Seleccione particiones adicionales en cualquier orden, o 'Finalizar' para terminar el proceso."
@@ -259,27 +259,27 @@ _ExtPartBody1="Punto de montaje de partición específica. Asegúrese de que el 
 _ExtErrBody="La partición no se puede montar debido a un problema con el nombre del punto de montaje. Se debe indicar un nombre después de una barra inclinada (/)."
 
 # Instalar sistema base
-_WarnInstBase="A Manjaro Base has already been installed on this partition.\nProceed anyway?"       # translate me !
+_WarnInstBase="Un sistema base Manjaro ha sido instalado en esta partición.\nProceder de todas formas?"
 _InstBseTitle="Instalar sistema base"
-_InstFail="Installation failed."          # translate me !
+_InstFail="Instalación fallida."
 _InstBseBody="Estándar: Recomendado para principiantes. Elija hasta dos núcleos (linux y linux-lts) y opcionalmente el grupo de paquetes 'base-devel'. También se instalará sudo, btrfs-progs y f2fs-tools.\n\nAvanzado: Elija hasta cuatro núcleos (linux, lts, grsec, zen) y controle de forma individual los paquetes de 'base' y 'base-devel'. VirtualBox y NVIDIA pueden requerir configuración adicional con grsec y zen.\n\nNOTA: A menos que ya esté instalado, se necesita seleccionar al menos un núcleo."
 _InstStandBseBody="Se instalará de forma automática el grupo de paquetes 'base'. El grupo de paquetes 'base-devel' es necesario para poder usar el Arch User Repository (AUR)."
 _InstStandBase="Instalación estándar"
 _InstAdvBase="Instalación avanzada"
 _InstAdvBseBody="AVISO: Ésto es sólo para usuarios experimentados. Los usuarios novatos deberían utilizar la opción de instalación estándar."
 _InstAdvWait="Recopilando información de paquetes."
-_InstGrub="Install Grub"        # translate me !
+_InstGrub="Instalar Grub"
 
 # Instalar gestor de arranque BIOS
 _InstBiosBtTitle="Instalar gestor de arranque BIOS"
-_InstGrubBody="The installation device for GRUB can be selected in the next step.\n\nOs-prober is needed for automatic detection of already installed systems on other partitions."                        # translate me !
+_InstGrubBody="El dispositivo de instalación para GRUB puede ser seleccionado en el próximo paso.\n\nOs-prober es necesario para la selección automática de sistemas ya instalados en otras particiones."
 _InstBiosBtBody="Se recomienda Grub2 para usuarios principiantes. También se puede seleccionar el dispositivo de instalación.\n\nSyslinux es una alternativa más ligera y más simple que sólo funciona con sistemas de archivos ext o btrfs."
 _InstSysTitle="Instalar Syslinux"
 _InstSysBody="¿Desea instalar 'syslinux' en el Registro de Arranque Maestro (MBR) o en la raíz (/)?"
 
 # Instalar gestor de arranque UEFI
 _InstUefiBtTitle="Instalar gestor de arranque UEFI"
-_InstUefiBtBody="Install UEFI Bootloader GRUB."    # translate me !
+_InstUefiBtBody="Instalar gestor de arranque UEFI GRUB."
 _SetBootDefBody="Algunos firmwares UEFI podrían no detectar el gestor de arranque a menos que sea establecido como predeterminado, copiando su EFISTUB (archivo de arranque) a"
 _SetBootDefBody2="y renombrándolo a bootx64.efi.\n\nSe recomienda hacer esto a menos que ya se esté usando un gestor de arranque predeterminado, o si se quieren usar varios gestores de arranque.\n\n¿Establecer gestor de arranque como el predeterminado?"
 
@@ -305,14 +305,14 @@ _DEInfoBody="Se pueden instalar varios entornos de escritorio.\n\nGnome y LXDE i
 
 # Menú de instalación de entornos de escritorio
 _InstDETitle="Instalar entornos de escritorio"
-_InstManDEBody="Please choose a Manjaro Environment.\n\nNote that the following are currently available for systemd base only:" # translate me !
-_ErrInit="Wrong init system" # translate me !
-_WarnInit="is currently available for systemd only\nPlease adjust your selection:" # translate me !
-_DiffPro="Select different profile" # translate me !
-_InstSystd="Install systemd base" # translate me !
+_InstManDEBody="Por favor selecciona un entorno de  Manjaro.\n\nTen en cuenta que los siguientes sólo están disponibles para systemd:"
+_ErrInit="Sistema de inicio incorrecto"
+_WarnInit="sólo está disponible actualmente para systemd\nPor favor modifica tu selección:"
+_DiffPro="Seleciona un perfil diferente"
+_InstSystd="Instalar systemd base"
 _InstDEBody="Primero se listan los entornos de escritorio y sus grupos de paquetes relacionados."
-_ExtraTitle="Full or minimal?"                     # translate me !
-_ExtraBody="This edition is offered in two versions" # translate me !
+_ExtraTitle="¿Completo o mínimo?"
+_ExtraBody="Esta edición se ofrece en dos versiones"
 
 # Instalar paquetes comunes
 _InstComTitle="Instalar paquetes comunes"
@@ -342,21 +342,21 @@ _PrepMntPart="Montar particiones"
 _Back="Atrás"
 
 # Menú de instalación del sistema base
-_PkgList="Processing package list"                                       # translate me !
+_PkgList="Procesando lista de paquetes"
 _InstBsMenuTitle="Instalar sistema base"
-_InstBseMenuBody="Packages to be installed will be downloaded from mirror servers. The default branch is 'stable'.\nTo optimize your download speed or to switch branch, use the entry [$_PrepMirror]."                                   # translate me !
+_InstBseMenuBody="Los paquetes a instalar se descargarán de los servidores mirror. La rama predeterminada es 'estable'.\nPara optimizar tu velocidad de descarga o cambiar de rama, usa la entrada [$_PrepMirror]."
 _InstBse="Instalar paquetes base"
-_ChsInit="Choose your initsystem"                                        # translate me !
-_Note="Note!"                                                            # translate me !
-_WarnOrc="These Manjaro profiles are incompatible with openrc:"          # translate me !
-_ChsAddPkgs="Choose additional modules for your kernels"                 # translate me !
+_ChsInit="Elige tu sistema de inicio"
+_Note="¡Atención!"
+_WarnOrc="Estos perfiles de manjaro son incompatibles con OpenRC:"
+_ChsAddPkgs="Selecciona módulos adicionales para tus núcleos"
 _InstBootldr="Instalar gestor de arranque"
-_InstDrvTitle="Install Hardware Drivers"                                 # translate me !
-_InstDrvBody="Some network and graphics cards \nmay need special drivers. \nOptions 1 and 2 choose drivers automatically, \noptions 3 and 4 let you choose specific drivers"                                   # translate me !
-_InstFree="Auto-install free drivers"               # translate me !
-_InstProp="Auto-install proprietary drivers"        # translate me !
-_SelDDrv="Select Display Driver"                    # translate me !
-_InstAllDrv="Install all free drivers"				# translate me !
+_InstDrvTitle="Instalar Drivers de Hardware"
+_InstDrvBody="Algunas tarjetas de red y tarjetas gráficas \npueden necesitar drivers especiales . \nLas opciones 1 y 2 eligen los drivers automáticamente, \nlas opciones 3 y 4 te dejan elegir drivers específicos"
+_InstFree="Instalar automáticamente drivers libres"
+_InstProp="Instalar automáticamente drivers propietarios"
+_SelDDrv="Seleccinoan el Driver Gráfico "
+_InstAllDrv="Instalar todos los drivers libres"
 
 # Menú de configuración del sistema base
 _ConfBseMenuTitle="Configurar sistema base"
@@ -365,8 +365,8 @@ _ConfBseFstab="Generar FSTAB"
 _ConfBseHost="Establecer nombre del equipo"
 _ConfBseTimeHC="Establecer zona horaria y reloj"
 _ConfBseSysLoc="Establecer idioma del sistema"
-_RunMkinit="Run Mkinitcpio"                         # translate me !
-_RunUpGrub="Update GRUB"                            # translate me !
+_RunMkinit="Ejecutar Mkinitcpio"
+_RunUpGrub="Actualizar GRUB"
 
 # Menú de usuario
 _ConfUsrRoot="Establecer contraseña de superusuario"
@@ -375,25 +375,25 @@ _ConfUsrNew="Añadir nuevo/s usuario/s"
 # Menú de gráficos
 _InstGrMenuTitle="Instalar interfaz gráfica"
 _InstGrMenuBody="Antes de instalar un entorno de escritorio, primero DEBEN instalarse drivers de gráficos, sonido y entrada. Esto incluye la instalación de drivers de tarjetas gráficas."
-_InstDEMenuTitle="Choose a full Manjaro edition or vanilla desktop environments"  # translate me !
+_InstDEMenuTitle="Elije una edición completa de Manjaro o un entorno de escritorio virgen"
 _InstGrMenuDS="Instalar servidor de pantalla"
 _InstGrMenuDSBody="Además de las opciones 'xorg' y 'wayland', también se proporcionan drivers para dispositivos de entrada (xf86-input)."
-_InstGrMenuDD="Select Display Driver to install"
-_InstGrDrv="Choose video-driver to be installed"             # translate me !
-_WarnInstGr="No Display Driver selected."                    # translate me !
-_InstDEStable="Install Manjaro Desktop"                      # translate me !
-_InstDEGit="Install Manjaro Desktop (development profiles)"  # translate me !
-_InstGrDE="Install Desktop environment"                      # translate me !
-_InstPBody="This installs a package list and a desktop-settings package, that corresponding to manjaro editions of the same name."         # translate me !
-_InstDE="Install unconfigured desktop environments"          # translate me !
+_InstGrMenuDD="Selecciona el Driver de pantalla a instalar"
+_InstGrDrv="Elije el driver de vídeo a instalar"
+_WarnInstGr="Ningún Driver de pantalla seleccionado."
+_InstDEStable="Instalar el Escritorio Manjaro"
+_InstDEGit="Instalar el Escritorio Manjaro (perfiles de desarrollador)"
+_InstGrDE="Instalar entorno de escritorio"
+_InstPBody="Esto instala una lista de paquetes y un paquete de configuraciones del escritorio, que corresponde a las ediciones de manjaro del mismo nombre."
+_InstDE="Instalar entornos de escritorio sin configurar"
 _InstGrMenuGE="Instalar entorno gráfico"
 _InstGrMenuDM="Instalar gestor de pantalla"
 
 # Menú de redes
 _InstNMMenuTitle="Instalar componentes de red"
-_InstNWDrv="Network Drivers"                                                                            # translate me !
-_SelNWDrv="Select Network Driver"                                                                       # translate me !
-_InfoNWKernel="Support for your network card is built into the kernel, \nno need to install anything."  # translate me !
+_InstNWDrv="Drivers de red"
+_SelNWDrv="Seleccionar driver de red"
+_InfoNWKernel="El soporte para tu tarjet de red está soportado en el núcleo, \nno se necesita instalar nada."
 _InstNMMenuBody="Pueden ser necesarios paquetes complementarios para los dispositivos de red e inalámbricos. Algunos dispositivos ianlámbricos pueden requerir firmwares adicionales para funcionar."
 _InstNMMenuPkg="Instalar paquetes de dispositivo inalámbrico"
 _InstNMMenuNM="Instalar administrador de conexiones"
@@ -426,37 +426,37 @@ _MMTitle="Menú principal"
 _MMBody="Cada paso se ha de seguir en ESTRICTO ORDEN.\nUna vez que haya terminado, seleccione 'Finalizar' para terminar la instalación correctamente."
 
 # Final Check
-_BaseCheck="Base is not installed"                   # translate me !
-_BootlCheck="Bootloader is not installed"            # translate me !
-_FstabCheck="Fstab has not been generated"           # translate me !
-_GCCheck="No graphics driver has been installed"     # translate me !
-_LocaleCheck="Locales have not been generated"       # translate me !
-_RootCheck="Root password is not set"                # translate me !
-_UserCheck="No user accounts have been generated"    # translate me !
+_BaseCheck="El sistema base no está instalado"
+_BootlCheck="El cargador de arranque no está instalado"
+_FstabCheck="Fstab no ha sido generado"
+_GCCheck="Ningún driver de gráficos instalado"
+_LocaleCheck="Los archivos de configuración local no han sido generados"
+_RootCheck="La contraseña de administrador (root) no ha sido establecida"
+_UserCheck="No se ha generado ninguna cuenta de usuario"
 
 # Cerrar instalador
 _CloseInstBody="¿Desea cerrar el instalador?"
-_LogInfo="Would you like to save the installation-log to the installed system?\nIt will be copied to"  # translate me !
+_LogInfo="¿Desea guardar el registro de instalación al sistema instalado?\nSerá copiado en"
 
 # Chroot
-_ChrootReturn="\nYou will now chroot into your installed system. You can do changes almost as if you had booted into your installation.\n\nType \"exit\" to exit chroot and \"fg\" to return to installer.\n " # translate me !
-_EnterChroot="Enter your installation" # translate me !
+_ChrootReturn="\nAhora ejecutará chroot en sus sitema instalado. Puede hacer cambios casi como si hubiese iniciado en su instalación.\n\nEscribe \"exit\" para salir del chroot y \"fg\" para volver al instalador.\n "
+_EnterChroot="Introducirse en su instalación"
 
 #Refind
-_InstRefindTitle="Install refind" # translate me !
-_InstRefindBody="This installs refind and configures it to automatically detect your kernels. No support for encrypted /boot or intel microcode. These require manual boot stanzas or using different bootloader." # translate me !
-_RefindReady="Refind was succesfully installed" # translate me !
-_bootloaderInfo="Refind can be used as standalone or in conjunction with other bootloaders as a graphical bootmenu. It autodetects all bootable systems at boot time.\nGrub supports encrypted /boot partition and detects all bootable systems when you update your kernels. It can boot .iso files from harddrive and has automatic boot entries for btrfs snapshots.\nSystemd-boot is very light and simple and has little automation. It autodetects windows, but is otherwise unsuited for multibooting." # translate me !
+_InstRefindTitle="Instalar refind"
+_InstRefindBody="Esta opción instala refind y lo configura para detectar tus núcleos automáticamente. No ofrece sporte para /boot encriptado o microcódigo intel. Estos requieren estancias de arranque manuales o usar un cargador de arranque diferente."
+_RefindReady="Refind fue instalado satisfactoriamente"
+_bootloaderInfo="Refind puede ser usado por sí mismo o en conjunto con otros cargadores de arranque como un menú de arranque gráfico. Autodetecta todos los sitemas arrancables en tiempo de arranque.\nGrub soporta particiones /boot encriptadas y detecta todos los sistemas arrancables cuando actualizas tus núcleos. Puede arrancar archivos .iso desde el disco duro y tiene entradas automáticas para instantáneas btrfs.\nSystemd-boot es muy ligero y simple, y tiene  poca automatización. Autodetecta windows pero es por lo demás inadecuado para multiarranque."
 
 # Systemd-boot
-_InstSystdBBody="This installs systemd-boot and generates boot entries for the currently installed kernels. This bootloader requires your kernels to be on the UEFI partition. This is achieved by mounting UEFI partition to /boot." # translate me !
-_SystdBReady="Systemd-boot was installed" # translate me !
+_InstSystdBBody="Esto instala systemd-boot y genera entradas para los núcleos actualmente instalados. Este cargador de arranque requiere que tus núcleos estén en la partición UEFI. Esto se consigue montando la partición UEFI en /boot."
+_SystdBReady="Systemd-boot ha sido instalado"
 
 #Meta menu
-_InstCrMenuTitle="Install CLI system" # translate me !
-_InstDsMenuBody="This installs base manjaro system without graphical desktop environment. Steps 1-3 are needed for working system, the rest is optional." # translate me !
-_InstDsMenuTitle="Install desktop system" # translate me !
-_InstDsMenuBody="This installs full manjaro edition with graphical desktop environment. Steps 1-4 are needed for working system, the rest is optional." # translate me !
-_InstCsMenuTitle="Install custom system" # translate me !
-_InstCsMenuBody="This installs base manjaro system without graphical desktop environment. Steps 1-4 are needed for working system, the rest is optional." # translate me !
-_MMNewBody="After mounting partitions in preparation section, select your installation type. If you are unsure, choose Desktop system for default manjaro." # translate me !
+_InstCrMenuTitle="Instalar sistema CLI"
+_InstDsMenuBody="Esto instala el sistema base de manjaro sin entorno de escritorio gráfico. Los pasos 1-3 son necesarios para sistemas funcionales, el resto es opcional."
+_InstDsMenuTitle="Instalar sistema de escritorio"
+_InstDsMenuBody="Esto instala el sistema base de manjaro sin entorno de escritorio gráfico. Los pasos 1-4 son necesarios para sistemas funcionales, el resto es opcional."
+_InstCsMenuTitle="Instalar sistema personalizado"
+_InstCsMenuBody="Esto instala el sistema base de manjaro sin entorno de escritorio gráfico. Los pasos 1-4 son necesarios para sistemas funcionales, el resto es opcional."
+_MMNewBody="Tras montar una partición en la sección de preparación, selecciona su tipo de instalación. Si no está seguro, elije un sistema de Escritorio para manjaro predeterminado."
