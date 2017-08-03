@@ -56,10 +56,10 @@ edit_configs() {
         options+=( $i "refind_linux.conf" )
         functions+=( "nano ${MOUNTPOINT}/boot/refind_linux.conf" )
     fi    
-    if [[ -e ${MOUNTPOINT}${UEFI_MOUNT}/EFI/refind/refind_linux.conf ]]; then
+    if [[ -e ${MOUNTPOINT}${UEFI_MOUNT}/efi/refind/refind_linux.conf ]]; then
         ((i++))
         options+=( $i "refind.conf" )
-        functions+=( "nano ${MOUNTPOINT}${UEFI_MOUNT}/EFI/refind/refind.conf" )
+        functions+=( "nano ${MOUNTPOINT}${UEFI_MOUNT}/efi/refind/refind.conf" )
     fi    
     if [[ -e ${MOUNTPOINT}${UEFI_MOUNT}/loader/loader.conf ]]; then
         ((i++))
