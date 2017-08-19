@@ -478,5 +478,5 @@ _AddPkgs="Выберите любые дополнительные пакеты,
 Нажмите Tab, чтобы выбрать несколько пакетов и нажмите Enter."
 
 #Extra
-_ExtraTitle="Extra packages" # translate me !
-_ExtraBody="Would you like to add any additional packages to your installation?" # translate me !
+_ExtraTitle="Дополнительные пакеты"
+_ExtraBody="Хотели бы вы добавить какие-либо дополнительные пакеты для установки?"
