@@ -444,7 +444,7 @@ _LogInfo="Désirez-vous copier le journal d'installation sur le système install
 # Chroot
 _ChrootReturn="\nVous allez maintenant entrer en chroot dans votre système installé. Vous pouvez faire des changements comme si vous étiez dans le système installé.\n\nTapez \"exit\" pour sortir du chroot et \"fg\" retourner vers l’installateur.\n "
 _EnterChroot="Entrez dans votre système installé"
-_ChrootTitle="Chroot into Installation" # translate me !
+_ChrootTitle="Chroot vers le système installé"
 
 #Refind
 _InstRefindTitle="Installer refind"
@@ -466,17 +466,17 @@ _InstCsMenuBody="Ceci va installer le système de base manjaro sans environnemen
 _MMNewBody="Après avoir sélectionné les partitions dans la section préparation, choisissez votre type d’installation. Si vous n’êtes pas sur, choisissez un environnement graphique manjaro."
 
 #System rescue
-_SysRescTitle="System Rescue" # translate me !
-_SysRescBody="This menu is collection of tools to help restore broken system to full functionality." # translate me !
-_RmPkgs="Remove packages" # translate me !
-_RmPkgsMsg="Search packages by typing their name.  
-Press tab to select multiple packages" # translate me !
-_RmPkgsPrmpt="Package to remove" # translate me !
-_AddPkgsPrmpt="Package" # translate me !
-_AddPkgs="Choose any extra packages you would like to add. 
-Search packages by typing their name. 
-Press tab to select multiple packages and proceed with Enter." # translate me !
+_SysRescTitle="Récupération système"
+_SysRescBody="Ce menu contient une série d'outils pour réparer un système cassé."
+_RmPkgs="Désinstaller des paquets"
+_RmPkgsMsg="Recherchez les paquets par leur nom.  
+Appuyez sur Tab pour sélectionner plusieurs paquets"
+_RmPkgsPrmpt="Paquets à désinstaller"
+_AddPkgsPrmpt="Paquet"
+_AddPkgs="Choisissez des paquets additionnels à ajouter.
+Recherchez des paquets par leur nom.
+Appuyez sur Tab pour sélectionner plusieurs paquets puis validez avec Entrée."
 
 #Extra
-_ExtraTitle="Extra packages" # translate me !
-_ExtraBody="Would you like to add any additional packages to your installation?" # translate me !
+_ExtraTitle="Paquets additionnels"
+_ExtraBody="Voulez-vous ajouter des paquets additionnels à votre installation ?"
