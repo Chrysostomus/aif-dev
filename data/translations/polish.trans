@@ -4,7 +4,7 @@
 ##
 ##
 ## Written by edskeye
-##
+## Edited by JabWik and vfjpl
 ##
 
 # Generic
@@ -31,21 +31,21 @@ _ChMenu="Wybierz Menu"
 _ChMenuBody="Standardowe Menu poprowadzi Cię przez instalację skonfigurowanego środowiska Manjaro z kilkoma dodatkowymi opcjami do wyboru.\n\nZaawansowane Menu może być użyte do instalacji nieskofigurowanego środowiska lub wersji deweloperskiej Manjaro. Dodatkowo zawiera zestaw aplikacji sieciowych i multimedialnych oraz zaawansowane opcje konfiguracji systemu i zasad bezpieczeństwa."
 
 # Security and Tweaks
-_SecMenuTitle="Poprawki bezpieczeństwa i systemd"
+_SecMenuTitle="Poprawki bezpieczeństwa i ustawienia systemd"
 _SecJournTitle="Zmień rejestrowanie dzienników"
 _SecCoreTitle="Wyłącz rejestrowanie zrzutu pamięci"
 _SecKernTitle="Ogranicz dostęp do logów kernela"
-_SecKernBody="Logi jądra mogą zawierać informacje, których atakujący może użyć do identyfikacji i wykorzysta luk jądra, włączając w to adresy pamięci.\n\nJeśli rejestrowanie systemd-journald nie zostało wyłączone, istnieje możliwość utworzenia reguły w /etc/sysctl.d/ w celu uniemożliwienia dostępu do tych dzienników bez uprawnień root'a (np. przy użyciu sudo)."
+_SecKernBody="Logi jądra mogą zawierać informacje, których atakujący może użyć do identyfikacji i wykorzystania luk jądra, włączając w to adresy pamięci.\n\nJeśli rejestrowanie systemd-journald nie zostało wyłączone, istnieje możliwość utworzenia reguły w /etc/sysctl.d/ w celu uniemożliwienia dostępu do tych dzienników bez uprawnień root'a (np. przy użyciu sudo)."
 _Edit="Edytuj plik konfiguracyjny"
 _Disable="Wyłącz"
 _SecMenuBody="Dostępne jest kilka użytecznych i przyjaznych początkującym użytkownikom poprawek umożliwiających zmiany bezpieczeństwa i wydajności systemu..\n\nWybranie opcji, wyświetli szczegółowe informacje o niej."
-_SecJournBody="systemd-journald gromadzie i przechowuje dzienniki jądra, dzienniki systemowe, wpisy audytu oraz standardowe informacje i błędny usług..\n\nDomyślnie limit stały (nieulotny) dziennika, wynosi 10% wielkości partycji root: root 500G oznacza limit 50G danych przechowywanych w dzienniku /var/log/journal. 50M powinno być wystarczające. Rejestrowanie można również wyłączyć, chociaż rozwiązywanie problemów z systemem może być trudniejsze."
+_SecJournBody="systemd-journald gromadzi i przechowuje dzienniki jądra, dzienniki systemowe, wpisy audytu oraz standardowe informacje i błędy usług.\n\nDomyślnie limit stały (nieulotny) dziennika, wynosi 10% wielkości partycji root: root 500G oznacza limit 50G danych przechowywanych w dzienniku /var/log/journal. 50M powinno być wystarczające. Rejestrowanie można również wyłączyć, chociaż rozwiązywanie problemów z systemem może być trudniejsze."
 _SecCoreBody="Zrzut rdzenia jest zapisem pamięci komputera, gdy proces się zawiesza. \n\nUżyteczny dla programistów, ale nie przeciętnego użytkownika. Zrzuty rdzenia pozbawiają system zasobów, mogą także zawierać poufne dane, takie jak hasła i klucze szyfrowania.\n\nDomyślnie zachowanie systemd polega na generowaniu zrzutów pamięci dla wszystkich procesów w /var/lib/systemd/coredump. To zachowanie może zostać nadpisane przez utworzenie pliku konfiguracyjnego w katalogu /etc/systemd/coredump.conf.d/."
 
 # btrfs
 _btrfsSVTitle="btrfs subwoluminy"
 _btrfsSVBody="Można wtedy utworzyć inne subwoluminy, będące jego odgałęzieniem. \n\nW przeciwnym razie możesz przejść bezpośrednio do opcji montowania."
-_btrfsMSubBody1="Podaj nazwę początkowego woluminu do zamontowania (np. ROOT). Opcje montowania będą wtedy dosteępne. Po zamontowaniu wszystkie subwoluminy utworzone dla"
+_btrfsMSubBody1="Podaj nazwę początkowego woluminu do zamontowania (np. ROOT). Opcje montowania będą wtedy dostępne. Po zamontowaniu wszystkie subwoluminy utworzone dla"
 _btrfsMSubBody2="Będą jego rozgałęzieniem."
 _btrfsSVErrBody="Przerwy i spacje nie są dozwolone. Spróbuj ponownie."
 _btrfsSVBody1="Podaj nazwę subwoluminu"
@@ -74,7 +74,7 @@ _SeeConfOptBody="Wybierz dowolny plik wymieniony poniżej, który ma zostać pod
 _SeeConfErrBody="Plik nie istnieje."
 
 # Pacman
-_PrepPacKey="Odśwież klucze pacmana"
+_PrepPacKey="Odśwież klucze Pacmana"
 
 # LUKS / DM-Crypt / Encryption
 _PrepLUKS="Szyfrowanie LUKS (opcjonalnie)"
@@ -98,7 +98,7 @@ _LuksCipherKey="Po wprowadzeniu określonych flag zostaną one automatycznie uż
 # Logical Volume Management
 _PrepLVM="Zarządzanie woluminem logicznym"
 _PrepLVM2="(opcjonalnie)"
-_LvmMenu="Zarządzanie woluminem logicznym (LVM) pozwala stworzyć z istniejących dysków i partycji 'wirtualne' dyski twardye (Grupy Woluminów - VG) oraz partycje (Woluminy Logiczne - LV).W tym celu musi zostać hapierw utworzona grupa woluminów zawierająca w sobie jeden lub więcej woluminów logicznych.\n\nLVM może również być użyte z zaszyfrowaną partycją, do utworzenia wielu woluminów (np. /root i /home)"
+_LvmMenu="Zarządzanie woluminem logicznym (LVM) pozwala stworzyć z istniejących dysków i partycji 'wirtualne' dyski twardye (Grupy Woluminów - VG) oraz partycje (Woluminy Logiczne - LV).W tym celu musi zostać najpierw utworzona grupa woluminów zawierająca w sobie jeden lub więcej woluminów logicznych.\n\nLVM może również być użyte z zaszyfrowaną partycją, do utworzenia wielu woluminów (np. /root i /home)"
 _LvmCreateVG="Utwórz GW oraz WL"
 _LvmDelVG="Usuń Grupy Woluminów"
 _LvMDelAll="Usuń *WSZYSTKIE* VG, LV, PV"
@@ -139,8 +139,8 @@ _UpdDb="Aktualizowanie bazy..."
 
 # Installer Mirrorlist
 _MirrorlistTitle="Lista serwerów lustrzanych"
-_MirrorBranch=" Wybierz gałąź Manjaro, której chcesz użyć"
-_MirrorlistBody="Lista serwerów lustrzanych (mirrorów) zawiera adresy serwerów używane przez program pacman do instalowania pakietów. Aby znaleźć najszybsze serwery, NAJPIERW wygeneruj mirrory według kraju PRZED uruchomieniem programu RankMirrors, w przeciwnym razie proces potrwa długo.\n\nPlik konfiguracyjny pacman można edytować, aby włączyć multilib i inne repozytoria.\n\nUWAGA: Pliki textowe zamykaj używając '[CTRL] + [x]'. Po edycji użyj [y] by zapisać lub [n] by odrzucić zmiany."
+_MirrorBranch="Wybierz gałąź Manjaro, której chcesz użyć"
+_MirrorlistBody="Lista serwerów lustrzanych (mirrorów) zawiera adresy serwerów używane przez program Pacman do instalowania pakietów. Aby znaleźć najszybsze serwery, NAJPIERW wygeneruj mirrory według kraju PRZED uruchomieniem programu RankMirrors, w przeciwnym razie proces potrwa długo.\n\nPlik konfiguracyjny Pacman można edytować, aby włączyć multilib i inne repozytoria.\n\nUWAGA: Pliki textowe zamykaj używając '[CTRL] + [x]'. Po edycji użyj [y] by zapisać lub [n] by odrzucić zmiany."
 _RankMirrors="Wybierz niestandardowe serwery lustrzane [Spacja] lub [Enter] i potwierdź przyciskiem [OK] znajdującym się na dole."
 _MirrorbyCountry="Generowanie listy mirrorów wg kraju."
 _MirrorEdit="Ręczna edycja listy serwerów lustrzanych"
@@ -150,9 +150,9 @@ _MirrorRankBody="Wyszukiwanie najszybszych serwerów z listy."
 _MirrorNoneBody="Nie znaleziono kopii listy oryginalnych serwerów."
 _MirrorCntryBody="Zostanie wygenerowana lista mirrorów dla wybranego kraju."
 _MirrorGenQ="Użyć wygenerowanej listy dla instalatora?"
-_MirrorConfig="Edycja konfiguracji listy serwerów pacman"
-_MirrorPacman="Edycja konfiguracji pacman"
-_MIrrorPacQ="Użyć zmienionej konfiguracji pacmana dla zainstalowanego systemu? Jeśli tak, plik zostanie skopiowany po zainstalowaniu bazy."
+_MirrorConfig="Edycja konfiguracji listy serwerów Pacman"
+_MirrorPacman="Edycja konfiguracji Pacman"
+_MIrrorPacQ="Użyć zmienionej konfiguracji Pacmana dla zainstalowanego systemu? Jeśli tak, plik zostanie skopiowany po zainstalowaniu bazy."
 
 # Set Keymap (vconsole)
 _VCKeymapTitle="Ustaw konsolę"
@@ -163,15 +163,15 @@ _VCKeymapBody="Konsola wirtualna jest powłoką shell w środowisku nie-graficzn
 _XkbmapBody="Wybierz mapowanie klawiszy dla środowiska graficznego."
 
 # Set Locale
-_localeBody="Lokalizacje określają wyświetlane języki, godziny, daty, itd.\n\nStosowany format to językKRAJ (na przykład en_US to angielski, Stany Zjednoczone; en_GB to angielski, Wielka Brytania)."
+_localeBody="Lokalizacje określają wyświetlane języki, godziny, daty, itd.\n\nStosowany format to język_KRAJ (na przykład en_US to angielski, Stany Zjednoczone; en_GB to angielski, Wielka Brytania)."
 
 # Set Timezone
 _TimeZBody="Strefa czasowa służy do prawidłowego ustawienia zegara systemowego."
-_TimeSubZBody="WYbierz miasto najbliżej ciebie."
+_TimeSubZBody="Wybierz miasto najbliżej ciebie."
 _TimeZQ="Ustaw strefę czasową:"
 
 # Set Hardware Clock
-_HwCBody="UTC jest uniwersalnym standardem czasu i jest zalecany, poza podwójnym uruchamianiem z systemem Windows."
+_HwCBody="UTC jest uniwersalnym standardem czasu i jest zalecanym ustawieniem; chyba, że użytkownik korzysta również z systemu Windows na tym komputerze."
 
 # Generate FSTAB
 _FstabBody="Plik FSTAB (File System TABle) ustala jakie dyski i partycje mają być zamontowane i w jaki sposób użyte\n\nUUID (Universally Unique IDentifier) jest rekomendowany.\n\nJeśli wcześniej nie nadano partycjom etykiet, zostaną w tym celu użyte nazwy nośników."
@@ -206,11 +206,11 @@ _MntStatusTitle="Status montowania"
 _MntStatusSucc="Montowanie zakończone sukcesem!"
 _MntStatusFail="Błąd montowania!"
 _WarnMount1="UWAGA: Partycje mogą zostać zamontowane bez formatowania, przez wybór"
-_WarnMount2="opcji wymienionej na góze menu systemu plików.\n\nUpewnij się odnośnie sowich decyzji względem montowania i formatowania. Nie pojawią się żadne ostrzeżenia, za wyjątkiej partycji rozruchowej UEFI."
+_WarnMount2="opcji wymienionej na szczycie menu systemu plików.\n\nUpewnij się odnośnie sowich decyzji względem montowania i formatowania. Nie pojawią się żadne ostrzeżenia, za wyjątkiej partycji rozruchowej UEFI."
 
 # Select Device (installation)
 _DevSelTitle="Wybierz urządzenie"
-_DevSelBody="Urządzenia(/dev/) to dostępne dyski i pamięci USB, na których można przeprowadzić instalację. pierwszy oznaczony jest jako  /sda, drugi /sdb itd..\n\nJeśli używasz pendrive'a do uruchaminia Architect'a, uważaj, ponieważ będzie or również wymieniony."
+_DevSelBody="Urządzenia(/dev/) to dostępne dyski i pamięci USB, na których można przeprowadzić instalację. Pierwszy oznaczony jest jako  /sda, drugi /sdb itd..\n\nJeśli używasz pendrive'a do uruchaminia Architect'a, uważaj, ponieważ będzie on również wymieniony."
 
 # Partitioning Tool
 _PartToolTitle="Narzędzie partycjonowania"
@@ -225,7 +225,7 @@ _PartErrBody="System BIOS wymaga przynajmniej jednej partycji (ROOT).\n\nSystem 
 
 # File System
 _FSTitle="Wybierz system plików"
-_FSBody="Zalecany jest Ext4. Nie wszystkie systemy plików są właściwe w przypadku partycji Root lub Boot. Każda ma różne cechy i ograniczenia."
+_FSBody="Zalecany jest system plików Ext4. Nie wszystkie systemy plików są właściwe w przypadku partycji Root lub Boot. Każda ma różne cechy i ograniczenia."
 _FSSkip="Pomiń / Żadne"
 _FSMount="Zamontuj"
 _FSWarn1="Dane na"
@@ -244,7 +244,7 @@ _SelUefiBody="Wybierz partycję UEFI. Jest to specjalna partycja do uruchamiania
 
 # Format UEFI
 _FormUefiBody="Partycja UEFI"
-_FormUefiBody2="Zostałą już sformatowana\n\nRSformatować ponownie? Operacja ta usunie wszystkie dane znajdujące się już na tej partycji."
+_FormUefiBody2="została już sformatowana\n\nSformatować ponownie? Operacja ta usunie wszystkie dane znajdujące się już na tej partycji."
 
 # UEFI Mountpoint
 _MntUefiBody="Wybierz punkt montowania UEFI."
@@ -262,7 +262,7 @@ _ExtErrBody="Nie można zamontować partycji z powodu problemu z nazwą punktu m
 _WarnInstBase="Na tej partycji została zainstalowana już baza Manjaro.\nKontynuować mimo wszystko?"
 _InstBseTitle="Zainstaluj system podstawowy"
 _InstFail="Instalacja zakończona niepowodzeniem."
-_InstBseBody="Standard: zalecane dla początkujących. Wybierz maksymalnie dwa jądra (linux i linux-lts) i opcjonalnie grupę pakietu base-devel. Sudo, btrfs-progs, f2fs-tools również zostaną zainstalowane.\n\nZaawansowane: Wybierz maksymalnie cztery jądra (linux, lts, grsec, zen) i kontroluj poszczególne pakiety base-devel. Do Virtualbox i NVIDIA może być wymagana dodatkowa konfiguracja dla grsec i zen. \n\nUWAGA: Jeśli nie zostałał jużzainstalowany, należy wybrać co najmniej jeden kernel."
+_InstBseBody="Standard: zalecane dla początkujących. Wybierz maksymalnie dwa jądra (linux i linux-lts) i opcjonalnie grupę pakietu base-devel. Sudo, btrfs-progs, f2fs-tools również zostaną zainstalowane.\n\nZaawansowane: Wybierz maksymalnie cztery jądra (linux, lts, grsec, zen) i kontroluj poszczególne pakiety base-devel. Do Virtualbox i NVIDIA może być wymagana dodatkowa konfiguracja dla grsec i zen. \n\nUWAGA: Jeśli nie zostałał już zainstalowany, należy wybrać co najmniej jeden kernel."
 _InstStandBseBody="Podstawowa grupa pakietów zostanie zainstalowana automatycznie. Grupa pakietów base-devel jest potrzebna do korzystania z Arch User Repository (AUR)."
 _InstStandBase="Standardowa instalacja"
 _InstAdvBase="Instalacja zaawansowana"
@@ -272,7 +272,7 @@ _InstGrub="Zainstaluj Grub"
 
 # Install BIOS Bootloader
 _InstBiosBtTitle="Zainstaluj program rozruchowy BIOS"
-_InstGrubBody="Urządzenie do zainstalowania GRUB, będzie można wybrać w następnym kroku.\n\nOs-prober jest wymagany, by wykryć inne systemy zainstalowane już na istniejących partycjach."
+_InstGrubBody="Urządzenie do zainstalowania GRUB będzie można wybrać w następnym kroku.\n\nOs-prober jest wymagany, by wykryć inne systemy zainstalowane już na istniejących partycjach."
 _InstBiosBtBody="Grub2 jest zalecany dla początkujących. Można również wybrać urządzenie instalacyjne.\n\nSyslinux jest lżejszą i prostszą alternatywą, która działa tylko z systemami plików ext / btrfs."
 _InstSysTitle="Zainstaluj Syslinux"
 _InstSysBody="Zainstalować Syslinux w Master Boot Record (MBR) czy Root (/)?"
@@ -280,8 +280,8 @@ _InstSysBody="Zainstalować Syslinux w Master Boot Record (MBR) czy Root (/)?"
 # Install UEFI Bootloader
 _InstUefiBtTitle="Zainstaluj program rozruchowy UEFI"
 _InstUefiBtBody="Zainstaluj program rozruchowy UEFI GRUB"
-_SetBootDefBody="Niektóre oprogramowanie UEFI może nie wykryć bootloadera, chyba że został ustawiony jako domyślne, kopiując jego efi do"
-_SetBootDefBody2="i zmieniając nazwę na bootx64.efi.\n\nJest to zalecane, chyba że używasz domyślnego programu rozruchowego lub zamierzasz używać wielu bootloaderów.\n\nSet bootloader as default?"
+_SetBootDefBody="Niektóre oprogramowanie UEFI może nie wykryć bootloadera, chyba że został on ustawiony jako domyślny, kopiując jego efi do"
+_SetBootDefBody2="i zmieniając nazwę na bootx64.efi.\n\nJest to zalecane, chyba że używasz domyślnego programu rozruchowego lub zamierzasz używać wielu bootloaderów.\n\nCzy ustawić bootloader jako domyślny?"
 
 # efi file set for Grub
 _SetDefDoneBody="został ustawiony jako domyślny program ładujący."
@@ -305,14 +305,14 @@ _DEInfoBody="Można zainstalować wiele środowisk.\n\nGnome i LXDE są wyposaż
 
 # Install DE Menu
 _InstDETitle="Zainstaluj środowisko pulpitu"
-_DesktopInstalled="Manjaro zostało już zainstalowane na tej partycji!\nKolejna instalacja w tym samym miejscu, może skutkować konfliktem pakietów i innymi problemami.\nZaleca się formatowanie partycji o rozpoczęcie świeżej instalacji.\n\nZignorować i kontynuować mimo to?"
+_DesktopInstalled="Manjaro zostało już zainstalowane na tej partycji!\nKolejna instalacja w tym samym miejscu, może skutkować konfliktem pakietów i innymi problemami.\nZaleca się sformatowanie partycji i rozpoczęcie świeżej instalacji.\n\nZignorować i kontynuować mimo to?"
 _InstManDEBody="Należy pamiętać"
 _ErrInit="Niewłaściwy system init"
 _WarnInit="jest obecnie dostępny tylko dla systemd.\nProszę dostosować wybór:"
 _DiffPro="Wybierz inny profil"
 _InstSystd="Zainstaluj bazę systemd"
 _InstDEBody="Środowiska graficzne i ich powiązane grupy pakietów są wymienione w pierwszej kolejności."
-_ExtraTitle=" Pełna czy minimalna"
+_ExtraTitle="Pełna czy minimalna"
 _ExtraBody="To wydanie jest oferowane w dwóch wersjach"
 
 # Install Common Packages
@@ -320,14 +320,14 @@ _InstComTitle="Zainstaluj wspólne pakiety"
 _InstComBody="Niektóre środowiska wymagają dodatkowych pakietów, aby działały lepiej."
 
 # Display Manager
-_DmChTitle="Zainstaluj menadzęra wyśiwetlania"
-_DmChBody="gdm wyświetla Gnome-shell jako zależność. Sddm jest zalecany dla KDE Plazma. Lightdm będzie zawierać lightdm-gtk-greeter. Slim nie jest już wspierany."
+_DmChTitle="Zainstaluj menadżera wyświetlania"
+_DmChBody="gdm wyświetla Gnome-shell jako zależność. sddm jest zalecany dla KDE Plazma. lightdm będzie zawierać lightdm-gtk-greeter. slim nie jest już wspierany."
 _DmDoneBody="Menedżer wyświetlania został zainstalowany i włączony."
 
 # Network Manager
 _InstNMTitle="Zainstaluj menadżera sieci"
 _InstNMBody="Zaleca się menadżera sieci, zwłaszcza dla połączeń bezprzewodowych i PPPoE / DSL."
-_InstNMErrBody="Menedżer sieci został zainstalowany i włączony."
+_InstNMErrBody="Menadżer sieci został zainstalowany i włączony."
 
 # Welcome
 _WelTitle="Witaj w"
@@ -393,7 +393,7 @@ _InstGrMenuDM="Zainstaluj manadżera wyświetlania"
 # Networking Menu
 _InstNMMenuTitle="Zainstaluj możliwości sieciowe"
 _InstNWDrv="Zainstaluj sterowniki sieciowe"
-_SelNWDrv="Wybierz streownik sieciowy"
+_SelNWDrv="Wybierz sterownik sieciowy"
 _InfoNWKernel="Obsługa karty sieciowej jest wbudowana w jądro,\nnie trzeba niczego instalować."
 _InstNMMenuBody="Dodatkowe pakiety mogą być wymagane w przypadku urządzeń sieciowych i bezprzewodowych. Niektóre urządzenia bezprzewodowe mogą wymagać dodatkowego oprogramowania do pracy."
 _InstNMMenuPkg="Zainstaluj pakiety urządzeń bezprzewodowych"
@@ -403,7 +403,7 @@ _InstNMMenuPkgBody="Kluczowe pakiety wifi zostaną wstępnie sprawdzone, jeśli 
 _SeeWirelessDev="Wyświetl urządzenie bezprzewodowe (opcjonalne)"
 _WirelessShowTitle="Urządzenie bezprzewodowe"
 _WirelessErrBody="Nic nie znaleziono."
-_InstCupsBody="CUPS (Common Unix Printing System) jest systemem standardowym otwartoźródłowym systemem drukowania opracowanym przez firmę Apple Inc. dla systemów OS X i innych systemami operacyjnymi UNIX. Samba umożliwia udostępnianie plików i drukarek między systemami Linux i Windows."
+_InstCupsBody="CUPS (Common Unix Printing System) jest systemem standardowym otwartoźródłowym systemem drukowania opracowanym przez firmę Apple Inc. dla systemów OS X i innych systemów operacyjnych UNIX. Samba umożliwia udostępnianie plików i drukarek między systemami Linux i Windows."
 _InstCupsQ="Uruchomić org.cups.cupsd.service na zainstalowanym systemie?"
 
 # Install Multimedia Support Menu
@@ -440,41 +440,41 @@ _CloseInstBody="Zamknąć instalator?"
 _LogInfo="Czy chcesz skopiować dziennik instalacyjny do zainstalowanego systemu?\nZostanie przeniesiony do"
 
 # Chroot
-_ChrootReturn="\nZostaniesz przeniesiony w chroot zainstalowanego systemu. Możesz tu korzystać z niego tak, jakbyś uruchomił właściwy system.\n\nWprowad \"exit\", aby opuścić chroot i \"fg\", aby wrócić do instalatora.\n "
+_ChrootReturn="\nZostaniesz przeniesiony w chroot zainstalowanego systemu. Możesz tu korzystać z niego tak, jakbyś uruchomił właściwy system.\n\nWprowadź \"exit\", aby opuścić chroot i \"fg\", aby wrócić do instalatora.\n "
 _EnterChroot="Wejdź w swoją instalację"
-_ChrootTitle="Chroot into Installation" # translate me !
+_ChrootTitle="Zaloguj się do nowozainstalowanego systemu za pomocą chroot"
 
 #Refind
-_InstRefindTitle="Zainstaluj refind"
-_InstRefindBody="Ta opcja instaluje refind i konfiguruje automatyczne wykrywanie jąder. Nie obsługuje zaszyfrowanego /boot i mikrokodu intel. Wymaga to ręcznego uruchamiania lub użycia innego bootloadera."
-_RefindReady="Pomyślnie zainstalwano refind"
-_bootloaderInfo="Refind może działać samodzielnie lub razem z innym bootloaderem jako menu graficzne. Wykrywa wszystkie opcje logowania przy uruchomieniu.\nGrub wspiera zaszyfrowane partycje /boot i wykrywa wszystkie uruchamialne systemy podczas aktualizacji. Może uruchamiać pliki .iso z dysku twardego i pozwala na uruchamianie z migawek btrfs.\nSystemd-boot jest lekki, prosty i częściowo zautomatyzowany. Wykrywa automatycznie system Windows, ale nie jest przystosowany do multi-bootu."
+_InstRefindTitle="Zainstaluj rEFInd"
+_InstRefindBody="Ta opcja instaluje rEFInd i konfiguruje automatyczne wykrywanie jąder. Nie obsługuje zaszyfrowanego /boot i mikrokodu intel. Wymaga to ręcznego uruchamiania lub użycia innego bootloadera."
+_RefindReady="Pomyślnie zainstalwano rEFInd"
+_bootloaderInfo="rEFInd może działać samodzielnie lub razem z innym bootloaderem jako menu graficzne. Wykrywa wszystkie opcje logowania przy uruchomieniu.\nGrub wspiera zaszyfrowane partycje /boot i wykrywa wszystkie uruchamialne systemy podczas aktualizacji. Może uruchamiać pliki .iso z dysku twardego i pozwala na uruchamianie z migawek btrfs.\nSystemd-boot jest lekki, prosty i częściowo zautomatyzowany. Wykrywa automatycznie system Windows, ale nie jest przystosowany do multi-bootu."
 
 # Systemd-boot
 _InstSystdBBody="Ta opcja zainstaluje systemd-boot i utworzy wpisy uruchamiające dla zainstalowanych jąder. Ten bootloader wymaga lokalizacji jąder na partycji UEFI. Można to osiągnąć montując partycję UEFI pod /boot."
 _SystdBReady="Systemd-boot został zainstalowany"
 
 #Meta menu
-_InstCrMenuTitle="Zainstaluj CLI system."
+_InstCrMenuTitle="Zainstaluj system CLI"
 _InstCrMenuBody="Ta opcja zainstaluje podstawową wersję systemu Manjaro bez środowiska graficznego. Kroki od 1 do 3 są wymagane, reszta jest opcjonalna i nie jest wymagana dla prawidłowego działania systemu."
-_InstDsMenuTitle="Zainstaluj desktop system"
+_InstDsMenuTitle="Zainstaluj system stacjonarny"
 _InstDsMenuBody="Ta opcja zainstaluje pełną wersję systemu Manjaro wraz ze środowiskiem graficznym. Kroki od 1 do 3 są wymagane, reszta jest opcjonalna i nie jest wymagana dla prawidłowego działania systemu."
 _InstCsMenuTitle="Zainstaluj system z własnymi ustawieniami"
 _InstCsMenuBody="Ta opcja zainstaluje podstawową wersję Manjaro bez środowiska graficznego. Kroki od 1 do 4 są wymagane, reszta jest opcjonalna i nie jest wymagana dla prawidłowego działania systemu."
-_MMNewBody="Po zamontowaniu partycji w dziale przygotowań, wybierz swój typ instalacji. Jeżeli nie jesteś pewien, która wersja będzie dla Ciebie odpowiednia, wybierz Desktop system w celu instalacji domyślnej, standardowej wersji Manjaro."
+_MMNewBody="Po zamontowaniu partycji w sekcji przygotowań, wybierz swój typ instalacji. Jeżeli nie jesteś pewien, która wersja będzie dla Ciebie odpowiednia, wybierz system stacjonarny w celu instalacji domyślnej, standardowej wersji Manjaro."
 
 #System rescue
-_SysRescTitle="System Rescue" # translate me !
-_SysRescBody="This menu is collection of tools to help restore broken system to full functionality." # translate me !
-_RmPkgs="Remove packages" # translate me !
-_RmPkgsMsg="Search packages by typing their name.  
-Press tab to select multiple packages" # translate me !
-_RmPkgsPrmpt="Package to remove" # translate me !
-_AddPkgsPrmpt="Package" # translate me !
-_AddPkgs="Choose any extra packages you would like to add. 
-Search packages by typing their name. 
-Press tab to select multiple packages and proceed with Enter." # translate me !
+_SysRescTitle="Odzyskiwanie systemu"
+_SysRescBody="To menu jest zbiorem narzędzi, pomocnych przy odzyskiwaniu uszkodzonego systemu."
+_RmPkgs="Usuń pakiety"
+_RmPkgsMsg="Wyszukaj pakiety, przez wpisanie ich nazwy.
+Wciśnij [tab], by zaznaczyć wiele pakietów."
+_RmPkgsPrmpt="Pakiety do usunięcia"
+_AddPkgsPrmpt="Pakiet"
+_AddPkgs="Wybierz dodatkowe pakiety, które chciałbyś zainstalować. 
+Wyszukaj pakiety, przez wpisanie ich nazwy.
+Wciśnij [tab], by zaznaczyć wiele pakietów i [enter], by kontynuować."
 
 #Extra
-_ExtraTitle="Extra packages" # translate me !
-_ExtraBody="Would you like to add any additional packages to your installation?" # translate me !
+_ExtraTitle="Dodatkowe pakiety"
+_ExtraBody="Czy chciałbyś dodać jakieś dodatkowe pakiety do swojej instalacji?"
