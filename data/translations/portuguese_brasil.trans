@@ -6,7 +6,7 @@
 ## Escrito por Carl Duff (27-Fev-2016)
 ##
 ## Tradutores - Fábio Nogueira <fnogueira@gnome.org>
-##              GrayJack <gr41.j4ck@gmail.com> (21-07-2017)
+##              GrayJack <gr41.j4ck@gmail.com>
 
 # Genérico
 _UseSpaceBar="Utilize [barra de espaço] para des/marcar as opções listadas."
@@ -249,12 +249,12 @@ _FormUefiBody="A partição UEFI"
 _FormUefiBody2="já foi formatado.\n\nReformatar? Isso apagará todos os dados da partição."
 
 # Ponto de montagem UEFI
-_MntUefiBody="Select UEFI Mountpoint.\n\n
-/boot/efi is recommended for multiboot systems.\n
-/boot is required for systemd-boot." # translate me !
-_MntUefiCrypt="Select UEFI Mountpoint.\n\n
-/boot/efi is recommended for multiboot systems and required for full disk encryption. Encrypted /boot is supported only by grub and can lead to slow startup.\n\n
-/boot is required for systemd-boot and for refind when using encryption." # translate me !
+_MntUefiBody="Selecione o ponto de montagem UEFI.\n\n
+/boot/efi é recomendado para sistemas com multiboot.\n
+/boot é requerido para systemd-boot."
+_MntUefiCrypt="Selecione o ponto de montagem UEFI.\n\n
+/boot/efi é recomendade para sistemas multiboot e requerido para criptografia de disco inteiro. /boot criptografado é suportado apenas por grub e pode levar a inícialização mais lenta.\n\n
+/boot é requedifo para systemd-boot e para refind quando usando criptografia."
 
 # Partições Extras
 _ExtPartBody="Selecionar partições adicionais em qualquer ordem, ou 'Feito' para finalizar."
@@ -471,7 +471,7 @@ _InstCsMenuBody="Este instala a base do sistema do Manjaro sem ambiente gráfico
 _MMNewBody="Após montar as partições na seção de preparação, selecione seu tipo de instalação. Se você não tem certeza, escolha sistema Desktop para Majaro padrão."
 
 #System rescue
-_SysRescTitle="Sistema de Resgate"
+_SysRescTitle="Recuperação do sistema"
 _SysRescBody="Este menu é uma coleção de ferramentas para ajudar a recuperar sistemas quebrados a sua total funcionalidade."
 _RmPkgs="Remover pacotes"
 _RmPkgsMsg="Procurar pacotes pelo nome.
@@ -483,14 +483,14 @@ Procurar pacotes pelo nome.
 Pressione tab para selecionar multiplos pacotes e prosseguir com Enter."
 
 #Extra
-_ExtraTitle="Pacotes extra"
+_ExtraTitle="Pacotes extras"
 _ExtraBody="Você gostaria de adicionar qualquer pacote a mais em sua instalação?"
 
-_TweaksMenuTitle="System tweaks" # translate me !
-_PerfBody="Settings to configure your system to a specific workload" # translate me !
-_TweaksBody="Various configuration options" # translate me !
-_PerfMenu="Performance" # translate me !
-_SetSchd="I/O schedulers" # translate me !
-_SetSwap="Swap configuration" # translate me !
-_AutologEnable="Enable automatic login" # translate me !
-_HibrnEnable="Enable hibernation" # translate me !
+_TweaksMenuTitle="Ajuste do Sistema"
+_PerfBody="Configurar seu sistema para uma carga de trabalho específica"
+_TweaksBody="Várias opções de configurações"
+_PerfMenu="Performance"
+_SetSchd="Agendador de I/O"
+_SetSwap="Configurações de Swap"
+_AutologEnable="Habilitar login automático"
+_HibrnEnable="Habilitar hibernação"
