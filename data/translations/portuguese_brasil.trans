@@ -494,8 +494,7 @@ _SetSchd="Agendador de I/O"
 _SetSwap="Configurações de Swap"
 _AutologEnable="Habilitar login automático"
 _HibrnEnable="Habilitar hibernação"
-_LogMenu="View system logs" # translate me !
-_LogBody="Parse system logs with fzf" # translate me !
-_DataRecMenu="Data recovery" # translate me !
-_DataRecBody="Various tools for data backup and recovery" # translate me !
-
+_LogMenu="Visualizar logs do sistema"
+_LogBody="Analizar logs do sistema com fzf"
+_DataRecMenu="Recuperação de dados"
+_DataRecBody="Várias ferramentas para backup e recuperação de dados"
