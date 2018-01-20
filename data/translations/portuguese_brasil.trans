@@ -253,8 +253,8 @@ _MntUefiBody="Selecione o ponto de montagem UEFI.\n\n
 /boot/efi é recomendado para sistemas com multiboot.\n
 /boot é requerido para systemd-boot."
 _MntUefiCrypt="Selecione o ponto de montagem UEFI.\n\n
-/boot/efi é recomendade para sistemas multiboot e requerido para criptografia de disco inteiro. /boot criptografado é suportado apenas por grub e pode levar a inícialização mais lenta.\n\n
-/boot é requedifo para systemd-boot e para refind quando usando criptografia."
+/boot/efi é recomendado para sistemas multiboot e requerido para criptografia de disco inteiro. /boot criptografado é suportado apenas por grub e pode levar a inicialização mais lenta.\n\n
+/boot é requedido para systemd-boot e para refind quando usando criptografia."
 
 # Partições Extras
 _ExtPartBody="Selecionar partições adicionais em qualquer ordem, ou 'Feito' para finalizar."
@@ -486,7 +486,7 @@ Pressione tab para selecionar multiplos pacotes e prosseguir com Enter."
 _ExtraTitle="Pacotes extras"
 _ExtraBody="Você gostaria de adicionar qualquer pacote a mais em sua instalação?"
 
-_TweaksMenuTitle="Ajuste do Sistema"
+_TweaksMenuTitle="Ajustes do Sistema"
 _PerfBody="Configurar seu sistema para uma carga de trabalho específica"
 _TweaksBody="Várias opções de configurações"
 _PerfMenu="Performance"
