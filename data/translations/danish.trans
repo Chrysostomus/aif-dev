@@ -10,7 +10,7 @@
 ##
 
 # Generic
-_UseSpaceBar="Brug [Mellemrum] til at ændre valg."
+_UseSpaceBar="Brug [MELLEMRUM] til at ændre valg."
 _AlreadyInst="Nuværende installation:"
 _InstPkg="Installer"
 _All="Alle"
@@ -25,12 +25,12 @@ _SelLang="Sprogvalg"
 _Lang="Sprog"
 _Keep="Behold"
 _Change="Skift"
-_NoCon="Internet forbindelse er ikke aktiv"
+_NoCon="Internetforbindelse er ikke aktiv"
 _EstCon="Opret forbindelse?"
 _Config="Opsæt"
-_ApplySet="Aktiverer sprog valget ..."
+_ApplySet="Aktiverer sprogvalget ..."
 _ChMenu="Vælg menu"
-_ChMenuBody="Den almindelige menu guider dig gennem installation af et forud konfigureret Manjaro system med nogle ekstra valg.\n\nDen udvidede menu kan bruges til installation af system uden ændringer eller Manjaro udviklingsprofiler og indeholder også ekstra konfigation og tilvalg af netværk multimedia komponenter og desuden nogle udvidede muligher for system og sikkerheds opsætning."
+_ChMenuBody="Den almindelige menu guider dig gennem installation af et forud konfigureret Manjaro system med nogle ekstra valg.\n\nDen udvidede menu kan bruges til installation af system uden ændringer eller Manjaro udviklingsprofiler og indeholder også ekstra konfiguration og tilvalg af netværk multimedie-komponenter og desuden nogle udvidede muligheder for system og sikkerheds opsætning."
 
 # Security and Tweaks
 _SecMenuTitle="Sikkerhed og Tilpasning"
@@ -42,7 +42,7 @@ _Edit="Ret opsætning"
 _Disable="Deaktiver"
 _SecMenuBody="Her findes nogle justeringer du kan lave for at forbedre systemets sikkerhed og ydelse .\n\nVed at vælge en mulighed vises oplysninger om den."
 _SecJournBody="systemd-journald indsamler og opbevarer kernelog, systemlog, audit registreringer, og standard meddelelser og fejl ved services.\n\nSom standard, er den permanente journal's størrelse begrænset til 10% rodsystemets størrelse: en 500G root betyder en 50G begrænsning på data opbevaret in /var/log/journal. 50M skulle være nok. Logging kan også deaktiveres; Dette gør afhjælpning af systemproblemer endog meget bøvlet."
-_SecCoreBody="Et coredump er en registrering af computerens RAM når en proces bryder ned.\n\nBrugbart for udviklere, men ubrugeligt for almindelig bruger. Coredump vil bruge unødige system resourcer og kan også indeholde følsomme data som adgangskoder og krypteringsnøgler.\n\nSom standard danner systemd core dumps for alle processer i /var/lib/systemd/coredump. Denne standard ændres ved at oprette en konfigurations fil i /etc/systemd/coredump.conf.d/ mappen."
+_SecCoreBody="Et coredump er en registrering af computerens RAM når en proces bryder ned.\n\nBrugbart for udviklere, men ubrugeligt for almindelig bruger. Coredump vil bruge unødige system ressourcer og kan også indeholde følsomme data som adgangskoder og krypteringsnøgler.\n\nSom standard danner systemd core dumps for alle processer i /var/lib/systemd/coredump. Denne standard ændres ved at oprette en konfigurations fil i /etc/systemd/coredump.conf.d/ mappen."
 
 # btrfs
 _btrfsSVTitle="btrfs Partionering"
@@ -52,7 +52,7 @@ _btrfsMSubBody2="og vil være i forhold til denne."
 _btrfsSVErrBody="Blanke tegn eller mellemrum må ikke anvendes.\nPrøv venligst igen."
 _btrfsSVBody1="Indtast navn på partition"
 _btrfsSVBody2="der oprettes på"
-_btrfsSVBody3="Denne process gentages indtil et jokertegn (*) angives som partitionsnavn.\n\nOprettede partitioner:"
+_btrfsSVBody3="Denne proces gentages indtil et jokertegn (*) angives som partitionsnavn.\n\nOprettede partitioner:"
 _btrfsMntBody="Brug [MELLEMRUM] for at ændre monteringsvalg. Gennemse dem omhyggeligt. Vælg ikke flere versioner af det samme valg."
 _btrfsMntConfBody="Bekræft dine valg:"
 
@@ -67,7 +67,7 @@ _ErrNoBase="Manjaro Base skal installeres først."
 _ErrNoKernel="Mindst en kerne skal vælges. I tvivl vælg linux49"
 
 # Vbox Installations
-_VBoxInstTitle="VirtualBox Installation"
+_VBoxInstTitle="VirtualBox-installation"
 _VBoxInstBody="Hvis VirtualBox gæste-moduler IKKE indlæses (f.eks. lav opløsning og rullepaneler efter opstart), vil følgende sekvens løse problemet (skal ikke gentages):\n\n$ su\n# depmod -a\n# modprobe -a vboxvideo vboxguest vboxsf\n# reboot"
 
 # Select Config Files
@@ -84,8 +84,8 @@ _LuksMenuBody="Enheder og partitioner krypteret med dm_crypt kan ikke anvendes f
 _LuksMenuBody2="En ukrypteret boot partition eller 'logical volume management' (LVM) skal bruges, medmindre BIOS Grub anvendes."
 _LuksMenuBody3="Ved at vælge Automatisk bliver der brugt standardindstillinger for kryptering, og dette anbefales til uerfarne brugere. Det er muligt at angive krypteringsmetode og nøglestørrelse manuelt."
 _LuksOpen="Åbning af krypteret partition"
-_LuksErr="Ingen LUKS-krypterede partitioner funcet."
-_LuksOpenBody="Angiv et navn for til den krypterede enhed. Det er ikke nødvendigt at angive prefix som /dev/mapper/. Et eksempel vises."
+_LuksErr="Ingen LUKS-krypterede partitioner fundet."
+_LuksOpenBody="Angiv et navn for til den krypterede enhed. Det er ikke nødvendigt at angive præfiks som /dev/mapper/. Et eksempel vises."
 _LuksEncrypt="Automatisk LUKS kryptering"
 _LuksEncryptAdv="Angiv nøglestørrelse og krypteringsmetode"
 _LuksEncryptBody="Vælg en partition til kryptering"
@@ -133,7 +133,7 @@ _DevShowOpt="Vis enhedsliste (valgfrit)"
 # Check Requirements
 _ChkTitle="Installationskontrol"
 _ChkBody="Sikrer at installation afvikles som root og at der er en aktiv internetforbindelse.\nVent venligst..."
-_RtFailBody="Installationsprogrammet skal afvikles som root. Lukker installaton."
+_RtFailBody="Installationsprogrammet skal afvikles som root. Lukker installation."
 _ConFailBody="Der er ingen aktiv internetforbindelse. Lukker installation."
 _ReqMetTitle="Alt OK"
 _ReqMetBody="Alt er OK - installation kan forsætte."
@@ -160,7 +160,7 @@ _MIrrorPacQ="Brug denne opsætning til det færdige system? Hvis ja, vil filen b
 # Set Keymap (vconsole)
 _VCKeymapTitle="Vælg Terminal Tastatur Layout"
 _DefKeymap="Standard tastatur for det valgte sprog er"
-_VCKeymapBody="En Terminal er en kommando prompt i et ikke-grafisk miljø. Tastatur layout er uafhængigt af Skrivebord"
+_VCKeymapBody="En Terminal er en kommandoprompt i et ikke-grafisk miljø. Tastatur layout er uafhængigt af Skrivebord"
 
 # Set Xkbmap (environment)
 _XkbmapBody="Vælg Skrivebord Tastatur Layout"
@@ -221,7 +221,7 @@ _PartToolBody="En automatisk opsætning er tilgængelig for uerfarne brugere. El
 _PartOptAuto="Automatisk Diskopsætning"
 _PartOptWipe="Sikker Sletning af Enhed (valgfrit/tidskrævende)"
 _AutoPartWipeBody1="ADVARSEL: ALLE data på"
-_AutoPartWipeBody2="vil blive ødelagt med kommandoen 'wipe -Ifre'. Denne process kan tage LANG TID afhængigt af størrelsen på enheden.\n\nVil du fortsætte?"
+_AutoPartWipeBody2="vil blive ødelagt med kommandoen 'wipe -Ifre'. Denne proces kan tage LANG TID afhængigt af størrelsen på enheden.\n\nVil du fortsætte?"
 
 # Partitioning Error
 _PartErrBody="BIOS systemer kræver mindst en partition (ROOT).\n\nUEFI systemer kræver mindst to partitioner (ROOT and UEFI)."
@@ -240,7 +240,7 @@ _SelRootBody="Første parttion er ROOT ('/'). Dette er hvor Manjaro skal install
 # Select SWAP
 _SelSwpBody="Vælg SWAP Partition. Hvis du vælger Swapfile, vil den blive sat til samme størrelse som mængden af hukommelse."
 _SelSwpNone="Ingen"
-_SelSwpFile="Swapfile"
+_SelSwpFile="Swapfil"
 
 # Select UEFI
 _SelUefiBody="Vælg UEFI Partition. Denne er en speciel partition til UEFI systemer."
@@ -272,8 +272,8 @@ _InstBseTitle="Installer Base"
 _InstFail="Installation fejlede."
 _InstBseBody="Standard: anbefalet for uerfarne. Vælg op til to kerner (linux and linux-lts) og om nødvendigt pakke-gruppen base-devel. Programmerne sudo, btrfs-progs, f2fs-tools installeres også.\n\nAvanceret: Vælg op til fire kerner (linux, lts, grsec, zen) og udvælg individuelle pakker fra base/base-dev gruppen. Yderligere opsætning af grsec og zen kan være nødvendig for Virtualbox and NVIDIA.\n\nBEMÆRK: Med undtagelse af allerede installerede kerner, skal mindst en kerne vælges."
 _InstStandBseBody="Pakke-gruppen base installeres automatisk. Pakke-gruppen base-devel er nødvendig hvis det er hensigten at anvende Arch User Repository (AUR)."
-_InstStandBase="Standard Installation"
-_InstAdvBase="Avanceret Installation"
+_InstStandBase="Standardinstallation"
+_InstAdvBase="Avanceret installation"
 _InstAdvBseBody="ADVARSEL: Dette er kun for erfarne brugere. Brugere med mindre erfaring bør vælge 'Standard' installation."
 _InstAdvWait="Indsamler pakke oplysninger."
 _InstGrub="Installer Grub"
@@ -295,7 +295,7 @@ _SetBootDefBody2="og derefter omdøbe den til bootx64.efi.\n\nDet anbefales at g
 _SetDefDoneBody="er oprettet som standard bootloader."
 
 # Graphics Card Menu
-_GCtitle="Grafik-kort Menu"
+_GCtitle="Grafikkort Menu"
 _GCBody="Vælg Nouveau hvis det er et ældre NVIDIA kort. Hvis dit kort ikke er på listen vælges 'Ukendt/Standard'."
 _GCUnknOpt="Ukendt / Standard"
 
@@ -305,20 +305,20 @@ _NvidiaConfBody="En grundlæggende NVIDIA konfiguration er oprettet. Kontroller 
 
 # Graphics Card Detection
 _GCDetTitle="Fundet"
-_GCDetBody="Er dit grafik-kort eller virtualiserings software"
-_GCDetBody2="-Vælg 'JA' for at anvende kortets OPEN-SOURCE driver.\n\n-Vælg 'NEJ' for at gå til grafik-kort menu som indeholder NVIDIA's egne drivere."
+_GCDetBody="Er dit grafikkort eller virtualiseringssoftware"
+_GCDetBody2="-Vælg 'JA' for at anvende kortets OPEN-SOURCE driver.\n\n-Vælg 'NEJ' for at gå til grafikkort menu som indeholder NVIDIA's egne drivere."
 
-#  Install DE Info
+# Install DE Info
 _DEInfoBody="Flere miljøer kan installeres.\n\nGnome og LXDE installerer display manager.\n\nCinnamon, Gnome og KDE installerer Netværks håndtering."
 
 # Install DE Menu
-_InstDETitle="Installer Skrivebords Miljø(er)"
+_InstDETitle="Installer skrivebordsmiljø(er)"
 _InstManDEBody="Vælg et Manjaro System."
 _ErrInit="Forkert init system"
 _WarnInit="er kun tilgængelig for systemd.\nVenligst tilpas dit valg:"
-_DiffPro="Vælg en anden profile"
+_DiffPro="Vælg en anden profil"
 _InstSystd="Installer systemd base"
-_InstDEBody="Skrivebords Miljøer og deres tilhørende pakkegrupper er listet først."
+_InstDEBody="Skrivebordsmiljøer og deres tilhørende pakkegrupper er listet først."
 _ExtraTitle="Komplet eller minimum?"
 _ExtraBody="Denne udgave findes i to varianter"
 
@@ -338,10 +338,10 @@ _InstNMErrBody="Netværk forbindelseshåndtering er installeret og aktiveret."
 
 # Welcome
 _WelTitle="Velkommen til"
-_WelBody="Dette installationsprogram vil hente de nyeste pakker fra Manjaro servere. Der foretages kun den allermest nødvendige opsætning.\n\nMENU MULIGHEDER:\nDu vælger muligheder ved tryk på et tal eller ved at bruge [PILTASTER]. [ENTER] vil udføre valget. Skift mellem knapperne ved at bruge [TAB] eller med [PILTASTER]. [ENTER] udfører valget. Lange lister kan navigeres ved at brug [PageUp] og [PageDown] taster, og/eller ved at trykke på en tast svarende til det første bogstav i det ønskede valg.\n\nOPSÆTNING & PAKKE MULIGHEDER:\nStandard pakker i check-lister vil være forvalgt. Brug [MELLEMRUM] for at til/fravælge pakker."
+_WelBody="Dette installationsprogram vil hente de nyeste pakker fra Manjaro servere. Der foretages kun den allermest nødvendige opsætning.\n\nMENU MULIGHEDER:\nDu vælger muligheder ved tryk på et tal eller ved at bruge [PILETASTER]. [ENTER] vil udføre valget. Skift mellem knapperne ved at bruge [TAB] eller med [PILETASTER]. [ENTER] udfører valget. Lange lister kan navigeres ved at brug [PAGEUP] og [PAGEDOWN] taster, og/eller ved at trykke på en tast svarende til det første bogstav i det ønskede valg.\n\nOPSÆTNING & PAKKE MULIGHEDER:\nStandard pakker i check-lister vil være forvalgt. Brug [MELLEMRUM] for at til/fravælge pakker."
 
 # Preparation Menu
-_PrepMenuTitle="Forbered Installation"
+_PrepMenuTitle="Forbered installation"
 _PrepMenuBody="Terminalens tastatur layout bruges under installation og i det færdige system."
 _PrepKBLayout="Desktop Tastatur Opsætning"
 _PrepMirror="Pakke Servere"
@@ -360,8 +360,8 @@ _WarnOrc="Disse Manjaro profiler kan ikke bruges på et openrc system:"
 _ChsAddPkgs="Vælg ekstra moduler til kernen"
 _InstBootldr="Installer Bootloader"
 _InstDrvTitle="Installer Hardware Driver(Styreprogrammer)"
-_InstDrvBody="Nogle net- og grafik kort\nkræver specielle drivere.\nMulighed 1 og 2 vælger disse drivere baseret på din hardware,\nmulighed 3 og 4 lader dig vælge specifikke drivere"
-_InstFree="Automatisk installallation åbne drivere"
+_InstDrvBody="Nogle net- og grafikkort\nkræver specielle drivere.\nMulighed 1 og 2 vælger disse drivere baseret på din hardware,\nmulighed 3 og 4 lader dig vælge specifikke drivere"
+_InstFree="Automatisk installation åbne drivere"
 _InstProp="Automatisk installation lukkede drivere"
 _SelDDrv="Vælg Skærm Driver"
 _InstAllDrv="Installer alle åbne drivere"
@@ -372,7 +372,7 @@ _ConfBseBody="Grundlæggende opsætning af Manjaro Base."
 _ConfBseFstab="Opret FSTAB"
 _ConfBseHost="Opsæt Computernavn"
 _ConfBseTimeHC="Opsæt Tidszone og Ur"
-_ConfBseSysLoc="Opsæt System Sprog"
+_ConfBseSysLoc="Opsæt Systemsprog"
 _RunMkinit="Kør Mkinitcpio"
 _RunUpGrub="Opdater GRUB"
 
@@ -382,8 +382,8 @@ _ConfUsrNew="Tilføj bruger(e)"
 
 # Graphics Menu
 _InstGrMenuTitle="Installer Grafisk Brugerflade"
-_InstGrMenuBody="Forud for installation af skrivebords miljø SKAL grafik, input og lyd drivere være installeret. Dette inkluderer installation af drivere til grafik-kort."
-_InstDEMenuTitle="Vælg en komplet Manjaro udgave eller et skrivebords miljø uden tilpasninger"
+_InstGrMenuBody="Forud for installation af skrivebordsmiljø SKAL grafik, input og lyd drivere være installeret. Dette inkluderer installation af drivere til grafikkort."
+_InstDEMenuTitle="Vælg en komplet Manjaro udgave eller et skrivebordsmiljø uden tilpasninger"
 _InstGrMenuDS="Installer Display Server"
 _InstGrMenuDSBody="I tillæg til xorg og wayland muligheder, er drivere til input enheder (xf86-input-) også medtaget."
 _InstGrMenuDD="Installer Display Driver"
@@ -391,9 +391,9 @@ _InstGrDrv="Vælg grafik driver"
 _WarnInstGr="Ingen Grafik Driver valgt."
 _InstDEStable="Installer Manjaro Skrivebord"
 _InstDEGit="Installer Manjaro Skrivebord (udviklings profiler)"
-_InstGrDE="Installer Skrivebords Miljø"
+_InstGrDE="Installer skrivebordsmiljø"
 _InstPBody="Dette installerer en pakkeliste og opsætningspakke til skrivebord, der passer med den tilsvarende Manjaro udgave"
-_InstDE="Installer Skrivebords Miljø uden tilpasninger (vanilla)"
+_InstDE="Installer skrivebordsmiljø uden tilpasninger (vanilla)"
 _InstGrMenuGE="Installer Grafisk Miljø"
 _InstGrMenuDM="Installer Display Manager"
 
@@ -414,17 +414,17 @@ _InstCupsBody="CUPS (Common Unix Printing System) er et udskriftsystem baseret p
 _InstCupsQ="Aktiver service org.cups.cupsd.service på dette system?"
 
 # Install Multimedia Support Menu
-_InstMultMenuTitle="Installerer Multimedia Understøttelse"
+_InstMultMenuTitle="Installerer Multimedie Understøttelse"
 _InstMultMenuBody="Tilgængeligheds pakker hjælper og støtter personer med nedsat syn og/eller hørelse. Under Særligt tilpasset pakkevalg kan angives yderligere brugerdefinerede pakkevalg."
 _InstMulSnd="Installerer lydkort driver(e)"
 _InstMulSndBody="ALSA understøtter lydkort direkte fra kernen. PulseAudio er et mellemlag for ALSA."
-_InstMulCodec="Installerer multimedia oversættere"
+_InstMulCodec="Installerer multimedie oversættere"
 _InstMulAcc="Installerer hjælp for tilgængelighed"
 _InstMulAccBody="Vælg de ønskede tilgængeligheds pakker."
 _InstMulCust="Ekstra pakke installation"
 
 # Codecs Menu
-_InstMulCodBody="GStreamer er et multimedia ramme-format. De første to muligheder er nuværende og legacy (gstreamer0.10) pakke grupper. Xine er også med."
+_InstMulCodBody="GStreamer er et multimedie ramme-format. De første to muligheder er nuværende og legacy (gstreamer0.10) pakkegrupper. Xine er også med."
 
 # Custom Packages Box
 _InstMulCustBody="Indtast (korrekt) navne for installations-pakker fra Manjaro repo, navne adskilles med mellemrun.\n\nF.eks, for at installere Firefox, VLC og HTop: firefox vlc htop"
@@ -447,14 +447,14 @@ _CloseInstBody="Afslut installation?"
 _LogInfo="Vil du gemme installations-loggen på det installerede system?\nDen vil blive kopieret til" 
 
 # Chroot
-_ChrootReturn="\nDu vil nu chroot'e ind i det installerede system. Du kan ændre og tilpasse det næsten som det var startede system.\n\nTast \"exit\" for at afslutte chroot og \"fg\" for at komḿe tibage til installation.\n "
+_ChrootReturn="\nDu vil nu chroot'e ind i det installerede system. Du kan ændre og tilpasse det næsten som det var startede system.\n\nTast \"exit\" for at afslutte chroot og \"fg\" for at komme tilbage til installation.\n "
 _EnterChroot="Gå ind i systemet"
-_ChrootTitle="Chroot into Installation" # translate me !
+_ChrootTitle="Chroot ind i installation"
 
 #Refind
 _InstRefindTitle="Installer refind"
 _InstRefindBody="Dette installerer refind og opsætter det til at finde dine kerner. Der er ingen støtte for krypteret /boot eller intel microcode. Disse kræver manual boot stanzas eller eller anden bootloader."
-_RefindReady="Refind er installeret uden proglemer."
+_RefindReady="Refind er installeret uden problemer."
 _bootloaderInfo="Refind kan bruges alene eller i forbindelse med andre bootloadere og som en grafisk bootmenu. Den finder alle bootbare systemer ved opstart.\nGrub kan bruges med krypteret /boot partition og finder alle bootbare systemer ved kerneopdateringer. Den kan starte .iso filer fra diske og har automatisk bootmulighed for btrfs snapshots.\nSystemd-boot er let og simpel med meget lidt tilpasning. Den finder Windows, og er i øvrigt ikke anvendelig til mulitboot systemer."
 
 # Systemd-boot
@@ -462,11 +462,11 @@ _InstSystdBBody="Dette installerer systemd-boot og opretter boot muligheder for 
 _SystdBReady="Systemd-boot er installeret uden problemer. er nødvendig for dette system, resten er valgfrit."
 
 #Meta menu
-_InstCrMenuTitle="CLI Installation"
+_InstCrMenuTitle="CLI-installation"
 _InstCrMenuBody="Dette installerer at Manjaro Base system uden grafisk skrivebord. Trin 1-3 er nødvendig for dette system, resten er valgfrit."
-_InstDsMenuTitle="Desktop Installation"
-_InstDsMenuBody="Dette installerer at fuldt Manjaro Base med grafisk skrivebord. Trin 1-3  er nødvendig for dette system, resten er valgfrit."
-_InstCsMenuTitle="Tilpasset Installation"
+_InstDsMenuTitle="Desktop-installation"
+_InstDsMenuBody="Dette installerer at fuldt Manjaro Base med grafisk skrivebord. Trin 1-3 er nødvendig for dette system, resten er valgfrit."
+_InstCsMenuTitle="Tilpasset installation"
 _InstCsMenuBody="Dette installerer at Manjaro Base system uden grafisk skrivebord. Trin 1-4 er nødvendig for dette system, resten er valgfrit."
 
 _MMNewBody="Efter montering af partitioner i klargørings sektionen, vælges installationstype. Hvis du er usikker, så vælg Desktop for et standard Manjaro system."
@@ -474,29 +474,29 @@ _MMNewBody="Efter montering af partitioner i klargørings sektionen, vælges ins
 #System rescue
 _SysRescTitle="System Rescue" # translate me !
 _SysRescBody="This menu is collection of tools to help restore broken system to full functionality." # translate me !
-_RmPkgs="Remove packages" # translate me !
-_RmPkgsMsg="Search packages by typing their name.  
+_RmPkgs="Fjern pakker"
+_RmPkgsMsg="Search packages by typing their name.
 Press tab to select multiple packages" # translate me !
-_RmPkgsPrmpt="Package to remove" # translate me !
-_AddPkgsPrmpt="Package" # translate me !
+_RmPkgsPrmpt="Pakke som skal fjernes"
+_AddPkgsPrmpt="Pakke"
 _AddPkgs="Choose any extra packages you would like to add. 
 Search packages by typing their name. 
 Press tab to select multiple packages and proceed with Enter." # translate me !
 
 #Extra
-_ExtraTitle="Extra packages" # translate me !
+_ExtraTitle="Ekstra pakker"
 _ExtraBody="Would you like to add any additional packages to your installation?" # translate me !
 
 _TweaksMenuTitle="System tweaks" # translate me !
 _PerfBody="Settings to configure your system to a specific workload" # translate me !
 _TweaksBody="Various configuration options" # translate me !
-_PerfMenu="Performance" # translate me !
+_PerfMenu="Ydelse"
 _SetSchd="I/O schedulers" # translate me !
-_SetSwap="Swap configuration" # translate me !
-_AutologEnable="Enable automatic login" # translate me !
-_HibrnEnable="Enable hibernation" # translate me !
+_SetSwap="Swap-konfiguration" # translate me !
+_AutologEnable="Aktivér automatisk login"
+_HibrnEnable="Aktivér dvale"
 
-_LogMenu="View system logs" # translate me !
+_LogMenu="Vis systemlogge"
 _LogBody="Parse system logs with fzf" # translate me !
 _DataRecMenu="Data recovery" # translate me !
 _DataRecBody="Various tools for data backup and recovery" # translate me !
