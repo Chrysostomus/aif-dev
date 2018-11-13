@@ -498,5 +498,5 @@ _LogBody="Зробити аналіз системних логів за доп�
 _DataRecMenu="Відновлення даних"
 _DataRecBody="Різні утиліти для копіювання та відновлення даних"
 
-_HostCache="Choose pacman cache" # translate me !
-_HostCacheBody="Do you want to use the pacman cache of the running system instead of the installation target? This can reduce the size of the required downloads in the installation." # translate me !
+_HostCache="Виберіть кеш pacman "
+_HostCacheBody="Ви хочете використовувати кеш pacman з працюючої системи, замість кешу системи цільового встановлення? Це може зменшити розмір необхідних завантажень в процесі встановлення." 
