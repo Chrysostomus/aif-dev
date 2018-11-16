@@ -3,11 +3,11 @@
 
 pkgbase=manjaro-architect
 pkgname=('manjaro-architect' 'manjaro-architect-launcher')
-pkgver=0.7.4.r78.g86f8c83
-pkgrel=1
+pkgver=0.9.19
+pkgrel=4
 pkgdesc="Manjaro CLI net-installer, forked from the Archlinux Architect"
 arch=(any)
-url="https://github.com/Chrysostomus/$pkgbase"
+url="https://github.com/GrayWolf82/$pkgbase"
 license=(GPL2)
 depends=('bash'
          'dialog')
