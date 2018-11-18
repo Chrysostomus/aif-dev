@@ -316,7 +316,7 @@ mount_opts() {
     echo ${FS_OPTS} > /tmp/.fs_options
 
     format_name=$(echo ${PARTITION} | rev | cut -d/ -f1 | rev)
-    format_device=$(lsblk -i | tac | sed -n -e "/$format_name/,/disk/p" | awk '/disk/ {print $1}')   
+    format_device=$(lsblk -i | tac | sed -r 's/^[^[:alnum:]]+//' | sed -n -e "/$format_name/,/disk/p" | awk '/disk/ {print $1}')   
     
     if [[ "$(cat /sys/block/${format_device}/queue/rotational)" == 1 ]]; then
         sed -i 's/autodefrag - off/autodefrag - on/' /tmp/.fs_options
@@ -1018,7 +1018,7 @@ mount_partitions() {
 
 get_cryptroot() {
         # Identify if /mnt or partition is type "crypt" (LUKS on LVM, or LUKS alone)
-    if $(lsblk | awk '/\/mnt$/ {print $6}' | grep -q crypt) || $(lsblk -i | tac | sed -n -e "/\/mnt$/,/part/p" | awk '{print $6}' | grep -q crypt); then
+    if $(lsblk | sed -r 's/^[^[:alnum:]]+//' | awk '/\/mnt$/ {print $6}' | grep -q crypt) || $(lsblk -i | tac | sed -r 's/^[^[:alnum:]]+//' | sed -n -e "/\/mnt$/,/part/p" | awk '{print $6}' | grep -q crypt); then
         LUKS=1
         root_name=$(mount | awk '/\/mnt / {print $1}' | sed s~/dev/mapper/~~g | sed s~/dev/~~g)
         #Get the name of the Luks device
@@ -1027,7 +1027,7 @@ get_cryptroot() {
             LUKS_ROOT_NAME="$root_name"
         else
             # Mountpoint is not directly on LUKS device, so we need to get the crypt device above the mountpoint
-            LUKS_ROOT_NAME="$(lsblk -i | tac | sed -n -e "/\/mnt$/,/crypt/p" | awk '/crypt/ {print $1}' | sed 's/^..//')"
+            LUKS_ROOT_NAME="$(lsblk -i | tac | sed -r 's/^[^[:alnum:]]+//' | sed -n -e "/\/mnt$/,/crypt/p" | awk '/crypt/ {print $1}')"
         fi
       
         # Check if LUKS on LVM  
@@ -1068,7 +1068,7 @@ get_cryptroot() {
 
 get_cryptboot(){
     # If /boot is encrypted
-    if $(lsblk | awk '/\/mnt\/boot$/ {print $6}' | grep -q crypt) || $(lsblk -i | tac | sed -n -e "/\/mnt\/boot$/,/part/p" | awk '{print $6}' | grep -q crypt); then
+    if $(lsblk | sed -r 's/^[^[:alnum:]]+//' | awk '/\/mnt\/boot$/ {print $6}' | grep -q crypt) || $(lsblk -i | tac | sed -r 's/^[^[:alnum:]]+//' | sed -n -e "/\/mnt\/boot$/,/part/p" | awk '{print $6}' | grep -q crypt); then
     
         LUKS=1
         boot_name=$(mount | awk '/\/mnt\/boot / {print $1}' | sed s~/dev/mapper/~~g | sed s~/dev/~~g)
@@ -1080,7 +1080,7 @@ get_cryptboot(){
             LUKS_BOOT_UUID=$(lsblk -lno UUID,MOUNTPOINT | awk '/\mnt\/boot$/ {print $1}')
         else
             # Mountpoint is not directly on LUKS device, so we need to get the crypt device above the mountpoint
-            LUKS_BOOT_NAME="$(lsblk -i | tac | sed -n -e "/\/mnt\/boot$/,/crypt/p" | awk '/crypt/ {print $1}' | sed 's/^..//')"
+            LUKS_BOOT_NAME="$(lsblk -i | tac | sed -r 's/^[^[:alnum:]]+//' | sed -n -e "/\/mnt\/boot$/,/crypt/p" | awk '/crypt/ {print $1}')"
             # Get UUID of the encrypted /boot
             LUKS_BOOT_UUID=$(lsblk -ino NAME,FSTYPE,TYPE,MOUNTPOINT,UUID | tac | sed -n -e "/\/mnt\/boot /,/part/p" | awk '/crypto_LUKS/ {print $4}')
         fi
@@ -1152,7 +1152,7 @@ btrfs_subvolumes() {
 mount_existing_subvols() {
     # Set mount options
     format_name=$(echo ${PARTITION} | rev | cut -d/ -f1 | rev)
-    format_device=$(lsblk -i | tac | sed -n -e "/$format_name/,/disk/p" | awk '/disk/ {print $1}')   
+    format_device=$(lsblk -i | tac | sed -r 's/^[^[:alnum:]]+//' | sed -n -e "/$format_name/,/disk/p" | awk '/disk/ {print $1}')   
     if [[ "$(cat /sys/block/${format_device}/queue/rotational)" == 1 ]]; then
         fs_opts="autodefrag,compress=zlib,noatime,nossd,commit=120"
     else
