@@ -1,3 +1,5 @@
+# Attention: all development has moved to Gitlab: https://gitlab.manjaro.org/applications/manjaro-architect
+
 # manjaro-architect
 CLI net-installer for Manjarolinux, forked from Carl Duff's Architect
 
