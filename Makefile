@@ -37,6 +37,7 @@ LANG = \
 	data/translations/portuguese.trans \
 	data/translations/portuguese_brasil.trans \
 	data/translations/russian.trans \
+	data/translations/ukrainian.trans \
 	data/translations/spanish.trans
 
 ICONS = \
